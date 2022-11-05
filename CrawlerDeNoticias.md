@@ -1,6 +1,8 @@
-# Crawler Noticias do G1
+# Crawler Noticias
 
-Capturando noticias do portal G1 da Globo
+
+
+## Introdução
 
 Estudo projeto de construção de um bot crawler para extrair e indexar noticias de sites.
 
@@ -39,8 +41,11 @@ import random
 from IPython.core.display import display, HTML
 ```
 
-## Modelagem Portal G1
+# Modelagem Portal G1
 
+
+
+Capturando noticias do portal G1 da Globo
 Funções básicas. Especifincando "selector css" classe 'bastian-page'  para tags div.
 
 
