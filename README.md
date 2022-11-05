@@ -4,4 +4,4 @@
 
 ## Jupyter Notebooks com saídas
 
-[Notebooks](CrawlerDeNoticias-Completo.md)
+[Notebooks](https://github.com/dimensaoalfa/info-crawler/blob/main/CrawlerDeNoticias-completo.md')
