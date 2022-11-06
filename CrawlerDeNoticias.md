@@ -64,6 +64,7 @@ with open('tmp/data', 'w') as fl:
 ```python
 class G1:
     def __init__(self, size_news=10, include_details = False):
+        
         self.size_news = size_news
         self.include_details = include_detais
         self.url = 'https://g1.globo.com/'
@@ -73,9 +74,25 @@ class G1:
         self.dnews = []
         self.soup = ''
         
-    def g1_():
-        pass
-        
+	# Funções para processar ágina e filtrar conteudos.
+	# Crawler function in G1 page
+    # Extraindo noticias do portal G1
+    def g1_(self, hdata, htag='div', attr={'class': '_b', 'id':''}, debug=False):
+        #global dnews
+        dnews = []
+
+        soup = BeautifulSoup(hdata, 'html.parser')
+        cwn = soup.find_all(htag, class_=attr['class'])
+        # Debug
+        if debug:
+            print('>> ',hdata[0:20])
+            print('> ',cwn)
+        #------------
+        for l in cwn[0].children:
+            for news in l:
+                dnews.append({'titulo': news.a.text, 'url': news.a['href']})
+
+        return dnews, cwn
         
 ```
 
