@@ -128,19 +128,24 @@ class NewsBot:
         elif url != None:
             try:
                 data = requests.get( url ).content.decode()
+                links =BeautifulSoup( data, 'html.parser').find_all('a')
+
             except:
                 print('Error in url request.')
         else:
             print('Data or url miss.')
             return None
-
+        print('links ', links)
         for i in links:
-            page_list_links.extend( [
-                {
-                    'text': i.text,
-                    'href': i['href']
-                }
-            ])
+            try:
+                page_list_links.extend( [
+                    {
+                        'text': i.text or i.content,
+                        'href': i['href']
+                    }
+                ])
+            except:
+                pass
 
         return page_list_links
 
@@ -155,3 +160,6 @@ if __name__ == "__main__":
     print( a )
     for i in a :
         print(f'\n\n{i["title"]}\n{i["href"]}')
+    with open('links.txt', 'w') as fl:
+        fl.write( '\n'.join( [ str( i['text'] ) + ' , ' + str( i['href'] )  for i in bot.trackLinks('https://www.band.uol.com.br') ] ) )
+        fl.close()
