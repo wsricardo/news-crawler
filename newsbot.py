@@ -1,5 +1,6 @@
 import requests
-from bs4 import BeautifulSoup 
+from bs4 import BeautifulSoup
+import random
 
 class NewsBot:
     def __init__(self, url=None, attrs=dict() ):
@@ -20,18 +21,22 @@ class NewsBot:
 
         return requests.get(url).content.decode()
         
-    def trackNews(self, tag=None, attrs=None):
-
-        aux_link_url = self.url.split('.')
+    def trackNews(self, url= None, tag=None, attrs=None):
+        
+        #if url != None:
+        #    self.url = url
+        
+        aux_link_url = url.split('.')
+        #print('aux link', aux_link_url)
         
 
-        if [ l.find('g1') for l in aux_link_url ] != [-1, -1, -1]:
+        if url.find('g1') != -1:
             return self.__trackNewsG1()
         
-        elif  [ l.find('cnn') for l in aux_link_url ] != [-1, -1, -1]:
+        elif  url.find('cnn') != -1:
             return self.__trackNewsCNN()
 
-        elif  [ l.find('bbc') for l in aux_link_url ] != [-1, -1, -1]:
+        elif  url.find('bbc') != -1:
             return self.__trackNewsBBC()
 
         else:
@@ -43,7 +48,7 @@ class NewsBot:
         if source.lower() == 'g1':
             return self.__trackNewsG1(html_content_file)
 
-        elif source.lower() == 'cnn':
+        elif source.lower() == 'cnnbrasil':
             return self.__trackNewsCNN( html_content_file )
 
         elif source.lower() == 'bbc':
@@ -52,15 +57,22 @@ class NewsBot:
         else:
             return None 
 
-    def __trackNewsG1(self, data):
+    def __trackNewsG1(self, data=None):
 
         dnews = []
-        #data = requests.get(self.url)
+        self.url = 'https://g1.globo.com'
+        if data == None and self.url != None:
+            data = requests.get(self.url).content.decode()
+
+        elif self.url == None and data == None :
+            print("Add data or url.")
+
         soup = BeautifulSoup(data, 'html.parser')
 
         cwn = soup.find_all('div', class_='bastian-page')
         #print( cwn[0] )
-        for i in cwn[0]:
+        
+        for i in cwn[0].children:
             for news in i:
                # print(news.a.text)
                 dnews.append( { 'title': news.a.text, 'href': news.a['href'] } )
@@ -68,34 +80,41 @@ class NewsBot:
         return dnews
 
 
-    def __trackNewsBBC(self, data):
-        bbc_list_news = []
+    def __trackNewsBBC(self, data=None):
+        bbc_news_lists = []
+        self.url = 'https://www.bbc.com/portuguese'
         url_bbc_base = 'https://www.bbc.com'
+
+        if data == None and self.url != None:
+            data = requests.get(self.url).content
+
+        elif self.url == None and data == None :
+            print("Add data or url.")
+
 
         bbc_soup = BeautifulSoup(data, 'html.parser')
         bbc_sections = bbc_soup.find_all('section', class_='bbc-iinl4t')
 
-        for sections_news in bbc_sections:
+        for section_news in bbc_sections:
             for news in section_news.select( 'a' ):
-                if news['href'].find[ 'topic' ] != -1:
-                    bbc_list_news.extend( [
-                        {
-                            'title': news.text,
-                            'href': news['href']
-                        }
-                    ])
-                    
-                else:
-                    bbc_list_news.extend( [
-                        {
-                            'title': news.text,
-                            'href': url_bbc_base+news['href']
-                        }
-                    ])
-        return bbc_list_news
+                if news['href'].find('topic') != -1:
+                    pass
+                else :
+                    if news['href'].find('https') != -1:
+                        bbc_news_lists.extend( [ { 'title': news.text, 'href': news['href'] } ] )
+                    else:
+                        bbc_news_lists.extend( [ { 'title': news.text, 'href': url_bbc_base+news['href'] } ] )
+        
+        return bbc_news_lists
 
-    def __trackNewsCNN(self, data):
+    def __trackNewsCNN(self, data = None):
         cnn_list_news = []
+        self.url = 'https://www.cnnbrasil.com.br/'
+        if data == None and self.url != None:
+            data = requests.get(self.url).content.decode()
+
+        elif self.url == None and data == None :
+            print("Add data or url.")
 
         cnn_soup = BeautifulSoup(data, 'html.parser')
         cnn_nw_data = cnn_soup.find_all('section')
@@ -106,6 +125,7 @@ class NewsBot:
             aux = news.find('a')
 
             try:
+                
                 aux = aux.attrs
                 cnn_list_news.extend( [ 
                     {
@@ -116,6 +136,7 @@ class NewsBot:
 
             except:
                 pass
+        print("cnn_list_news", cnn_list_news)
 
         return cnn_list_news
 
@@ -149,9 +170,46 @@ class NewsBot:
 
         return page_list_links
 
+def create_list_news(name='out.txt', number_news_per_page = 2):
+    urls = { 'g1': 'https://g1.globo.com', 
+        'bbc': 'https://www.bbc.com/portuguese', 
+        'cnnbrasil': 'https://www.cnnbrasil.com.br/'
+    }
+    url_name_replace = {'g1': 'G1/Globo', 'bbc': 'BBC Brasil', 'cnnbrasil': 'CNN Brasil'  }
+
+    d = NewsBot()
+    news = [] 
+    keys = urls.keys()
+    print(keys)
+
+    for i in keys:
+        print('keys',i)
+        news.extend( [ { i: random.choices( d.trackNews( url=urls[i] ), k = number_news_per_page ) } ] )
+
+    #print( d.trackNews( urls['g1'] ) )
+    #news.extend( random.choices( d.trackNews( urls['g1'] ) ) )
+    #news.extend( random.choices( d.trackNews( urls['cnnbrasil'] ) ) )
+    #news.extend( random.choices( d.trackNews( urls['bbc'] ) ) )
+    out = ''
+    j = ''
+    #print(f'news - {dir( news[0].keys() )}')
+    for i in news:
+        #print(i)
+        j = [ s for s in i.keys()][0]
+        #print(f'key j {j}')   
+        out += f"Portal de Notícias { url_name_replace[j] }\n"
+        for k in i[j]:
+            out += k['title']  + '\n' + k['href'] + '\n'
+        out += '\n\n'
+
+    #print(news)
+    with open(name, "w") as fl:
+        fl.write( out )
+
 if __name__ == "__main__":
-    
-    with open('data.html', 'r') as fl:
+    create_list_news("Notícias 08-11-22.txt", 3)
+
+    """with open('data.html', 'r') as fl:
         data = fl.read()
         fl.close()
     
@@ -163,3 +221,4 @@ if __name__ == "__main__":
     with open('links.txt', 'w') as fl:
         fl.write( '\n'.join( [ str( i['text'] ) + ' , ' + str( i['href'] )  for i in bot.trackLinks('https://www.band.uol.com.br') ] ) )
         fl.close()
+    """
