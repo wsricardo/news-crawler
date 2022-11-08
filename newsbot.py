@@ -27,7 +27,7 @@ class NewsBot:
         #    self.url = url
         
         aux_link_url = url.split('.')
-        #print('aux link', aux_link_url)
+        
         
 
         if url.find('g1') != -1:
@@ -70,11 +70,10 @@ class NewsBot:
         soup = BeautifulSoup(data, 'html.parser')
 
         cwn = soup.find_all('div', class_='bastian-page')
-        #print( cwn[0] )
         
         for i in cwn[0].children:
             for news in i:
-               # print(news.a.text)
+               
                 dnews.append( { 'title': news.a.text, 'href': news.a['href'] } )
         
         return dnews
@@ -136,7 +135,6 @@ class NewsBot:
 
             except:
                 pass
-        print("cnn_list_news", cnn_list_news)
 
         return cnn_list_news
 
@@ -186,23 +184,19 @@ def create_list_news(name='out.txt', number_news_per_page = 2):
         print('keys',i)
         news.extend( [ { i: random.choices( d.trackNews( url=urls[i] ), k = number_news_per_page ) } ] )
 
-    #print( d.trackNews( urls['g1'] ) )
-    #news.extend( random.choices( d.trackNews( urls['g1'] ) ) )
-    #news.extend( random.choices( d.trackNews( urls['cnnbrasil'] ) ) )
-    #news.extend( random.choices( d.trackNews( urls['bbc'] ) ) )
     out = ''
     j = ''
-    #print(f'news - {dir( news[0].keys() )}')
+
     for i in news:
-        #print(i)
+        
         j = [ s for s in i.keys()][0]
-        #print(f'key j {j}')   
+          
         out += f"Portal de Notícias { url_name_replace[j] }\n"
         for k in i[j]:
             out += k['title']  + '\n' + k['href'] + '\n'
         out += '\n\n'
 
-    #print(news)
+    
     with open(name, "w") as fl:
         fl.write( out )
 
