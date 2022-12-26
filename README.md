@@ -15,6 +15,6 @@ Módulo newsbot servirá para extração de listas de noticias dos portais e ind
 
 ## Links
 
-[www.facebook.com/dimensaoalfa](https://www.dimensaoalfa.com.br)
+[Instagram WSRicardo](https://www.instagram.com/wsricardoof)
 
 [wsricardo blog](https://wsricardo.blogspot.com)
