@@ -34,7 +34,7 @@ if __name__ == "__main__":
 
     if len(arg) < 4:
         print('\n\nFormat\n')
-        print('\tprog <audio name> <out file name mp4> <image bakground for vídeo>\n')
+        print('\tprog <audio name> <image bakground for vídeo> <out file name mp4>\n')
         exit(0)
 
     else:

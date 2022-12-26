@@ -168,40 +168,52 @@ class NewsBot:
 
         return page_list_links
 
-def create_list_news(name='out.txt', number_news_per_page = 2):
-    urls = { 'g1': 'https://g1.globo.com', 
+def create_list_news(name='out.txt', number_news_per_page = 2, withLinks=True):
+	urls = { 'g1': 'https://g1.globo.com', 
         'bbc': 'https://www.bbc.com/portuguese', 
         'cnnbrasil': 'https://www.cnnbrasil.com.br/'
     }
-    url_name_replace = {'g1': 'G1/Globo', 'bbc': 'BBC Brasil', 'cnnbrasil': 'CNN Brasil'  }
+	url_name_replace = {'g1': 'G1/Globo', 'bbc': 'BBC Brasil', 'cnnbrasil': 'CNN Brasil'  }
 
-    d = NewsBot()
-    news = [] 
-    keys = urls.keys()
-    print(keys)
+	d = NewsBot()
+	news = [] 
+	keys = urls.keys()
+	print(keys)
 
-    for i in keys:
-        print('keys',i)
-        news.extend( [ { i: random.choices( d.trackNews( url=urls[i] ), k = number_news_per_page ) } ] )
+	for i in keys:
+		print('keys',i)
+		news.extend( [ { i: random.choices( d.trackNews( url=urls[i] ), k = number_news_per_page ) } ] )
 
-    out = ''
-    j = ''
+	out = ''
+	j = ''
 
-    for i in news:
-        
-        j = [ s for s in i.keys()][0]
+	if withLinks:
+		for i in news:
+
+			j = [ s for s in i.keys()][0]
           
-        out += f"Portal de Notícias { url_name_replace[j] }\n"
-        for k in i[j]:
-            out += k['title']  + '\n' + k['href'] + '\n'
-        out += '\n\n'
+			out += f"Portal de Notícias { url_name_replace[j] }\n"
+			for k in i[j]:
+				out += k['title'] + '.'  + '\n' + k['href'] + '\n'
+			out += '\n\n'
+	else:
+		for i in news:
+
+			j = [ s for s in i.keys()][0]
+
+			out += f"Portal de Notícias { url_name_replace[j] }\n"
+			
+			for k in i[j]:
+				out += k['title'] + '.' + '\n'
+
+			out += '\n\n'
 
     
-    with open(name, "w") as fl:
-        fl.write( out )
+	with open(name, "w") as fl:
+		fl.write( out )
 
 if __name__ == "__main__":
-    create_list_news("Notícias.txt", 3)
+    create_list_news("Noticias.txt", 3, False)
 
     """with open('data.html', 'r') as fl:
         data = fl.read()
