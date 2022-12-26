@@ -535,7 +535,7 @@ Tecnologias foram usadas para gerar vídeo de noticias diária para página [Dim
 
 Peço e agradeço a compreensão e apoio de todos. 
 
-Para contribuições, dúvidas, sugestões visitem nossas páginas no [Facebook](https://www.facebook.com/).
+Para contribuições, dúvidas, sugestões visitem minha página [Instagram WSRicardo](https://www.instagram.com/wsricardoof).
 
 
 ## Sugestões de Conteúdo
