@@ -17,7 +17,7 @@ def g1_(hdata, htag='div', attr={'class': '_b', 'id':''}, debug=False):
     #------------
     for l in cwn[0].children:
         for news in l:
-            dnews.append({'titulo': news.a.text, 'url': news.a['href']})
+            dnews.append({'title': news.a.text, 'url': news.a['href']})
 
     return dnews, cwn
 
