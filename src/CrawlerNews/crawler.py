@@ -169,51 +169,75 @@ class NewsBot:
         return page_list_links
 
 def create_list_news(name='out.txt', number_news_per_page = 2, withLinks=True):
-	urls = { 'g1': 'https://g1.globo.com', 
+    import datetime
+    import json
+
+    urls = { 'g1': 'https://g1.globo.com',
         'bbc': 'https://www.bbc.com/portuguese', 
         'cnnbrasil': 'https://www.cnnbrasil.com.br/'
     }
-	url_name_replace = {'g1': 'G1/Globo', 'bbc': 'BBC Brasil', 'cnnbrasil': 'CNN Brasil'  }
 
-	d = NewsBot()
-	news = [] 
-	keys = urls.keys()
-	print(keys)
+    url_name_replace = {'g1': 'G1/Globo', 'bbc': 'BBC Brasil', 'cnnbrasil': 'CNN Brasil'  }
 
-	for i in keys:
-		print('keys',i)
-		news.extend( [ { i: random.choices( d.trackNews( url=urls[i] ), k = number_news_per_page ) } ] )
+    d = NewsBot()
+    news = []
+    keys = urls.keys()
+    print(keys)
 
-	out = ''
-	j = ''
-
-	if withLinks:
-		for i in news:
-
-			j = [ s for s in i.keys()][0]
-          
-			out += f"Portal de Notícias { url_name_replace[j] }\n"
-			for k in i[j]:
-				out += k['title'] + '.'  + '\n' + k['href'] + '\n'
-			out += '\n\n'
-	else:
-		for i in news:
-
-			j = [ s for s in i.keys()][0]
-
-			out += f"Portal de Notícias { url_name_replace[j] }\n"
-			
-			for k in i[j]:
-				out += k['title'] + '.' + '\n'
-
-			out += '\n\n'
-
+    if number_news_per_page == 0:
+        for i in keys:
+            news.extend( d.trackNews( url=urls[i] ) )
     
-	with open(name, "w") as fl:
-		fl.write( out )
+    elif number_news_per_page > 0:
+        for i in keys:
+            print('keys',i)
+            news.extend( [ { i: random.choices( d.trackNews( url=urls[i] ), k = number_news_per_page ) } ] )
+
+    out = ''
+    j = ''
+    news = [ 
+        { 
+        key.replace( 'titulo', 'title' ): value for key, value in i.items() } for i in news 
+        ]
+    
+    news = [ 
+        {
+            key.replace('url', 'href'):value for key, value in i.items()
+        } for i in news
+        
+    ]
+    print(news)
+    """if withLinks:
+        for i in news:
+
+            j = [ s for s in i.keys()][0]
+          
+            out += f"Portal de Notícias { url_name_replace[j] }\n"
+            for k in i[j]:
+                out += k['title'] + '.'  + '\n' + k['href'] + '\n'
+            out += '\n\n'
+    else:
+        for i in news:
+
+            j = [ s for s in i.keys()][0]
+
+            out += f"Portal de Notícias { url_name_replace[j] }\n"
+			
+            for k in i[j]:
+                out += k['title'] + '.' + '\n'
+
+            out += '\n\n'
+    """
+
+    date = datetime.date.today()
+    date = str( date.day ) + '-' + str( date.month ) + '-' + str( date.year )
+
+    with open(name+'-'+date+'.json', "w") as fl:
+        fl.write( json.dumps( news, ensure_ascii=False, indent=4 ) )
+        print('save')
 
 if __name__ == "__main__":
-    create_list_news("Noticias.txt", 3, False)
+    create_list_news("Noticias", 0, True)
 
     """with open('data.html', 'r') as fl:
         data = fl.read()
