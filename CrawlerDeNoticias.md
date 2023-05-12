@@ -535,7 +535,7 @@ Tecnologias foram usadas para gerar vídeo de noticias diária para página [Dim
 
 Peço e agradeço a compreensão e apoio de todos. 
 
-Para contribuições, dúvidas, sugestões visitem minha página [Instagram WSRicardo](https://www.instagram.com/wsricardoof).
+Para contribuições, dúvidas, sugestões visitem minha página [Instagram WSRicardo](https://www.instagram.com/wsricardo22).
 
 
 ## Sugestões de Conteúdo
@@ -543,6 +543,7 @@ Para contribuições, dúvidas, sugestões visitem minha página [Instagram WSRi
 Deixamos abaixo algumas sugestões de conteúdos e canais com recursos para estudos e pesquisa que podem ser uteis para quem se interessa por tecnologia, programação de computadores, matemática, ciências de dados e inteligência artificial.
 
 * [Programação Dinâmica](https://www.youtube.com/c/Programa%C3%A7%C3%A3oDin%C3%A2mica)
+* [Live Python / Dunossauro]()
 * [Toda Matemática](https://www.youtube.com/c/GustavoViegascurso)
 * [Matemática Universitária](https://www.youtube.com/c/Matem%C3%A1ticaUniversit%C3%A1riaProfRenan)
 * [Reflexões Matemáticas](https://www.youtube.com/c/Reflex%C3%B5esMatem%C3%A1ticasDrDilbertoJ%C3%BAnior)
