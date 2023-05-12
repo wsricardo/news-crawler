@@ -12,18 +12,22 @@ def g1_(hdata, htag='div', attr={'class': '_b', 'id':''}, debug=False):
     cwn = soup.find_all(htag, class_=attr['class'])
     # Debug
     if debug:
-        print('>> ',hdata[0:20])
-        print('> ',cwn)
+        print('\n\n>> ',hdata[0:20])
+        #print('\n\n> ',cwn)
+        print('\n\n>> debug',cwn[0] )
+        print('\n\n >>> debug cwn children ', cwn[0].children)
+        print('\n\n>>> debug 2 ', [ i.keys() if i == dict() else 0 for i in cwn[0] ] )
     #------------
+
     try:
         for l in cwn[0].children:
             for news in l:
 
                 dnews.append({'title': news.a.text, 'url': news.a['href']})
-    except KeyError:
-        print("KeyError in get data")
 
-
+    if debug:
+        return {'dnews':dnews,'cwn': cwn, 'keyslist': [ [ i.keys() if i == dict() else i for i in j ] for j in cwn ]  }
+    
     return dnews, cwn
 
 # Generate json file with G1 news.
