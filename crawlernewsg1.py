@@ -15,9 +15,14 @@ def g1_(hdata, htag='div', attr={'class': '_b', 'id':''}, debug=False):
         print('>> ',hdata[0:20])
         print('> ',cwn)
     #------------
-    for l in cwn[0].children:
-        for news in l:
-            dnews.append({'title': news.a.text, 'url': news.a['href']})
+    try:
+        for l in cwn[0].children:
+            for news in l:
+
+                dnews.append({'title': news.a.text, 'url': news.a['href']})
+    except KeyError:
+        print("KeyError in get data")
+
 
     return dnews, cwn
 
