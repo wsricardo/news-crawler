@@ -18,17 +18,13 @@ def g1_(hdata, htag='div', attr={'class': '_b', 'id':''}, debug=False):
         print('\n\n >>> debug cwn children ', cwn[0].children)
         print('\n\n>>> debug 2 ', [ i.keys() if i == dict() else 0 for i in cwn[0] ] )
     #------------
-    
-    # Tratar falhas ou coportamentos inesperados.
+
     try:
         for l in cwn[0].children:
             for news in l:
 
                 dnews.append({'title': news.a.text, 'url': news.a['href']})
-                
-    except KeyError:
-        # Return data from variables to analyze errors.
-        raise("keys from data returned stored dictionary structure: 'dnews', 'cwn' and 'keyslist'.") 
+
     if debug:
         return {'dnews':dnews,'cwn': cwn, 'keyslist': [ [ i.keys() if i == dict() else i for i in j ] for j in cwn ]  }
     
