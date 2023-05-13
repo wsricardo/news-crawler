@@ -17,7 +17,7 @@ Módulo newsbot servirá para extração de listas de noticias dos portais e ind
 
 [Instagram WSRicardo](https://www.instagram.com/wsricardoof)
 
-[wsricardo blog](https://wsricardo.blogspot.com)
+[WSRicardo meu blog](https://wsricardo.blogspot.com)
 
 ## Lista de Canais Sugeridos
 
