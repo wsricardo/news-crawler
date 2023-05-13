@@ -6018,4 +6018,1412 @@ class AB {
 !function(t){var e={};function n(r){if(e[r])return e[r].exports;var o=e[r]={i:r,l:!1,exports:{}};return t[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}n.m=t,n.c=e,n.d=function(t,e,r){n.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:r})},n.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},n.t=function(t,e){if(1&e&&(t=n(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var o in t)n.d(r,o,function(e){return t[e]}.bind(null,o));return r},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,"a",e),e},n.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},n.p="",n(n.s=15)}([function(t,e,n){t.exports=n(8)},function(t,e){function n(t,e,n,r,o,i,a){try{var c=t[i](a),u=c.value}catch(t){return void n(t)}c.done?e(u):Promise.resolve(u).then(r,o)}t.exports=function(t){return function(){var e=this,r=arguments;return new Promise((function(o,i){var a=t.apply(e,r);function c(t){n(a,o,i,c,u,"next",t)}function u(t){n(a,o,i,c,u,"throw",t)}c(void 0)}))}}},function(t,e){t.exports=function(t,e,n){return e in t?Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}):t[e]=n,t}},function(t,e,n){var r=n(4);t.exports=function(t,e){if(t){if("string"==typeof t)return r(t,e);var n=Object.prototype.toString.call(t).slice(8,-1);return"Object"===n&&t.constructor&&(n=t.constructor.name),"Map"===n||"Set"===n?Array.from(t):"Arguments"===n||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)?r(t,e):void 0}}},function(t,e){t.exports=function(t,e){(null==e||e>t.length)&&(e=t.length);for(var n=0,r=new Array(e);n<e;n++)r[n]=t[n];return r}},function(t,e,n){var r=n(9),o=n(10),i=n(3),a=n(11);t.exports=function(t,e){return r(t)||o(t,e)||i(t,e)||a()}},function(t,e,n){var r=n(12),o=n(13),i=n(3),a=n(14);t.exports=function(t){return r(t)||o(t)||i(t)||a()}},function(t,e,n){},function(t,e,n){var r=function(t){"use strict";var e=Object.prototype,n=e.hasOwnProperty,r="function"==typeof Symbol?Symbol:{},o=r.iterator||"@@iterator",i=r.asyncIterator||"@@asyncIterator",a=r.toStringTag||"@@toStringTag";function c(t,e,n){return Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}),t[e]}try{c({},"")}catch(t){c=function(t,e,n){return t[e]=n}}function u(t,e,n,r){var o=e&&e.prototype instanceof f?e:f,i=Object.create(o.prototype),a=new T(r||[]);return i._invoke=function(t,e,n){var r="suspendedStart";return function(o,i){if("executing"===r)throw new Error("Generator is already running");if("completed"===r){if("throw"===o)throw i;return E()}for(n.method=o,n.arg=i;;){var a=n.delegate;if(a){var c=w(a,n);if(c){if(c===l)continue;return c}}if("next"===n.method)n.sent=n._sent=n.arg;else if("throw"===n.method){if("suspendedStart"===r)throw r="completed",n.arg;n.dispatchException(n.arg)}else"return"===n.method&&n.abrupt("return",n.arg);r="executing";var u=s(t,e,n);if("normal"===u.type){if(r=n.done?"completed":"suspendedYield",u.arg===l)continue;return{value:u.arg,done:n.done}}"throw"===u.type&&(r="completed",n.method="throw",n.arg=u.arg)}}}(t,n,a),i}function s(t,e,n){try{return{type:"normal",arg:t.call(e,n)}}catch(t){return{type:"throw",arg:t}}}t.wrap=u;var l={};function f(){}function p(){}function d(){}var h={};h[o]=function(){return this};var v=Object.getPrototypeOf,b=v&&v(v(O([])));b&&b!==e&&n.call(b,o)&&(h=b);var g=d.prototype=f.prototype=Object.create(h);function y(t){["next","throw","return"].forEach((function(e){c(t,e,(function(t){return this._invoke(e,t)}))}))}function m(t,e){var r;this._invoke=function(o,i){function a(){return new e((function(r,a){!function r(o,i,a,c){var u=s(t[o],t,i);if("throw"!==u.type){var l=u.arg,f=l.value;return f&&"object"==typeof f&&n.call(f,"__await")?e.resolve(f.__await).then((function(t){r("next",t,a,c)}),(function(t){r("throw",t,a,c)})):e.resolve(f).then((function(t){l.value=t,a(l)}),(function(t){return r("throw",t,a,c)}))}c(u.arg)}(o,i,r,a)}))}return r=r?r.then(a,a):a()}}function w(t,e){var n=t.iterator[e.method];if(void 0===n){if(e.delegate=null,"throw"===e.method){if(t.iterator.return&&(e.method="return",e.arg=void 0,w(t,e),"throw"===e.method))return l;e.method="throw",e.arg=new TypeError("The iterator does not provide a 'throw' method")}return l}var r=s(n,t.iterator,e.arg);if("throw"===r.type)return e.method="throw",e.arg=r.arg,e.delegate=null,l;var o=r.arg;return o?o.done?(e[t.resultName]=o.value,e.next=t.nextLoc,"return"!==e.method&&(e.method="next",e.arg=void 0),e.delegate=null,l):o:(e.method="throw",e.arg=new TypeError("iterator result is not an object"),e.delegate=null,l)}function x(t){var e={tryLoc:t[0]};1 in t&&(e.catchLoc=t[1]),2 in t&&(e.finallyLoc=t[2],e.afterLoc=t[3]),this.tryEntries.push(e)}function S(t){var e=t.completion||{};e.type="normal",delete e.arg,t.completion=e}function T(t){this.tryEntries=[{tryLoc:"root"}],t.forEach(x,this),this.reset(!0)}function O(t){if(t){var e=t[o];if(e)return e.call(t);if("function"==typeof t.next)return t;if(!isNaN(t.length)){var r=-1,i=function e(){for(;++r<t.length;)if(n.call(t,r))return e.value=t[r],e.done=!1,e;return e.value=void 0,e.done=!0,e};return i.next=i}}return{next:E}}function E(){return{value:void 0,done:!0}}return p.prototype=g.constructor=d,d.constructor=p,p.displayName=c(d,a,"GeneratorFunction"),t.isGeneratorFunction=function(t){var e="function"==typeof t&&t.constructor;return!!e&&(e===p||"GeneratorFunction"===(e.displayName||e.name))},t.mark=function(t){return Object.setPrototypeOf?Object.setPrototypeOf(t,d):(t.__proto__=d,c(t,a,"GeneratorFunction")),t.prototype=Object.create(g),t},t.awrap=function(t){return{__await:t}},y(m.prototype),m.prototype[i]=function(){return this},t.AsyncIterator=m,t.async=function(e,n,r,o,i){void 0===i&&(i=Promise);var a=new m(u(e,n,r,o),i);return t.isGeneratorFunction(n)?a:a.next().then((function(t){return t.done?t.value:a.next()}))},y(g),c(g,a,"Generator"),g[o]=function(){return this},g.toString=function(){return"[object Generator]"},t.keys=function(t){var e=[];for(var n in t)e.push(n);return e.reverse(),function n(){for(;e.length;){var r=e.pop();if(r in t)return n.value=r,n.done=!1,n}return n.done=!0,n}},t.values=O,T.prototype={constructor:T,reset:function(t){if(this.prev=0,this.next=0,this.sent=this._sent=void 0,this.done=!1,this.delegate=null,this.method="next",this.arg=void 0,this.tryEntries.forEach(S),!t)for(var e in this)"t"===e.charAt(0)&&n.call(this,e)&&!isNaN(+e.slice(1))&&(this[e]=void 0)},stop:function(){this.done=!0;var t=this.tryEntries[0].completion;if("throw"===t.type)throw t.arg;return this.rval},dispatchException:function(t){if(this.done)throw t;var e=this;function r(n,r){return a.type="throw",a.arg=t,e.next=n,r&&(e.method="next",e.arg=void 0),!!r}for(var o=this.tryEntries.length-1;o>=0;--o){var i=this.tryEntries[o],a=i.completion;if("root"===i.tryLoc)return r("end");if(i.tryLoc<=this.prev){var c=n.call(i,"catchLoc"),u=n.call(i,"finallyLoc");if(c&&u){if(this.prev<i.catchLoc)return r(i.catchLoc,!0);if(this.prev<i.finallyLoc)return r(i.finallyLoc)}else if(c){if(this.prev<i.catchLoc)return r(i.catchLoc,!0)}else{if(!u)throw new Error("try statement without catch or finally");if(this.prev<i.finallyLoc)return r(i.finallyLoc)}}}},abrupt:function(t,e){for(var r=this.tryEntries.length-1;r>=0;--r){var o=this.tryEntries[r];if(o.tryLoc<=this.prev&&n.call(o,"finallyLoc")&&this.prev<o.finallyLoc){var i=o;break}}i&&("break"===t||"continue"===t)&&i.tryLoc<=e&&e<=i.finallyLoc&&(i=null);var a=i?i.completion:{};return a.type=t,a.arg=e,i?(this.method="next",this.next=i.finallyLoc,l):this.complete(a)},complete:function(t,e){if("throw"===t.type)throw t.arg;return"break"===t.type||"continue"===t.type?this.next=t.arg:"return"===t.type?(this.rval=this.arg=t.arg,this.method="return",this.next="end"):"normal"===t.type&&e&&(this.next=e),l},finish:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var n=this.tryEntries[e];if(n.finallyLoc===t)return this.complete(n.completion,n.afterLoc),S(n),l}},catch:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var n=this.tryEntries[e];if(n.tryLoc===t){var r=n.completion;if("throw"===r.type){var o=r.arg;S(n)}return o}}throw new Error("illegal catch attempt")},delegateYield:function(t,e,n){return this.delegate={iterator:O(t),resultName:e,nextLoc:n},"next"===this.method&&(this.arg=void 0),l}},t}(t.exports);try{regeneratorRuntime=r}catch(t){Function("r","regeneratorRuntime = r")(r)}},function(t,e){t.exports=function(t){if(Array.isArray(t))return t}},function(t,e){t.exports=function(t,e){if("undefined"!=typeof Symbol&&Symbol.iterator in Object(t)){var n=[],r=!0,o=!1,i=void 0;try{for(var a,c=t[Symbol.iterator]();!(r=(a=c.next()).done)&&(n.push(a.value),!e||n.length!==e);r=!0);}catch(t){o=!0,i=t}finally{try{r||null==c.return||c.return()}finally{if(o)throw i}}return n}}},function(t,e){t.exports=function(){throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}},function(t,e,n){var r=n(4);t.exports=function(t){if(Array.isArray(t))return r(t)}},function(t,e){t.exports=function(t){if("undefined"!=typeof Symbol&&Symbol.iterator in Object(t))return Array.from(t)}},function(t,e){t.exports=function(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}},function(t,e,n){"use strict";n.r(e);n(7);var r,o,i=n(0),a=n.n(i),c=n(1),u=n.n(c),s=n(2),l=n.n(s),f={CTA_BUTTON:"cta-button",CTA_IMAGERY:"cta-imagery"},p=l()({},"".concat(null===globalThis||void 0===globalThis||null===(r=globalThis.cdaaas)||void 0===r||null===(o=r.SETTINGS)||void 0===o?void 0:o.SITE_ID,"-tp-bottom-v2"),{"tp-enabled-button":[f.CTA_BUTTON],"tp-enabled-imagery-cta":[f.CTA_IMAGERY]}),d=f.TP_DISABLED,h=function(t){var e=document.cookie.split(";").find((function(e){return e.includes(t)}));return e?e.split("=")[1]:""},v=function(t,e){var n=new Date;n.setDate(n.getDate()+1),document.cookie="".concat(t,"=").concat(e,";samesite=strict;expires=").concat(n.toUTCString(),";domain=").concat(globalThis.location.hostname,";path=/")},b={executeIfAble:function(){var t=u()(a.a.mark((function t(e){var n,r,o,i,c;return a.a.wrap((function(t){for(;;)switch(t.prev=t.next){case 0:if(n=e.render,r=e.ABTestControl,t.prev=1,!(null==r||null===(o=r.isActiveFlag)||void 0===o?void 0:o.call(r,d))){t.next=4;break}return t.abrupt("return");case 4:i="true"===h("cookie-banner-consent-accepted"),c="true"===h("glb-tp-bottom-closed"),i&&!c&&n(),t.next=12;break;case 9:t.prev=9,t.t0=t.catch(1),console.error("[bs-tp-bottom-section::executeIfAble]",t.t0);case 12:case"end":return t.stop()}}),t,null,[[1,9]])})));return function(e){return t.apply(this,arguments)}}(),closeForSession:function(){v("glb-tp-bottom-closed",!0)},setCookie:v,getCookie:h,TP_BOTTOM_KEY_CLOSED:"glb-tp-bottom-closed"},g=[{topic:"dismiss",fn:function(t){return function(e,n,r){var o=googletag.pubads().getSlots().find((function(t){return t.getSlotElementId()===n}));o&&(googletag.destroySlots([o]),r&&r("click | close","touchpoint_D2C","tp_bottom | ".concat(t.sizeState||"collapsed")),b.closeForSession())}}},{topic:"resize",fn:function(t){return function(e,n,r){var o=document.querySelector("#".concat(n,"  iframe")),i=e.height,a="".concat(i,"px"),c="auto"===i?"auto":a,u="expand"===e.action?"expanded":"collapsed",s="click | ".concat(u),l="tp_bottom | ".concat("expand"===e.action?"collapsed":"expanded");if(o.style.height!==a){var f=document.querySelector("#glb-tp-bottom .glb-tp-bottom__background");f&&(f.classList.add("visible"),setTimeout((function(){f.classList.remove("visible")}),1e3)),o.style.height=c,e.action&&r&&r(s,"touchpoint_D2C",l),e.isOnload&&e.contentHeight&&f&&(f.style.maxHeight="".concat(e.contentHeight>120?50:e.contentHeight,"px")),t.sizeState=u}}}},{topic:"cta-collapsed",fn:function(t){return function(t,e,n,r){n&&(n("click | cta","touchpoint_D2C","tp_bottom | collapsed"),r.conversion())}}}],y=function(t){var e=t.slot,n=t.tracker,r=t.ABTestControl,o=t.tpState,i=function(t){var e=t.tracker,n=t.ABTestControl;return function(t,r,o){window.addEventListener("message",(function(i){i.data&&"globoTouchPointD2C"===i.data.context&&i.data.event===t&&o(i.data,r,e,n)}),!1)}}({tracker:n,ABTestControl:r});g.forEach((function(t){return i(t.topic,e,t.fn(o))}))},m=function(t){var e=t.target,n=t.show,r=t.hide;if("IntersectionObserver"in window&&"IntersectionObserverEntry"in window&&"intersectionRatio"in window.IntersectionObserverEntry.prototype){new IntersectionObserver((function(t){t.forEach((function(t){t.isIntersecting?r():n()}))}),{root:null,rootMargin:"15% 0px 0px 0px"}).observe(e)}else n()},w=function(t){var e=t.target,n=t.aboveSelectors,r=t.translateProperty,o=getComputedStyle(e).getPropertyValue(r);return n.reduce((function(t,e){var n,r;return t-(null!==(n=null===(r=document.querySelector(e))||void 0===r?void 0:r.clientHeight)&&void 0!==n?n:0)}),o)},x=n(5),S=n.n(x),T=n(6),O=n.n(T),E=function(){var t=u()(a.a.mark((function t(){var e,n;return a.a.wrap((function(t){for(;;)switch(t.prev=t.next){case 0:if(!globalThis.globalWebdeps){t.next=20;break}return t.prev=1,t.next=4,globalThis.globalWebdeps("globo-ab");case 4:if(!globalThis.HorizonClientPromise){t.next=10;break}return t.next=7,globalThis.HorizonClientPromise();case 7:t.t0=t.sent,t.next=11;break;case 10:t.t0=void 0;case 11:n=t.t0,(e=new globalThis.GloboAB([".qa.",".globoi.com","localhost"].find((function(t){return globalThis.location.hostname.includes(t)}))?"qa":"prod",n)).options().timeout(2e3),e.options().skipImpression(),t.next=20;break;case 17:t.prev=17,t.t1=t.catch(1),console.error("[bs-tp-bottom-section::getGloboABClient]",t.t1);case 20:return t.abrupt("return",e);case 21:case"end":return t.stop()}}),t,null,[[1,17]])})));return function(){return t.apply(this,arguments)}}(),_=function(t){var e=t.activeFlags,n=t.abExperiments,r=Object.keys(n);return{isActiveFlag:function(t){return e.some((function(e){return e===t}))},listFlags:function(){return e},conversion:function(){return r.forEach((function(t){return n[t].conversion()}))},impression:function(){return r.forEach((function(t){return n[t].impression()}))}}},L=function(){var t=u()(a.a.mark((function t(e){var n,r,o,i,c,u,s;return a.a.wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return n=e.flagsData,r=void 0===n?p:n,o=e.abClient,t.prev=1,t.next=4,o.choose(Object.keys(r));case 4:c=t.sent,u=Object.entries(c),s=O()(new Set(u.flatMap((function(t){var e=S()(t,2),n=e[0],o=e[1];return r[n][o.alternative]})).filter(Boolean))),i=_({activeFlags:s,abExperiments:c}),t.next=13;break;case 10:t.prev=10,t.t0=t.catch(1),console.error("[bs-tp-bottom-section::createControl]",t.t0);case 13:return t.abrupt("return",i);case 14:case"end":return t.stop()}}),t,null,[[1,10]])})));return function(e){return t.apply(this,arguments)}}(),A=u()(a.a.mark((function t(){var e;return a.a.wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return t.next=2,E();case 2:return e=t.sent,t.abrupt("return",L({abClient:e}));case 4:case"end":return t.stop()}}),t)}))),j=function(t,e){window.setTimeout((function n(){window[t]?e():window.setTimeout(n,100)}),100)},k=function(t){return function(e,n,r){var o=r.split(" | "),i=o.slice(0,1),a=o.slice(1),c=i.concat(t,a).join(" | ");!function(t,e,n){j("ga",(function(){window.ga("".concat(window.cdaaas.SETTINGS.SITE_ID,"_portal.send"),"event",t,e,n)}))}(n,e,c),function(t,e,n){j("HorizonClient",(function(){window.HorizonClient.then((function(r){r.send({id:"common-event",version:"0.1",contentType:"common",properties:{eventCategory:t,eventAction:e,eventLabel:n}})}))}))}(n,e,c)}};function P(t,e){var n=Object.keys(t);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(t);e&&(r=r.filter((function(e){return Object.getOwnPropertyDescriptor(t,e).enumerable}))),n.push.apply(n,r)}return n}function C(t){for(var e=1;e<arguments.length;e++){var n=null!=arguments[e]?arguments[e]:{};e%2?P(Object(n),!0).forEach((function(e){l()(t,e,n[e])})):Object.getOwnPropertyDescriptors?Object.defineProperties(t,Object.getOwnPropertyDescriptors(n)):P(Object(n)).forEach((function(e){Object.defineProperty(t,e,Object.getOwnPropertyDescriptor(n,e))}))}return t}var I=function(){var t,e;return"touchPoint/bottom/".concat(null===globalThis||void 0===globalThis||null===(t=globalThis.cdaaas)||void 0===t||null===(e=t.SETTINGS)||void 0===e?void 0:e.SITE_ID)},D=function(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};return function(){var e="banner_touch_point_bottom",n=k(t.listFlags()),r=f.CTA_BUTTON,o=f.CTA_IMAGERY;y({slot:e,tracker:n,ABTestControl:t,tpState:{sizeState:"collapsed"}});var i={allowOverlayExpansion:!0,allowPushExpansion:!0,sandbox:!0},a=function(t){var e=t.context,n=t.event,r=t.props,o=void 0===r?{}:r;try{document.querySelector("#".concat("glb-tp-bottom"," iframe")).contentWindow.postMessage(C({context:e,event:n},o),"*")}catch(t){return console.error("[glb-touchpointD2C-bottom] message error - ".concat(n),t),!1}return!0},c=function(){var c=document.getElementById("glb-tp-bottom"),u=JSON.parse(c.getAttribute("data-display").replaceAll("'",'"')).translateAbove,s=w({target:c,aboveSelectors:u,translateProperty:"--translatelimit"});c.style.setProperty("--translatelimit","".concat(s,"px")),window.googletag.cmd.push((function(){window.bannerLazyLoading(e,{adUnit:I(),targets:{version:"v7.0.0",tp_type:t.isActiveFlag(o)?"v2":"v1"}});var u=googletag.pubads();u.getSlots().find((function(t){return t.getSlotElementId()===e})).setSafeFrameConfig(i),u.addEventListener("slotOnload",(function(i){if(i.slot.getSlotElementId()===e){var u=t.isActiveFlag(r),s=t.isActiveFlag(o);m({target:document.querySelector(".tp-threshold"),show:function(){c.classList.remove("glb-tp-bottom--hide")},hide:function(){c.classList.add("glb-tp-bottom--hide")}}),u&&a({context:"tp-alternative",event:"enable-cta"}),s&&a({context:"tp-imagery",event:"enable-imagery"}),c.addEventListener("transitionend",(function(){n("view","touchpoint_D2C","tp_bottom"),t.impression()}),{once:!0})}})),window.disableLazyLoad(googletag)}))};window.libPubReady?c():document.addEventListener("libPubReady",c)}};(function(){var t=u()(a.a.mark((function t(){var e;return a.a.wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return t.next=2,A();case 2:e=t.sent,b.executeIfAble({render:D(e),ABTestControl:e});case 4:case"end":return t.stop()}}),t)})));return function(){return t.apply(this,arguments)}})()()}]);
 !function(e){var t={};function n(r){if(t[r])return t[r].exports;var i=t[r]={i:r,l:!1,exports:{}};return e[r].call(i.exports,i,i.exports,n),i.l=!0,i.exports}n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var i in e)n.d(r,i,function(t){return e[t]}.bind(null,i));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=1)}([function(e,t,n){"use strict";function r(e,t){var n;if("undefined"==typeof Symbol||null==e[Symbol.iterator]){if(Array.isArray(e)||(n=a(e))||t&&e&&"number"==typeof e.length){n&&(e=n);var r=0,i=function(){};return{s:i,n:function(){return r>=e.length?{done:!0}:{done:!1,value:e[r++]}},e:function(e){throw e},f:i}}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}var o,u=!0,s=!1;return{s:function(){n=e[Symbol.iterator]()},n:function(){var e=n.next();return u=e.done,e},e:function(e){s=!0,o=e},f:function(){try{u||null==n.return||n.return()}finally{if(s)throw o}}}}function i(e,t){return function(e){if(Array.isArray(e))return e}(e)||function(e,t){if("undefined"==typeof Symbol||!(Symbol.iterator in Object(e)))return;var n=[],r=!0,i=!1,a=void 0;try{for(var o,u=e[Symbol.iterator]();!(r=(o=u.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{r||null==u.return||u.return()}finally{if(i)throw a}}return n}(e,t)||a(e,t)||function(){throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()}function a(e,t){if(e){if("string"==typeof e)return o(e,t);var n=Object.prototype.toString.call(e).slice(8,-1);return"Object"===n&&e.constructor&&(n=e.constructor.name),"Map"===n||"Set"===n?Array.from(e):"Arguments"===n||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)?o(e,t):void 0}}function o(e,t){(null==t||t>e.length)&&(t=e.length);for(var n=0,r=new Array(t);n<t;n++)r[n]=e[n];return r}function u(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function s(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}var c="impressionViewable",l="slotRenderEnded",f={prod:"prod",qa:"qa",dev:"dev"},d=function(e,t){window.setTimeout((function n(){window[e]?t():window.setTimeout(n,50)}),50)},g=function(){function e(t){var n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:[],r=arguments.length>2?arguments[2]:void 0;u(this,e),this.isMabActive=t,this.currentChannel=window.cdaaas.SETTINGS.CHANNEL,this.currentTenant=window.cdaaas.SETTINGS.SITE_ID,this.currentEnv=window.cdaaas.SETTINGS.ENV,this.tenants=n,this.interval=void 0,this.triggerZone={},this.triggerZoneMap=new Map,this.mab=void 0,this.adContainers=document.querySelectorAll(".mc-has-ad-lazyload"),this.gptExperiment=r}var t,n,a;return t=e,(n=[{key:"getPositionExperiment",value:function(e){var t=this;if(this.tenants.length>0&&this.currentTenant&&this.currentChannel&&e){var n=this.tenants.filter((function(e){return e.name===t.currentTenant}))[0]||[];return(n.channels&&n.channels.filter((function(e){return e.channel===t.currentChannel}))[0]||[]).positions.filter((function(t){return t.position===e}))[0]||{}||""}return""}},{key:"resolveAllPromisses",value:function(e){return e&&Array.isArray(e)?Promise.all(Array.from(e,(function(e){var t=i(e,2),n=t[0],r=t[1];return Promise.resolve(r).then((function(e){return[n,e]}))}))).then((function(e){return new Map(e)})):new Promise((function(e){return e(new Map)}))}},{key:"extractExperiment",value:function(e,t,n){if(n){var r=t&&t.split("__")[0]||"";return n&&n.size>0&&n.get(r)||{}}return{}}},{key:"generateExperiments",value:function(){var e,t=[],n=[],i=r(this.adContainers);try{for(i.s();!(e=i.n()).done;){var a=e.value.getAttribute("data-id").split("__")[0],o=this.getPositionExperiment(a).experiment;if(!n.includes(a)){n.push(a);var u=this.mab.choose(o);t.push([a,u])}}}catch(e){i.e(e)}finally{i.f()}return t}},{key:"__configureTriggerZone",value:function(e){var t,n=r(e);try{for(n.s();!(t=n.n()).done;){var a=i(t.value,2),o=a[0],u=a[1];this.triggerZone[o]=screen.height*+u.arm.split(":").splice(-1)[0]}}catch(e){n.e(e)}finally{n.f()}this.triggerZone.default=2*screen.height}},{key:"__configureMAB",value:function(e){var t=window,n=t.googletag,r=t.GloboAB;if(r&&n&&"function"==typeof n.pubads){var i=new r(function(e){return f[e]?f[e]:f.qa}(this.currentEnv));i.options().skipImpression();var a=i.mab();e.setMabClient(a);var o=e.generateExperiments();e.resolveAllPromisses(o).then((function(t){e.setTzMap(t),window.googletag.pubads().addEventListener(c,(function(t){return e.__bannerListenerCallback(t,e,c)})),window.googletag.pubads().addEventListener(l,(function(t){return e.__bannerListenerCallback(t,e,l)})),e.__triggerBasicServices()}),(function(t){console.warn("(MC Ads) Mab Promise Rejection, using default value instead",t),e.__triggerBasicServices()})).catch((function(){console.warn("(MC Ads) Some problems ocurring when fetch MAB Values, using default value instead"),e.__triggerBasicServices()})),clearInterval(this.interval)}}},{key:"__bannerListenerCallback",value:function(e,t,n){var r=e.slot&&Object.keys(e.slot).includes("getSlotElementId"),i=e.slot.getSlotElementId();if(r){var a=this.extractExperiment(t.currentChannel,i,t.triggerZoneMap);if(i&&Object.keys(a).length>0)switch(n){case c:t.mab.reward(a);break;case l:t.mab.increment(a)}}}},{key:"thisTenantHaveMab",value:function(){var e=this;return this.tenants.filter((function(t){return t.name===e.currentTenant}))[0]}},{key:"start",value:function(){var e=this,t=this;this.isMabActive&&this.tenants.length>0&&this.thisTenantHaveMab()?this.interval=setInterval((function(){return e.__configureMAB(t)}),500):(this.__triggerBasicServices(),this.__configureABTriggers())}},{key:"__configureABTriggers",value:function(){var e=this,t=["banner_materia1","banner_materia2","banner_materia"],n=function(n,r){if(("desktop"!==e.currentChannel||"banner_materia1"!==r)&&function(e){return t.includes(e.split("__")[0])}(r))switch(n){case"conversion":e.gptExperiment&&e.gptExperiment.conversion();break;case"impression":e.gptExperiment&&e.gptExperiment.impression()}};if(this.gptExperiment)var r=setInterval((function(){window.googletag&&window.googletag.pubads&&(window.googletag.pubads().addEventListener(l,(function(e){return n("impression",e.slot.getSlotElementId())})),window.googletag.pubads().addEventListener(c,(function(e){return n("conversion",e.slot.getSlotElementId())})),clearInterval(r))}),500)}},{key:"__triggerBasicServices",value:function(){this.__configureTriggerZone(this.triggerZoneMap),this.__watchTriggerZone(),this.__watchAdsVisibility()}},{key:"__watchAdsVisibility",value:function(){for(var e=this,t=this.adContainers.length-1;t>=0;t--){var n=this.adContainers[t],r=n.getAttribute("data-id")&&n.getAttribute("data-id").split("__")[0],i=this.triggerZone[r]||this.triggerZone.default;window.ScrollSpy.add({el:n,offset:i,ctx:this,callback:function(t){e.__initBanner(t)}})}}},{key:"__initBanner",value:function(e){var t=this;d("bannerLazyLoading",(function(){return t.__defineBanner(e)}))}},{key:"__defineBanner",value:function(e){var t=e.getAttribute("data-id");e.setAttribute("id",t);var n=this.extractExperiment(this.currentChannel,t,this.triggerZoneMap),r={};r.gptLazyload=this.gptExperiment&&"lazyload-nativo-google"===this.gptExperiment.alternative||!1,this.thisTenantHaveMab()&&(r.abAlternative=function(){if(n&&n.abAlternative)return"(control)"===n.abAlternative.split(" ")[0]?"control":"mab"}()),setTimeout(window.bannerLazyLoading(t,r),0)}},{key:"__throttle",value:function(e){var t,n,r=arguments,i=this,a=arguments.length>1&&void 0!==arguments[1]?arguments[1]:100,o=arguments.length>2?arguments[2]:void 0;return function(){var u=o||i,s=+new Date,c=r;t&&s<t+a?(clearTimeout(n),n=setTimeout((function(){t=s,e.apply(u,c)}),a)):(t=s,e.apply(u,c))}}},{key:"__watchTriggerZone",value:function(){var e=this;window.addEventListener("resize",this.__throttle((function(){return e.__configureTriggerZone(e.triggerZoneMap)})),!1)}},{key:"setMabClient",value:function(e){this.mab=e}},{key:"setTzMap",value:function(e){this.triggerZoneMap=e}}])&&s(t.prototype,n),a&&s(t,a),e}();function v(){var e=[];document.addEventListener("adserver-ad-rendered",(function(t){var n,r,i,a=0,o=null;if(t.publicidade_visivel){if(!(n=document.querySelector("#".concat(t.id_elemento,".mc-has-reveal")))||!ScrollSpy||!getComputedStyle||e.indexOf(t.id_elemento)>=0)return;e.push(t.id_elemento),o=n.parentNode;var u="undefined"!=typeof pageYOffset?pageYOffset:(i=(i=document.documentElement).clientHeight?i:document.body).scrollTop;if(o.getBoundingClientRect().top+u<u)return;r=getComputedStyle(o),a+=parseInt(r.height)+parseInt(r.marginTop)+parseInt(r.marginBottom),o.style.height=0,ScrollSpy.add({el:o,offset:-200,callback:function(){requestAnimationFrame((function(){o.style.height="".concat(a,"px")}))}})}}))}function h(e,t,n,r,i,a,o){try{var u=e[a](o),s=u.value}catch(e){return void n(e)}u.done?t(s):Promise.resolve(s).then(r,i)}var p=["redeglobo"],m=function(e){if(p.includes(window.cdaaas.SETTINGS.SITE_ID))try{d("GloboAB",function(){var t,n=(t=regeneratorRuntime.mark((function t(){var n,r;return regeneratorRuntime.wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return n=new GloboAB("prod"),t.next=3,n.choose("multicontent-redeglobo-lazyload-gpt");case 3:r=t.sent,e(r);case 5:case"end":return t.stop()}}),t)})),function(){var e=this,n=arguments;return new Promise((function(r,i){var a=t.apply(e,n);function o(e){h(a,r,i,o,u,"next",e)}function u(e){h(a,r,i,o,u,"throw",e)}o(void 0)}))});return function(){return n.apply(this,arguments)}}())}catch(t){e()}else e()};n.d(t,"a",(function(){return E}));var b=function(e,t,n){return"mc-".concat(e,"-lazy-load-advwblt.v2:").concat(t,":").concat(n)},y=function(e){return[{position:"banner_materia2",experiment:b(e,"smart","banner-materia2")},{position:"banner_materia",experiment:b(e,"smart","banner-materia")},{position:"banner_materia1",experiment:b(e,"smart","banner-materia1")}]},_=function(e){return[{position:"banner_materia2",experiment:b(e,"desktop","banner-materia2")},{position:"banner_materia",experiment:b(e,"desktop","banner-materia")}]},w=[];["g1","ge","gshow"].forEach((function(e){return w.push({name:e,channels:[{channel:"smart",positions:y(e)},{channel:"desktop",positions:_(e)}]})}));var S=function(e){e?new g(!1,[],e).start():new g(!0,w).start(),v()},E=function(){m(S)}},function(e,t,n){"use strict";n.r(t);var r=n(0);n(2);Object(r.a)()},function(e,t,n){}]);
 //]]>
-</script> <script src="https://s3.glbimg.com/cdn/libs/jquery/1.8.3/jquery.min.js" type="text/javascript" crossorigin="anonymous"></script> <script src="https://s3.glbimg.com/v1/AUTH_ba8e460c944543468c3c80cb9675751f/integracoes/chartbeat/chartbeat.min.js" type="text/javascript" defer></script> <script src="https://s3.glbimg.com/v1/AUTH_b002e0039b9f46a5a4a94ff667d31e2d/assets/dist/89407ae2b3108fbab0e74c0048f4cf2c.js" type="text/javascript" integrity="sha384-fGFi9TvYcTAKAnhvzmb6mmL63zKqlP2ZujG6c7R/xdMXBDrZ1GlnXnvuoaTdYvLE" crossorigin="anonymous"></script> </body> </html>
+</script> <script src="https://s3.glbimg.com/cdn/libs/jquery/1.8.3/jquery.min.js" type="text/javascript" crossorigin="anonymous"></script> <script src="https://s3.glbimg.com/v1/AUTH_ba8e460c944543468c3c80cb9675751f/integracoes/chartbeat/chartbeat.min.js" type="text/javascript" defer></script> <script src="https://s3.glbimg.com/v1/AUTH_b002e0039b9f46a5a4a94ff667d31e2d/assets/dist/89407ae2b3108fbab0e74c0048f4cf2c.js" type="text/javascript" integrity="sha384-fGFi9TvYcTAKAnhvzmb6mmL63zKqlP2ZujG6c7R/xdMXBDrZ1GlnXnvuoaTdYvLE" crossorigin="anonymous"></script> </body> </html><!DOCTYPE html>
+<html>
+<head lang="pt-br">
+<title>Ar frio de origem polar continua sobre o centro-sul do Brasil | Climatempo</title>
+<meta charset="UTF-8">
+
+<meta name="google-site-verification" content="f-v1CUADcZO9RTlI5wOpt11LsuNyyqWC6zHgEG43hQA" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store">
+<meta http-equiv="Pragma" content="no-cache, no-store">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="author" content="Climatempo">
+<meta name="copyright" content="© Climatempo">
+<meta name="url" content="https://www.climatempo.com.br/noticia/2023/05/13/ar-frio-de-origem-polar-continua-sobre-o-centro-sul-do-brasil-0521">
+<meta name="description" content="Várias capitais do Sul, do Sudeste e do Centro-Oeste podem estabelecer novos recordes de menores temperaturas do ano neste fim de semana">
+<meta name="publisher" content="Climatempo">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ar frio de origem polar continua sobre o centro-sul do Brasil | Climatempo">
+<meta property="og:description" content="Várias capitais do Sul, do Sudeste e do Centro-Oeste podem estabelecer novos recordes de menores temperaturas do ano neste fim de semana">
+<meta property="og:url" content="https://www.climatempo.com.br/noticia/2023/05/13/ar-frio-de-origem-polar-continua-sobre-o-centro-sul-do-brasil-0521">
+<meta property="og:locale" content="pt-br">
+<meta property="og:image" content="https://imagens.climatempo.com.br/climapress/galeria/2021/05/0276302788667b2080ca2144f12cc294.jpg">
+<meta name="premiumAds" content="0">
+
+<meta name="ab" content="12">
+<meta name="robots" content="all">
+<meta name="regiao" content="">
+<meta name="uf" content="">
+<meta name="idCidade" content="">
+<meta name="tmin" content="">
+<meta name="tmax" content="">
+<meta name="cmomento" content="">
+<meta name="tmomento" content="">
+<meta name="icoman" content="">
+<meta name="icotar" content="">
+<meta name="iconoi" content="">
+<meta name="icodia" content="">
+<meta name="chuvamm" content="">
+<meta name="urmax" content="">
+<meta name="uvmax" content="">
+<meta name="agricola" content="">
+<meta name="litoranea" content="">
+<meta name="turistica" content="">
+<meta name="secao" content="noticias">
+<meta name="website" content="producao">
+<meta name="idNoticia" content="420521">
+<meta name="lancamento" content="">
+<meta name="vitaminaD" content="">
+<meta name="qualidadeAr" content="">
+<meta name="resfriado" content="">
+<meta name="mosquito" content="">
+<meta name="raiosUV" content="">
+<meta name="pele" content="">
+
+<link rel="icon" href="/dist/images/favicon-32x32.png">
+<link rel="shortcut icon" href="/dist/images/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="57x57" href="/dist/images/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/dist/images/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/dist/images/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/dist/images/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/dist/images/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/dist/images/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/dist/images/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/dist/images/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/dist/images/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/dist/images/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/dist/images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/dist/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/dist/images/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/dist/images/favicon-512x512.png">
+
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="preconnect" href="//imagens.climatempo.com.br">
+<link rel="preconnect" href="//pagead2.googlesyndication.com">
+<link rel="preconnect" href="//securepubads.g.doubleclick.net">
+<link rel="preconnect" href="//cm.g.doubleclick.net">
+<link rel="preconnect" href="//tpc.googlesyndication.com">
+<link rel="preconnect" href="//www.googletagmanager.com">
+<link rel="preconnect" href="//www.googletagservices.com">
+<link rel="preconnect" href="//www.googleadservices.com">
+<link rel="preconnect" href="//www.google-analytics.com">
+<link rel="preconnect" href="//www.googleads.g.doubleclick.net">
+<link rel="preconnect" href="//tags.t.tailtarget.com">
+<link rel="preconnect" href="//d.tailtarget.com">
+<link rel="preconnect" href="//b.scorecardresearch.com">
+<link rel="preconnect" href="//cdn.taboola.com">
+<link rel="preconnect" href="//ads.rubiconproject.com/">
+<link rel="preconnect" href="//optimized-by.rubiconproject.com/">
+<link rel="preconnect" href="//tru.webelapp.com">
+<link rel="preconnect" href="//ib.adnxs.com">
+<link rel="preconnect" href="//scripts.curtivendi.com.br">
+<link rel="preconnect" href="//prg.smartadserver.com">
+<link rel="preconnect" href="//cdn.ampproject.org">
+<link rel="preconnect" href="//boostbox.com.br">
+
+<meta name="lomadee-verification" content="22867836" />
+
+
+<script async type="text/javascript" src="https://clickio.mgr.consensu.org/t/consent_213407.js"></script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PXVG66L');</script>
+
+
+<script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@type": "WebSite",
+		"name": "Climatempo",
+		"description": "Clima e Previsão do tempo agora é na Climatempo! Confira todas as previsões de temperaturas pelo país agora e daqui a 15 e 30 dias!",
+		"url": "https://www.climatempo.com.br",
+		"image": "https://imagens.climatempo.com.br/site/imagens/logo-climatempo-stormgeo.png",
+		"sameAs": [
+			"https://twitter.com/climatempo",
+			"https://www.linkedin.com/company/climatempo",
+			"https://www.youtube.com/climatempo",
+			"https://www.instagram.com/climatempo",
+			"https://www.facebook.com/Climatempo.Meteorologia"
+		],
+		"isFamilyFriendly": "https://schema.org/True"
+	}
+	</script>
+<script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Climatempo",
+		"url": "https://www.climatempo.com.br",
+		"logo": {
+			"@type": "ImageObject",
+			"url": "https://imagens.climatempo.com.br/site/imagens/logo-climatempo-stormgeo.png",
+			"width": 120,
+			"height": 31
+		},
+		"sameAs": [
+			"https://twitter.com/climatempo",
+			"https://www.linkedin.com/company/climatempo",
+			"https://www.youtube.com/climatempo",
+			"https://www.instagram.com/climatempo",
+			"https://www.facebook.com/Climatempo.Meteorologia"
+		]
+	}
+	</script>
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Ar frio de origem polar continua sobre o centro-sul do Brasil",
+    "author": "Redação",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Climatempo",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://imagens.climatempo.com.br/site/imagens/logo-climatempo-stormgeo.png",
+        "width": 120,
+        "height": 31
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.climatempo.com.br/noticia/2023/05/13/ar-frio-de-origem-polar-continua-sobre-o-centro-sul-do-brasil-0521",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.climatempo.com.br"
+          }, {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Notícias",
+            "item": "https://www.climatempo.com.br/noticias"
+          }, {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "https://www.climatempo.com.br/noticia/2023/05/13/ar-frio-de-origem-polar-continua-sobre-o-centro-sul-do-brasil-0521"
+          }
+        ],
+        "numberOfItems": 3
+      }
+    },
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://imagens.climatempo.com.br/climapress/galeria/2021/05/970x453_0276302788667b2080ca2144f12cc294.jpg",
+      "width": 196,
+      "height": 196
+    },
+    "dateModified": "13/05/2023 às 02:48",
+    "datePublished": "13/05/2023 às 02:48"
+  }
+</script>
+
+<link rel="preload" href="/dist/fonts/Roboto-Bold.ttf" as="font" crossorigin="anonymous">
+<link rel="preload" href="/dist/fonts/Roboto-Regular.ttf" as="font" crossorigin="anonymous">
+<link rel="preload" href="/dist/fonts/fontawesome-webfont.woff2" as="font" crossorigin="anonymous">
+
+<link rel="canonical" href="https://www.climatempo.com.br/noticia/2023/05/13/ar-frio-de-origem-polar-continua-sobre-o-centro-sul-do-brasil-0521">
+<link rel="amphtml" href="https://www.climatempo.com.br/noticia/amp/v2/2023/05/13/ar-frio-de-origem-polar-continua-sobre-o-centro-sul-do-brasil-0521">
+<link rel="stylesheet" href="/dist/css/articlestyle.bundle.min.css">
+<link rel="stylesheet" href="/dist/css/articlecontentstyle.bundle.min.css">
+<script src="/dist/js/dfp/dfp_library_artigo.js"></script>
+</head>
+<body data-slug=>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXVG66L"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div class="_none _fixed _flex-column-md _center-sm _space-between _justify -white alert-cookie">
+<span class='teste'>
+Usamos cookies para personalizar a sua experiência. Ao utilizar nossos sites e serviços, você concorda com o uso de cookies por nossa parte conforme estabelecido na nossa <a href="https://assetslite.climatempo.com.br/termos" target="_blank">Política de privacidade</a>.
+</span>
+<button class="_margin-l-20 _margin-t-md-10 _pointer -white cookie-consent-btn" type="button">OK</button>
+</div>
+<script>
+const cookieConsent = document.cookie.match(new RegExp('(^| )cookieConsent=([^;]+)'));
+if (!cookieConsent) {
+	const alertElement = document.querySelector('.alert-cookie')
+	if (alertElement) {
+	alertElement.classList.add("_flex");
+	alertElement.classList.remove("_none");
+	document.querySelector('.cookie-consent-btn').addEventListener('click', function() {
+		document.cookie = `cookieConsent=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; domain=.climatempo.com.br; path=/`;
+		alertElement.remove()
+	});
+	}
+}
+</script>
+
+<div id="M_interstitial" class="">
+<script>
+			googletag.cmd.push(function() { 
+				googletag.display('M_interstitial'); 
+			});
+		</script>
+</div>
+<div id="D_interstitial" class="">
+<script>
+			googletag.cmd.push(function() { 
+				googletag.display('D_interstitial'); 
+			});
+		</script>
+</div>
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v8.0&appId=181349075940707&autoLogAppEvents=1" nonce="tFvCoIdr">
+</script>
+<input type="checkbox" id="chkHamburguerMenu" class="_none">
+<nav class="modal-menu" data-section="modal-menu">
+<div class="container _overflow-auto custom-scrollbar">
+<section class="wrapper-menu">
+<div>
+<div id="column-3">
+<div class="column-menu">
+<div class="menu-item act-open-menu-itens act-control-mobile-menu" data-menu="previsao" data-after="3">
+<div class="bg">
+<img class="lazyload" data-src="/dist/images/v2/svg/forecast.svg" width="30" height="30" alt="Ícone menu previsão do tempo" />
+</div>
+<p>Previsão</p>
+</div>
+<div class="menu-item act-open-menu-itens act-control-mobile-menu" data-menu="clima" data-after="3">
+<div class="bg">
+<img class="lazyload" data-src="/dist/images/v2/svg/clima.svg" width="30" height="30" alt="Ícone menu clima" />
+</div>
+<p>Clima</p>
+</div>
+<div class="menu-item act-open-menu-itens act-control-mobile-menu" data-menu="podcasts" data-after="3">
+<div class="bg">
+<img class="lazyload" data-src="/dist/images/v2/svg/podcasts.svg" width="30" height="30" alt="Ícone menu podcasts" />
+</div>
+<p>Podcasts</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div id="column-6">
+<div class="column-menu">
+<div class="menu-item act-open-menu-itens act-control-mobile-menu" data-menu="chuva" data-after="6">
+<div class="bg">
+<img class="lazyload" data-src="/dist/images/v2/svg/rain.svg" width="30" height="30" alt="Ícone menu chuva" />
+</div>
+<p>Chuva</p>
+</div>
+<div class="menu-item act-open-menu-itens act-control-mobile-menu" data-menu="graficos" data-after="6">
+<div class="bg">
+<img class="lazyload" data-src="/dist/images/v2/svg/charts.svg" width="30" height="30" alt="Ícone menu gráficos" />
+</div>
+<p>Gráficos</p>
+</div>
+<div class="menu-item act-open-menu-itens act-control-mobile-menu" data-menu="mapas" data-after="6">
+<div class="bg">
+<img class="lazyload" data-src="/dist/images/v2/svg/maps.svg" width="30" height="30" alt="Ícone menu mapas" />
+</div>
+<p>Mapas</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div id="column-9">
+<div class="column-menu">
+<div class="menu-item act-open-menu-itens act-control-mobile-menu" data-menu="noticias" data-after="9">
+<div class="bg">
+<img class="lazyload" data-src="/dist/images/v2/svg/news.svg" width="30" height="30" alt="Ícone menu notícias" />
+</div>
+<p>Notícias</p>
+</div>
+<div class="menu-item act-open-menu-itens act-control-mobile-menu" data-menu="videos" data-after="9">
+<div class="bg">
+<img class="lazyload" data-src="/dist/images/v2/svg/videos.svg" width="30" height="30" alt="Ícone menu vídeos" />
+</div>
+<p>Vídeos</p>
+</div>
+<div class="menu-item act-open-menu-itens act-control-mobile-menu" data-menu="canais" data-after="9">
+<div class="bg">
+<img class="lazyload" data-src="/dist/images/v2/svg/channels.svg" width="30" height="30" alt="Ícone menu canais" />
+</div>
+<p>Canais</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div id="column-12">
+<div class="column-menu">
+<div class="menu-item act-open-menu-itens act-control-mobile-menu" data-menu="confira" data-after="12">
+<div class="bg">
+<img class="lazyload" data-src="/dist/images/v2/svg/star.svg" width="30" height="30" alt="Ícone menu confira" />
+</div>
+<p>Confira</p>
+</div>
+<div class="menu-item act-open-menu-itens act-control-mobile-menu" data-menu="produtos" data-after="12">
+<div class="bg">
+<img class="lazyload" data-src="/dist/images/v2/svg/products.svg" width="30" height="30" alt="Ícone menu produtos" />
+</div>
+<p>Produtos</p>
+</div>
+<div class="menu-item act-open-menu-itens act-control-mobile-menu" data-menu="descontos" data-after="12">
+<div class="bg">
+<img class="lazyload" data-src="/dist/images/v2/svg/discounts.svg" width="30" height="30" alt="Ícone menu descontos" />
+</div>
+<p>Descontos</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="wrapper-menu-itens" data-wrapper-menu-itens>
+<div class="wrapper-links" data-menu-itens="previsao">
+<a href="/brasil" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Previsao_Brasil" data-category="Links do Menu">Brasil</a>
+<a data-link="/previsao-do-tempo/agora/cidade/{slug}" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Previsao_Agora" data-category="Links do Menu" data-dynamic-link>Agora</a>
+<a data-link="/previsao-do-tempo/cidade/{slug}" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Previsao_Hoje" data-category="Links do Menu" data-dynamic-link>Hoje</a>
+<a data-link="/previsao-do-tempo/amanha/cidade/{slug}" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Previsao_Amanha" data-category="Links do Menu" data-dynamic-link>Amanhã</a>
+<a data-link="/previsao-do-tempo/fim-de-semana/cidade/{slug}" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Previsao_Fim_de_Semana" data-category="Links do Menu" data-dynamic-link>Fim de semana</a>
+<a data-link="/previsao-do-tempo/15-dias/cidade/{slug}" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Previsao_15_Dias" data-category="Links do Menu" data-dynamic-link>15 dias</a>
+<a href="/previsao-do-tempo/litoral" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Previsao_Praias" data-category="Links do Menu">Praias</a>
+<a href="/previsao-do-tempo/aeroporto" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Previsao_Aeroportos" data-category="Links do Menu">Aeroportos</a>
+</div>
+<div class="wrapper-links" data-menu-itens="clima">
+<a href="https://www.climatempoconsultoria.com.br/levantamento-de-dados-meteorologicos/?utm_source=climatempo&utm_medium=portal&utm_campaign=botao_produtos&utm_content=levantamento%2Cdados%2Cmeteorologia" target="_blank" rel="noopener" rel="noreferrer" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Clima_Historico_de_Clima_Dataclima" data-category="Links do Menu">Históricos de clima</a>
+<a href="https://www.climatempoconsultoria.com.br/relclima/" target="_blank" rel="noopener" rel="noreferrer" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Clima_Relclima" data-category="Links do Menu">Relclima</a>
+<a href="/podcasts" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Clima_Podcasts" data-category="Links do Menu">Podcasts</a>
+<a href="/noticia/2020/09/09/clima-o-que-e-fatores-elementos-e-muito-mais--5667" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Clima_Diferenca_Entre_Clima_e_Tempo" data-category="Links do Menu">Diferença entre clima e tempo</a>
+</div>
+<div class="wrapper-links" data-menu-itens="podcasts">
+<div class="_flex _flex-column-xl">
+<a href="/podcast/o-clima-entre-nos" class="column _flex no-hover actTriggerGA" data-label="Menu" data-action="Link_Menu_Podcast_O Clima Entre Nós" data-category="Links do Menu">
+<figure class="capa">
+<span class="bg-capa"></span>
+<img class="lazyload" width="70" height="70" data-class="lazyload _width-100-pct" data-src="/dist/images/podcast/o-clima-entre-nos.jpg" alt="O Clima Entre Nós">
+</figure>
+<div class="_margin-l-20 _flex-column">
+<b class="title">O Clima Entre Nós</b>
+<span class="_flex _align-center _margin-t-5 -gray -font-12">
+<span class="wrapper-fa-play _margin-r-10">
+<i class="fa fa-play -gray-dark-2"></i>
+</span>
+Ouvir agora
+</span>
+</div>
+</a>
+<a href="/podcast/agrotalk" class="column _flex no-hover actTriggerGA" data-label="Menu" data-action="Link_Menu_Podcast_Agrotalk" data-category="Links do Menu">
+<figure class="capa">
+<span class="bg-capa"></span>
+<img class="lazyload" width="70" height="70" data-class="lazyload _width-100-pct" data-src="/dist/images/podcast/agrotalk.jpg" alt="Agrotalk">
+</figure>
+<div class="_margin-l-20 _flex-column">
+<b class="title">Agrotalk</b>
+<span class="_flex _align-center _margin-t-5 -gray -font-12">
+<span class="wrapper-fa-play _margin-r-10">
+<i class="fa fa-play -gray-dark-2"></i>
+</span>
+Ouvir agora
+</span>
+</div>
+</a>
+<a href="/podcast/estudioagro" class="column _flex no-hover actTriggerGA" data-label="Menu" data-action="Link_Menu_Podcast_EstúdioAgro" data-category="Links do Menu">
+<figure class="capa">
+<span class="bg-capa"></span>
+<img class="lazyload" width="70" height="70" data-class="lazyload _width-100-pct" data-src="/dist/images/podcast/estudioagro.jpg" alt="EstúdioAgro">
+</figure>
+<div class="_margin-l-20 _flex-column">
+<b class="title">EstúdioAgro</b>
+<span class="_flex _align-center _margin-t-5 -gray -font-12">
+<span class="wrapper-fa-play _margin-r-10">
+<i class="fa fa-play -gray-dark-2"></i>
+</span>
+Ouvir agora
+</span>
+</div>
+</a>
+</div>
+</div>
+<div class="wrapper-links" data-menu-itens="chuva">
+<div class="_flex _margin-b-30 _flex-column-xl">
+<a href="/mapas#weatherNow:rainNow" class="column _flex no-hover actTriggerGA" data-label="Menu" data-action="Link_Menu_Chuva_Chuva_Agora" data-category="Links do Menu">
+<figure class="capa">
+<span class="bg-capa"></span>
+<img class="lazyload" width="70" height="70" data-src="https://www.climatempo.com.br/dist/images/mapa-md.jpg" alt="Chuva Agora" style="width: 100%">
+</figure>
+<div class="_margin-l-20 _flex-column">
+<b class="title">Chuva Agora</b>
+<span class="_flex _align-center _margin-t-10 -blue -font-12">
+Ver mapa
+<i class="fa fa-chevron-right _margin-l-10"></i>
+</span>
+</div>
+</a>
+<a href="https://www.climatempo.com.br/alerta-rio/radar" target="_blank" rel="noopener" rel="noreferrer" class="column _flex no-hover actTriggerGA" data-label="Menu" data-action="Link_Menu_Chuva_Radar_RJ" data-category="Links do Menu">
+<figure class="capa">
+<span class="bg-capa"></span>
+<img class="lazyload" width="70" height="70" data-src="https://www.climatempo.com.br/dist/images/radar-md.png" alt="Radar RJ" style="width: 100%">
+</figure>
+<div class="_margin-l-20 _flex-column">
+<b class="title">Radar RJ</b>
+<span class="_flex _align-center _margin-t-10 -blue -font-12">
+Ver mapa
+<i class="fa fa-chevron-right _margin-l-10"></i>
+</span>
+</div>
+</a>
+</div>
+<div class="">
+<a href="https://www.redemet.aer.mil.br/" target="_blank" rel="noopener" rel="noreferrer" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Chuva_Outros_Radares" data-category="Links do Menu">Outros radares</a>
+<a data-link="/previsao-do-tempo/15-dias/cidade/{slug}#chuva" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Chuva_Chuva_Prevista" data-category="Links do Menu" data-dynamic-link>Chuva prevista</a>
+<a href="/mapas#forecast:accumulatedRain" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Chuva_Chuva_Acumulada" data-category="Links do Menu">Chuva acumulada</a>
+</div>
+</div>
+<div class="wrapper-links" data-menu-itens="graficos">
+<a data-link="/graficos/cidade/{slug}#chuva" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Graficos_Previsao_de_Chuva" data-category="Links do Menu" data-dynamic-link>Previsão de chuva</a>
+<a data-link="/graficos/cidade/{slug}#temperatura" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Graficos_Previsao_de_Temperatura" data-category="Links do Menu" data-dynamic-link>Previsão de temperatura</a>
+<a data-link="/graficos/cidade/{slug}#umidade" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Graficos_Previsao_de_Umidade" data-category="Links do Menu" data-dynamic-link>Previsão de umidade</a>
+<a data-link="/vento/cidade/{slug}" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Graficos_Vento_Hora_a_Hora" data-category="Links do Menu" data-dynamic-link>Vento hora a hora</a>
+<a data-link="/uv/{slug}" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Graficos_Indice_UV" data-category="Links do Menu" data-dynamic-link>Índice UV</a>
+<a href="/tabua-de-mares" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Graficos_Tabua_de_Mares" data-category="Links do Menu">Tábua de marés</a>
+</div>
+<div class="wrapper-links _flex-column" data-menu-itens="mapas">
+<div class="column _flex _margin-b-30 no-hover">
+<figure class="capa">
+<span class="bg-capa"></span>
+<img class="lazyload" width="70" height="70" data-src="https://www.climatempo.com.br/dist/images/mapa-md.jpg" alt="Mapas de previsão do tempo" style="width: 100%">
+</figure>
+<div class="_margin-l-20">
+<a href="/mapas#forecast" class="title actTriggerGA" data-label="Menu" data-action="Link_Menu_Mapas_Previsao_do_Tempo" data-category="Links do Menu">
+<b>Previsão do tempo</b>
+</a>
+<div class="_margin-t-10">
+<a href="/mapas#forecast:temperature" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Mapas_Temperatura" data-category="Links do Menu">Temperatura</a>
+<a href="/mapas#forecast:rain" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Mapas_Chuva" data-category="Links do Menu">Chuva</a>
+<a href="/mapas#forecast:accumulatedRain" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Mapas_Acumulado_de_Chuva" data-category="Links do Menu">Acumulado de chuva</a>
+<a href="/mapas#forecast:pressure" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Mapas_Pressao" data-category="Links do Menu">Pressão</a>
+<a href="/mapas#forecast:humidity" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Mapas_Umidade_Relativa" data-category="Links do Menu">Umidade relativa</a>
+<a href="/mapas#forecast:wind" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Mapas_Vento" data-category="Links do Menu">Vento</a>
+<a href="/mapas#forecast:fireRisk" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Mapas_Risco_Incendio" data-category="Links do Menu">Risco de Incêndio</a>
+</div>
+</div>
+</div>
+<div class="column _flex no-hover">
+<figure class="capa">
+<span class="bg-capa"></span>
+<img class="lazyload" width="70" height="70" data-src="https://www.climatempo.com.br/dist/images/radar-md.png" alt="Mapas de tempo agora" style="width: 100%">
+</figure>
+<div class="_margin-l-20">
+<a href="/mapas#weatherNow" class="title actTriggerGA" data-label="Menu" data-action="Link_Menu_Mapas_Tempo_Agora" data-category="Links do Menu">
+<b>Tempo Agora</b>
+</a>
+<div class="_margin-t-10">
+<a href="/mapas#weatherNow" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Mapas_Satelite" data-category="Links do Menu">Satélite</a>
+<a href="/mapas#weatherNow:rainNow" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Mapas_Chuva_Agora" data-category="Links do Menu">Chuva agora</a>
+<a href="/mapas#weatherNow:flood" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Mapas_Risco_de_Alagamento_RMSP" data-category="Links do Menu">Risco de alagamento RMSP</a>
+</div>
+</div>
+</div>
+</div>
+<div class="wrapper-links _flex-column" data-menu-itens="noticias">
+<div class="_flex _margin-b-30 _flex-column-xl">
+</div>
+<div class="">
+<a href="/noticias" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Noticias_Ultimas_Noticias" data-category="Links do Menu">Últimas notícias</a>
+<a href="https://agroclima.climatempo.com.br/noticias-agricolas/" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Noticias_Agroclima" data-category="Links do Menu">Agroclima</a>
+<a href="/noticias/alimentacao" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Noticias_Alimentacao" data-category="Links do Menu">Alimentação</a>
+<a href="/noticias/saude" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Noticias_Saude" data-category="Links do Menu">Saúde</a>
+<a href="/noticias/meio-ambiente" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Noticias_Meio_Ambiente" data-category="Links do Menu">Meio Ambiente</a>
+<a href="/participe" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Noticias_Enviados_pelos_Usuarios" data-category="Links do Menu">Enviados pelos usuários</a>
+<a href="/noticias/o-clima-que-queremos" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Noticias_O_Clima_que_Queremos" data-category="Links do Menu">O Clima que queremos</a>
+<a href="/alertas" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Noticias_Alertas" data-category="Links do Menu">Alertas</a>
+<a href="/noticias/sustentabilidade" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Noticias_Sustentabilidade" data-category="Links do Menu">Sustentabilidade</a>
+<a href="/noticias/internacional" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Noticias_Internacional" data-category="Links do Menu">Internacional</a>
+<a href="https://agroclima.climatempo.com.br/boletim-semanal" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Noticias_Boletim_Semanal" data-category="Links do Menu">Agroclima - Boletim Semanal de previsão do tempo </a>
+<a href="https://www.climatempo.com.br/noticias/energia" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Noticias_Energia" data-category="Links do Menu">Energia</a>
+<a href="https://www.climatempo.com.br/noticias/negocios" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Noticias_Negocios" data-category="Links do Menu">Negócios</a>
+</div>
+</div>
+<div class="wrapper-links _flex-column" data-menu-itens="videos">
+<a href="/videos" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Videos_Ver_Todos" data-category="Links do Menu">Ver todos os vídeos</a>
+<a href="/videos/playlist/1/previsao-brasil-e-regioes" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Videos_Boletins_de_Previsao" data-category="Links do Menu">Boletins de previsão</a>
+<a href="/videos/playlist/5/tendencia-climatica" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Videos_Tendencias_Climaticas" data-category="Links do Menu">Tendências climáticas</a>
+<a href="/videos/playlist/11/videos-usuarios--whatsapp" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Videos_Enviados_pelos_Usuarios" data-category="Links do Menu">Enviados pelos usuários</a>
+</div>
+<div class="wrapper-links" data-menu-itens="canais">
+<a href="https://agroclima.climatempo.com.br/" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Canais_Agroclima" data-category="Links do Menu">Agroclima</a>
+<a href="https://agrotalk.climatempo.com.br/" target="_blank" rel="noopener" rel="noreferrer" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Canais_Agrotalk" data-category="Links do Menu">Agrotalk</a>
+</div>
+<div class="wrapper-links" data-menu-itens="confira">
+<a href="/participe" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Confira_Participe" data-category="Links do Menu">Participe</a>
+<a href="/tempo-no-seu-site" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Confira_Tempo_no_seu_Site" data-category="Links do Menu">Tempo no seu site</a>
+</div>
+<div class="wrapper-links" data-menu-itens="produtos">
+<a href="https://www.climatempoconsultoria.com.br/smac/?utm_source=climatempo&utm_medium=portal&utm_campaign=botao_produtos&utm_content=raios%2Cchuva%2Cvento%2Csmac" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Produtos_SMAC" data-category="Links do Menu" target="_blank" rel="noopener" rel="noreferrer">SMAC</a>
+<a href="https://www.climatempoconsultoria.com.br/agroclima-pro/?utm_source=agroclima&utm_medium=botao&utm_campaign=assine&utm_content=agricultura%2C%20safra%2C%20chuva%2C%20colheita%2C%20estiagem" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Produtos_Agroclima_PRO" data-category="Links do Menu" target="_blank" rel="noopener" rel="noreferrer">Agroclima PRO</a>
+<a href="https://advisor.climatempo.com.br/?utm_source=climatempo&utm_medium=portal&utm_campaign=botao_produtos&utm_content=api%2Cdados%2Cadvisor" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Produtos_API" data-category="Links do Menu" target="_blank" rel="noopener" rel="noreferrer">API</a>
+<a href="https://www.climatempoconsultoria.com.br/levantamento-de-dados-meteorologicos/?utm_source=climatempo&utm_medium=portal&utm_campaign=botao_produtos&utm_content=levantamento%2Cdados%2Cmeteorologia" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Produtos_Levantamento_de_Dados" data-category="Links do Menu" target="_blank" rel="noopener" rel="noreferrer">Levantamento de dados</a>
+<a href="https://www.climatempoconsultoria.com.br/ocean-report/?utm_source=climatempo&utm_medium=portal&utm_campaign=botao_produtos&utm_content=ocean%2Creport%2Cmeteorologia" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Produtos_Ocean_Report" data-category="Links do Menu" target="_blank" rel="noopener" rel="noreferrer">Ocean Report</a>
+<a href="https://www.climatempoconsultoria.com.br/relclima/?utm_source=climatempo&utm_medium=portal&utm_campaign=botao_produtos&utm_content=relatorio%2Cclimatico%2Cmeteorologia" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Produtos_Relclima" data-category="Links do Menu" target="_blank" rel="noopener" rel="noreferrer">Relclima</a>
+<a href="https://www.climatempoconsultoria.com.br/weather-index/?utm_source=climatempo&utm_medium=portal&utm_campaign=botao_produtos&utm_content=consultoria%2Cclimatica%2Cmeteorologia" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Produtos_Weather_Index" data-category="Links do Menu" target="_blank" rel="noopener" rel="noreferrer">Weather Index</a>
+<a href="https://academy.climatempo.com.br/cursos" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Produtos_Climatempo_Academy" data-category="Links do Menu" target="_blank" rel="noopener" rel="noreferrer">Climatempo Academy</a>
+<a href="https://business2.climatempoconsultoria.com.br/consultoria-climatempo-infra" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Produtos_Climatempo_Infra" data-category="Links do Menu" target="_blank" rel="noopener" rel="noreferrer">Climatempo Infra</a>
+</div>
+<div class="wrapper-links" data-menu-itens="descontos">
+<a href="https://descontos.climatempo.com.br/cupom-desconto-americanas" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Descontos_Cupons" data-category="Links do Menu" target="_blank" rel="noopener" rel="noreferrer">Cupom Americanas</a>
+<a href="https://descontos.climatempo.com.br/descontos-submarino" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Descontos_Cupons" data-category="Links do Menu" target="_blank" rel="noopener" rel="noreferrer">Cupom Submarino</a>
+<a href="https://descontos.climatempo.com.br/cupom-desconto-netshoes" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Descontos_Cupons" data-category="Links do Menu" target="_blank" rel="noopener" rel="noreferrer">Cupom Netshoes</a>
+<a href="https://descontos.climatempo.com.br/cupom-desconto-casas-bahia" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Descontos_Cupons" data-category="Links do Menu" target="_blank" rel="noopener" rel="noreferrer">Cupom Casas Bahia</a>
+<a href="https://descontos.climatempo.com.br/cupom-de-desconto-ponto-frio" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Descontos_Cupons" data-category="Links do Menu" target="_blank" rel="noopener" rel="noreferrer">Cupom Ponto Frio</a>
+<a href="https://descontos.climatempo.com.br/cupom-de-desconto-extra" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Descontos_Cupons" data-category="Links do Menu" target="_blank" rel="noopener" rel="noreferrer">Cupom Extra</a>
+<a href="https://descontos.climatempo.com.br/cupom-desconto-zattini" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Descontos_Cupons" data-category="Links do Menu" target="_blank" rel="noopener" rel="noreferrer">Cupom Zattini</a>
+<a href="https://descontos.climatempo.com.br/cupom-desconto-carrefour" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Descontos_Cupons" data-category="Links do Menu" target="_blank" rel="noopener" rel="noreferrer">Cupom Carrefour</a>
+<a href="https://descontos.climatempo.com.br/" class="link actTriggerGA" data-label="Menu" data-action="Link_Menu_Descontos_Ver_Todos_os_Descontos" data-category="Links do Menu" target="_blank" rel="noopener" rel="noreferrer">Ver todos os descontos</a>
+</div>
+</section>
+<section class="_none _block-xl _center _margin-t-30 _margin-b-20">
+<p class="-gray-dark-2" style="font-weight: 700">Siga-nos</p>
+<ul class="_margin-t-20">
+<li class="_inline-block _margin-r-10">
+<a class="actTriggerGA" data-label="Menu" data-action="Link_Menu_Facebook" data-category="Links do Menu" href="https://www.facebook.com/Climatempo.Meteorologia" target="_blank" rel="noopener" rel="noreferrer">
+<img width="40" height="40" class="lazyload" data-src="/dist/images/v2/svg/facebook.svg" alt="Facebook Climatempo" />
+</a>
+</li>
+<li class="_inline-block _margin-r-10">
+<a class="actTriggerGA" data-label="Menu" data-action="Link_Menu_Twitter" data-category="Links do Menu" href="https://twitter.com/climatempo" target="_blank" rel="noopener" rel="noreferrer">
+<img width="40" height="40" class="lazyload" data-src="/dist/images/v2/svg/twitter.svg" alt="Twitter Climatempo" />
+</a>
+</li>
+<li class="_inline-block _margin-r-10">
+<a class="actTriggerGA" data-label="Menu" data-action="Link_Menu_Linkedin" data-category="Links do Menu" href="https://www.linkedin.com/company/climatempo" target="_blank" rel="noopener" rel="noreferrer">
+<img width="40" height="40" class="lazyload" data-src="/dist/images/v2/svg/linkedin.svg" alt="Linkedin Climatempo" />
+</a>
+</li>
+<li class="_inline-block _margin-r-10">
+<a class="actTriggerGA" data-label="Menu" data-action="Link_Menu_Instagram" data-category="Links do Menu" href="https://instagram.com/climatempo/" target="_blank" rel="noopener" rel="noreferrer">
+<img width="40" height="40" class="lazyload" data-src="/dist/images/v2/svg/instagram.svg" alt="Instagram Climatempo" />
+</a>
+</li>
+<li class="_inline-block">
+<a class="actTriggerGA" data-label="Menu" data-action="Link_Menu_Youtube" data-category="Links do Menu" href="https://www.youtube.com/user/climatempo" target="_blank" rel="noopener" rel="noreferrer">
+<img width="40" height="40" class="lazyload" data-src="/dist/images/v2/svg/youtube.svg" alt="Youtube Climatempo" />
+</a>
+</li>
+</ul>
+</section>
+</div>
+</nav>
+<header class="header-site ">
+<div class="container">
+<div class="_flex _align-center _space-between">
+<div class="_flex _align-center">
+<label for="chkHamburguerMenu" class="hamburguer-menu" id="hamburguer-menu">
+<span class="bar-hamburguer"></span>
+</label>
+<a href="https://www.climatempo.com.br">
+<img class="logo lazyload" width="120" height="31" data-src="/dist/images/v2/svg/logo-climatempo-stormgeo.svg" alt="Climatempo">
+</a>
+</div>
+<form class="_relative _none-xl">
+<input type="search" placeholder="Busque por uma cidade..." id="searchGeneral" class="general-search-input" autocomplete="off" data-hj-whitelist required>
+<i class="fa fa-search"></i>
+<div class="autocomplete-list">
+<ul id="searchGeneral_autocomplete"></ul>
+</div>
+</form>
+<div class="_flex _align-center">
+<a class="-white _none _block-xl act-control-mobile-search _margin-r-20 actTriggerGA" id="bt_modalSearch_mobile" data-category="Buscar_cidade" data-action="Abrir_modal_busca_por_cidade" data-label="Busca_por_cidade">
+<i class="fa fa-search"></i>
+</a>
+<a href="/login" class="-white login-button actTriggerGA" data-category="Meu Climatempo" data-action="Clique no botão de login - canto superior direito do site (Menu)" data-label="Ir para a tela de login no Meu Climatempo" id="isnt-logged-content">
+<i class="fa fa-user-circle"></i>
+<span><span class="_none-sm">Faça seu </span>login</span>
+</a>
+<div class="_relative _none" id="is-logged-content">
+<a href="#" class="user-avatar _margin-l-20 act-control-logged-menu">
+<span id="user-initials">-</span>
+</a>
+<ul class="user-logged-menu _none" data-modal="user-logged-menu">
+<li class="head">
+<span id="user-name" class="featured"></span>
+<span id="user-email"></span>
+</li>
+<li class="item">
+<a class="link" href="/meu-climatempo/favoritos">Locais Favoritos</a>
+</li>
+<li class="item">
+<a class="link" href="/meu-climatempo/configuracoes#email-forecast">Previsão por e-mail</a>
+</li>
+<li class="item">
+<a class="link" href="/meu-climatempo/configuracoes">Editar Perfil</a>
+</li>
+<li class="item">
+<a class="link" href="/sair">Sair</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div id="mainContent" data-page="news">
+<ul class="header-breadcrumb _flex _align-center">
+<div class="container _flex _space-between _align-center _relative" style="height: 100%">
+<div class="_none-sm">
+<ol itemscope itemtype="https://schema.org/BreadcrumbList">
+<li class="item -font-13" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+<a href="https://www.climatempo.com.br" class="link" itemprop="item">
+<span itemprop="name">Clima e Previsão do Tempo</span>
+</a>
+<meta itemprop="position" content="1" />
+</li>
+<li class="item -font-13" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+/ <a href="/noticias" class="link" itemprop="item"><span itemprop="name">Notícias</span></a>
+<meta itemprop="position" content="2" />
+</li>
+<li class="item -font-13" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+/ <span itemprop="name">Ar frio de origem polar continua sobre o centro-sul do Brasil</span>
+<meta itemprop="position" content="3" />
+</li>
+</ol>
+</div>
+<div class="-white _margin-l-auto _relative _flex _align-center -hidden-geolocated" data-id="geolocated" style="height: 100%">
+<div class="_flex _align-center _relative">
+<a class="_flex _align-center -white _pointer link">
+<img class="ico _margin-r-10" src="" width="25" height="25" alt="Ícone de temperatura atual">
+<span class="city _margin-r-5 -font-13">-</span> / <span class="temperature _margin-l-5 -font-13">-</span>
+</a>
+<a class="_margin-l-10 _pointer act-control-favorites-locales-breadcrumb">
+<i class="fa fa-sort-down -arrow-down _none" data-id="list-favorites-locales-arrow"></i>
+</a>
+<ul class="list-favorites _absolute _none" data-id="list-favorites-locales-breadcrumb"></ul>
+</div>
+<div class="language-flags _none">
+<a class="flag -br"></a>
+<a class="flag -us"></a>
+<a class="flag -es"></a>
+</div>
+</div>
+</div>
+</ul>
+<div class="mobile-search container" data-id="mobile-search" style="display: none;">
+<form class="_relative">
+<input type="text" placeholder="Busque por uma cidade..." id="searchGeneralMobile" autocomplete="off" data-hj-whitelist required>
+<i class="fa fa-search"></i>
+<div class="autocomplete-list">
+<ul id="searchGeneralMobile_autocomplete"></ul>
+</div>
+</form>
+</div>
+<div class="bg-mega-featured" data-id="bgMegaFeatured">
+<div class="img-mega-featured" id="D_background" data-id="banner-mega-featured">
+<script>
+        googletag.cmd.push(function() { 
+          googletag.display('D_background')
+        })
+      </script>
+</div>
+</div>
+
+<div class="_flex _justify-center _margin-b-md-20 _relative">
+<div class="stick-banner-mobile -super-middle -top _none _flex-md" data-banner="stickBannerMobile">
+<div class="" id="M_noticias_sticky">
+<script>
+          googletag.cmd.push(function() { 
+            googletag.display('M_noticias_sticky'); 
+          });
+        </script>
+</div>
+<span class="-close-banner -top" data-close-banner></span>
+</div>
+</div>
+
+<div class="container" data-id="mainContainer">
+<div class="row _sticky-lg">
+<div class="container alert-news" data-alert>
+<div class="">
+<i class="ico -circle" style="background-color: #F4511E;">
+<img src="/dist/images/v2/svg/ic-alert.svg" width="14" height="14" alt="Ícone de alerta" />
+</i>
+<div class="carousel">
+<div class="owl-carousel owl-theme owl-default" data-alert-carousel></div>
+</div>
+<div class="wrapper-icons">
+<i class="ico -circle _pointer actTriggerGA" id="Botao_seta_prev" data-category="Barra_de_alertas" data-action="Clique_botao_seta_prev" data-label="Barra_de_alertas_geral" data-alert-prev>
+<img src="/dist/images/v2/svg/ic-previous.svg" alt="Alerta anterior" width="15" height="15" />
+</i>
+<i class="ico -circle _pointer actTriggerGA" id="Botao_seta_next" data-category="Barra_de_alertas" data-action="Clique_botao_seta_next" data-label="Barra_de_alertas_geral" data-alert-next>
+<img src="/dist/images/v2/svg/ic-next.svg" alt="Próximo alerta" width="15" height="15" />
+</i>
+<i class="ico -circle _pointer actTriggerGA" id="Botao_seta_close" data-category="Barra_de_alertas" data-action="Clique_botao_seta_close" data-label="Barra_de_alertas_geral" data-close-alert>
+<img src="/dist/images/v2/svg/close.svg" width="12.81" height="12.81" alt="Fechar alerta" />
+</i>
+</div>
+</div>
+</div>
+</div>
+<div class="row no-gutters _none-md _relative _margin-t-40" data-id="super-banner">
+
+<div class="wrapper-banner -bg-dark -super -has-close-button">
+<div id="D_noticias_super_topo"></div>
+<span class="-close-banner -right -bottom" data-close-banner></span>
+</div>
+
+</div>
+<div class="row _margin-t-20">
+<div class="col-lg-8">
+<div class="card" style="padding-left: 0; padding-right: 0;">
+<h1 class="article-title -bold -gray-dark-2 _padding-l-20 _padding-r-20">Ar frio de origem polar continua sobre o centro-sul do Brasil</h1>
+<p class="article-share -gray _flex _align-center _padding-l-20 _padding-r-20 _margin-t-20">
+Compartilhar
+<a title="Compartilhe no Whatsapp" href="whatsapp://send?text=Ar frio de origem polar continua sobre o centro-sul do Brasil https://www.climatempo.com.br/noticia/2023/05/13/ar-frio-de-origem-polar-continua-sobre-o-centro-sul-do-brasil-0521" target="_blank" class="actTriggerGA" id="Botao_compartilhar_whatsapp_noticia_interna" data-category="Pagina_noticia_interna" data-action="Clique_botao_compartilhar_whatsapp_noticia_interna" data-label="Noticia_interna">
+<img class="_margin-l-10" width="25" height="25" src="https://imagens.climatempo.com.br/site/imagens/whatsapp.png" alt="Compartilhe no Whatsapp">
+</a>
+<a title="Compartilhe no Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.climatempo.com.br/noticia/2023/05/13/ar-frio-de-origem-polar-continua-sobre-o-centro-sul-do-brasil-0521" target="_blank" class="actTriggerGA" id="Botao_compartilhar_facebook_noticia_interna" data-category="Pagina_noticia_interna" data-action="Clique_botao_compartilhar_facebook_noticia_interna" data-label="Noticia_interna">
+<img class="_margin-l-5" width="25" height="25" src="https://imagens.climatempo.com.br/site/imagens/facebook.png" alt="Compartilhe no Facebook">
+</a>
+<a title="Compartilhe no Twitter" href="https://twitter.com/intent/tweet?text=Ar frio de origem polar continua sobre o centro-sul do Brasil https://www.climatempo.com.br/noticia/2023/05/13/ar-frio-de-origem-polar-continua-sobre-o-centro-sul-do-brasil-0521" target="_blank" class="actTriggerGA" id="Botao_compartilhar_twitter_noticia_interna" data-category="Pagina_noticia_interna" data-action="Clique_botao_compartilhar_twitter_noticia_interna" data-label="Noticia_interna">
+<img class="_margin-l-5" width="25" height="25" src="https://imagens.climatempo.com.br/site/imagens/twitter.png" alt="Compartilhe no Twitter">
+</a>
+</p>
+<div class="_margin-b-20 _margin-t-20 _flex _space-between _padding-l-20 _padding-r-20" style="min-height: 42px;">
+<div>
+<p class="article-author -bold -gray-dark-2">Redação</p>
+<p class="article-date -bold -gray">
+<time datetime="13/05/2023 às 02:48">13/05/2023 às 02:48</time>
+</p>
+</div>
+<p class="article-read-time -gray">4 min de leitura</p>
+</div>
+<div id="article-content" class="_padding-t-20 _margin-l-20 _margin-r-20" data-end-sticky-banner-mobile>
+<div class="_margin-b-20 _align-center _none" id="banner-oferecimento">
+<p style="font-style: italic; font-size: 12px;" class="_margin-r-10">Oferecido por</p>
+<div id="D_Climatempo_80x50" style="min-height: 50px !important;">
+<script>
+                  googletag.cmd.push(function() { 
+                    googletag.display('D_Climatempo_80x50')
+                  })
+                </script>
+</div>
+<div id="M_Climatempo_80x50" style="min-height: 50px !important;">
+<script>
+                  googletag.cmd.push(function() { 
+                    googletag.display('M_Climatempo_80x50')
+                  })
+                </script>
+</div>
+</div>
+<p>O <strong>ar frio de origem polar</strong> que se espalhou sobre o centro-sul do Brasil esta semana será reforçado nos próximos dias. Até pelo menos a próxima quarta-feira, 17 de maio, baixas temperaturas vão continuar sendo observadas durante a noite e no começo da manhã nos estados do Sul e da Região Sudeste. A região Centro-Oeste também terá madrugadas mais frias do que na semana passada.
+<div class="_relative _margin-t-30 _margin-b-30" id="D_noticias_middle_1" style="left: -20px;">
+<script>
+      googletag.cmd.push(function() {
+        googletag.display("D_noticias_middle_1")
+      });
+      </script>
+</div>
+<p> 
+<p> 
+<p style="text-align: center;"><a href="https://www.climatempo.com.br/participe" target="_blank" rel="noopener" data-time2="1683956817"> <img src="https://imagens.climatempo.com.br/climapress/galeria/2021/05/0276302788667b2080ca2144f12cc294.jpg" width="639" height="471" /> </a>
+<p style="text-align: center;" data-time-legend="1683956817">Foto; Campos do Jordão (SP), por Helena Mangini
+<h2><br />Frio perto de 0°C e geada</h2>
+<p> 
+<p>Neste fim de semana, 13 e 14 de maio, o <strong>ar frio de origem polar</strong> atua com mais intensidade no Sul, no Sudeste e em Mato Grosso do Sul. Temperaturas entre 5°C e 10°C voltam a ser observadas no sul de Mato Grosso do Sul, em algumas áreas do interior de <a href='/previsao-do-tempo/cidade/558/saopaulo-sp'>São Paulo</a>, e em muitas áreas dos estados da Região Sul e também na região Serrana do <a href='/previsao-do-tempo/cidade/321/riodejaneiro-rj'>Rio De Janeiro</a>. 
+<p> 
+<p>Temperaturas próximas, e até <strong>ligeiramente abaixo de 0°C</strong>, ainda devem ser observadas nas áreas mais elevadas dos estados da Região Sul. As regiões serranas em São Paulo, Minas Gerais e Rio de Janeiro também terão uma queda mais acentuada da temperatura neste fim de semana.
+<p> 
+<blockquote>
+<p>Há condições para <strong>geada</strong> no amanhecer deste sábado, 13, nas serras gaúcha e catarinense. No domingo, 14, a <strong>geada</strong> poderá se formar na Serra da Mantiqueira, na divisa de São Paulo com Minas Gerais, nas cidades de altitude mais elevada como Campos do Jordão, Maria da Fé e Monte Verde.
+</blockquote>
+<p> 
+<h2><br />Possibilidade de recordes de frio em capitais</h2>
+<p> 
+<p><strong>Várias capitais</strong> do Sul, do Sudeste e do Centro-Oeste do Brasil podem estabelecer novos recordes de menores temperaturas do ano neste fim de semana ou na próxima segunda-feira, 15 de maio.
+<p> 
+<p><strong>Campo Grande</strong>, capital de Mato Grosso do Sul, registrou nesta sexta-feira um novo recorde de frio para 2023, com a temperatura de 13,2°C. 
+<p> 
+<p>Confira agora as capitais que podem bater o recorde de frio nos próximos dias e os valores atuais das menores temperaturas registradas pelo Instituto Nacional de Meteorologia (Inmet).
+<p> 
+<p><strong>Porto Alegre</strong>: previsão de até 9°C no fim de semana; recorde de frio atual 10,4°C em 20 de abril, considerando os valores registrados na estação meteorológica convencional do Inmet, no Jardim botânico
+<p> 
+<p><strong>Curitiba</strong>: a temperatura mínima prevista para o fim de semana é de °C; recorde de frio atual é de 9,2°C, em 21 de abril, conforme medição da estação meteorológica automática do Inmet
+<p> 
+<p><strong>Em São Paulo</strong>: previsão de temperatura de até 1°C no fim de semana; recorde de frio atual 12,3°C, em 21 de abril, de acordo com a medição da estação meteorológica convencional do Mirante de Santana
+<p> 
+<p><strong>Rio de Janeiro</strong>: previsão de até 15°C no fim de semana; a menor temperatura registrada esse ano foi de 15°C, em 21 de abril, considerando as medições das estações meteorológicas automáticas do Inmet
+<p> 
+<p><strong>Belo Horizonte</strong>: previsão de até 13°C no fim de semana; o recorde atual é de 16,4°C no dia 21 de abril, considerando os dados registrados na estação meteorológica de Santo Agostinho, na região central de <a href='/previsao-do-tempo/cidade/107/belohorizonte-mg'>Belo Horizonte</a>
+<p> 
+<p><strong>Vitória</strong>: previsão de até 18°C no fim de semana; recorde atual de menor temperatura em 2023 é de 20,3°C, em 3 de maio, considerando a medição da estação meteorológica convencional, do Inmet.
+<p> 
+<p> 
+</div>
+<div data-control-fake-sticky></div>
+<div class="wrapper-banner -bg-dark -super-middle _none-md _margin-t-30 fake-sticky -hidden" data-banner="fake-sticky">
+<div class="banner -half-super">
+<div id="D_noticias_sticky" style="z-index: 999">
+<script>
+                  googletag.cmd.push(function() { 
+                    googletag.display('D_noticias_sticky')
+                  });
+                </script>
+</div>
+<span class="-close-banner -bottom _flex" data-close-fake-sticky></span>
+</div>
+</div>
+<div class="fb-comments _padding-l-20 _padding-r-20 _margin-t-30" data-href="https://www.climatempo.com.br/noticia/2023/05/13/ar-frio-de-origem-polar-continua-sobre-o-centro-sul-do-brasil-0521" data-numposts="2" data-width="100%"></div>
+</div>
+</div>
+<div class="col-lg-4 _margin-t-sm-20 _none-sm">
+<div class="wrapper-banner -bg-light _sticky _padding-20-0">
+<div class="_flex _justify-center" id="D_noticias_lateral_fixo" style="height: 600px;">
+<script>
+              googletag.cmd.push(function() {
+                googletag.display('D_noticias_lateral_fixo')
+              });
+            </script>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-8">
+<div class="accordion-card _margin-t-20">
+<input type="checkbox" class="chk-accordion _none" id="chk-accordion-colaborative">
+<div class="card -no-bottom _relative">
+<label class="label actTriggerGA" for="chk-accordion-colaborative" id="accordion-colaborative" data-category="Participacao_dos_usuarios" data-action="Clique_accordion_participacao_dos_usuarios" data-label="Participacao_dos_usuarios">
+<p class="title _flex _align-center"><span class="icon -circle -colaborative common-sprite sprite-colaborative"></span> Participação dos usuários</p>
+<span class="dropdown-arrow">
+<i class="fa chevron"></i>
+</span>
+</label>
+</div>
+<div class="accordion-content card -no-top">
+<div class="wrapper owl-carousel -padding owl-theme" data-owl-carousel data-items="3" data-autoplay="true">
+<div>
+<a class="act-control-modal" title="Sábado Nublado Vitória -ES" data-modal="article" data-open-article data-image="https://imagens.climatempo.com.br/img_users/2021/06/80f1cb10442dd1bf8108bcc49e85a3c9/595x278.jpg" data-text="Manhã Sábado Nublada em Vitória, ES " data-title="Sábado Nublado Vitória -ES" data-time="26/06 às 09:54" data-user="Marcos Canuto " data-modal-title="Colaborativo" data-modal-link="/participe">
+<figure>
+<img data-src="https://imagens.climatempo.com.br/img_users/2021/06/80f1cb10442dd1bf8108bcc49e85a3c9/248x248.jpg" class="lazyload" alt="Sábado Nublado Vitória -ES" height="100%">
+</figure>
+</a>
+<a class="-dark-blue -bold _block -font-16 _margin-t-20 act-control-modal" data-modal="article" data-open-article data-image="https://imagens.climatempo.com.br/img_users/2021/06/80f1cb10442dd1bf8108bcc49e85a3c9/595x278.jpg" data-title="Sábado Nublado Vitória -ES" data-text="Manhã Sábado Nublada em Vitória, ES " data-user="Marcos Canuto " data-time="26/06 às 09:54" style="" title="Sábado Nublado Vitória -ES">SÁBADO NUBLADO VITÓRIA -ES
+</a>
+<p class="_margin-t-20 -gray">
+Por Marcos Canuto
+</p>
+<p class="_margin-t-10 -gray" style="font-size: 13px;">
+<time>26/06 às 09:54</time>
+</p>
+</div>
+<div>
+<a class="act-control-modal" title="Pôr  do Sol em Barra da estiva  - BA " data-modal="article" data-open-article data-image="https://imagens.climatempo.com.br/img_users/2021/06/804bdbd69eb61d2c240ed342aa720ff2/595x278.jpg" data-text="Final de tarde na Chapada diamantina para finalizar o dia um pôr do sol " data-title="Pôr  do Sol em Barra da estiva  - BA " data-time="22/06 às 05:18" data-user="FLÁVIO SANTOS " data-modal-title="Colaborativo" data-modal-link="/participe">
+<figure>
+<img data-src="https://imagens.climatempo.com.br/img_users/2021/06/804bdbd69eb61d2c240ed342aa720ff2/248x248.jpg" class="lazyload" alt="Pôr  do Sol em Barra da estiva  - BA " height="100%">
+</figure>
+</a>
+<a class="-dark-blue -bold _block -font-16 _margin-t-20 act-control-modal" data-modal="article" data-open-article data-image="https://imagens.climatempo.com.br/img_users/2021/06/804bdbd69eb61d2c240ed342aa720ff2/595x278.jpg" data-title="Pôr  do Sol em Barra da estiva  - BA " data-text="Final de tarde na Chapada diamantina para finalizar o dia um pôr do sol " data-user="FLÁVIO SANTOS " data-time="22/06 às 05:18" style="" title="Pôr  do Sol em Barra da estiva  - BA ">PÔR DO SOL EM BARRA DA ESTIVA - BA
+</a>
+<p class="_margin-t-20 -gray">
+Por FLÁVIO SANTOS
+</p>
+<p class="_margin-t-10 -gray" style="font-size: 13px;">
+<time>22/06 às 05:18</time>
+</p>
+</div>
+<div>
+<a class="act-control-modal" title="POR DO SOL em brumado bahia" data-modal="article" data-open-article data-image="https://imagens.climatempo.com.br/img_users/2021/06/699787741b3df4d9c366ac4f11c75f14/595x278.jpg" data-text="Por do sol no Sudoeste da BAHIA
+#climatempo" data-title="POR DO SOL em brumado bahia" data-time="17/06 às 06:01" data-user="Roberto Meira" data-modal-title="Colaborativo" data-modal-link="/participe">
+<figure>
+<img data-src="https://imagens.climatempo.com.br/img_users/2021/06/699787741b3df4d9c366ac4f11c75f14/248x248.jpg" class="lazyload" alt="POR DO SOL em brumado bahia" height="100%">
+</figure>
+</a>
+<a class="-dark-blue -bold _block -font-16 _margin-t-20 act-control-modal" data-modal="article" data-open-article data-image="https://imagens.climatempo.com.br/img_users/2021/06/699787741b3df4d9c366ac4f11c75f14/595x278.jpg" data-title="POR DO SOL em brumado bahia" data-text="Por do sol no Sudoeste da BAHIA
+#climatempo" data-user="Roberto Meira" data-time="17/06 às 06:01" style="" title="POR DO SOL em brumado bahia">POR DO SOL EM BRUMADO BAHIA
+</a>
+<p class="_margin-t-20 -gray">
+Por Roberto Meira
+</p>
+<p class="_margin-t-10 -gray" style="font-size: 13px;">
+<time>17/06 às 06:01</time>
+</p>
+</div>
+<div>
+<a class="act-control-modal" title="Por do sol em brumado no sudoeste BAIANO" data-modal="article" data-open-article data-image="https://imagens.climatempo.com.br/img_users/2021/06/9637ac077862f6f96421e623565757a5/595x278.jpg" data-text="Por do sol em brumado ba
+#climatempo" data-title="Por do sol em brumado no sudoeste BAIANO" data-time="17/06 às 05:58" data-user="Roberto Meira" data-modal-title="Colaborativo" data-modal-link="/participe">
+<figure>
+<img data-src="https://imagens.climatempo.com.br/img_users/2021/06/9637ac077862f6f96421e623565757a5/248x248.jpg" class="lazyload" alt="Por do sol em brumado no sudoeste BAIANO" height="100%">
+</figure>
+</a>
+<a class="-dark-blue -bold _block -font-16 _margin-t-20 act-control-modal" data-modal="article" data-open-article data-image="https://imagens.climatempo.com.br/img_users/2021/06/9637ac077862f6f96421e623565757a5/595x278.jpg" data-title="Por do sol em brumado no sudoeste BAIANO" data-text="Por do sol em brumado ba
+#climatempo" data-user="Roberto Meira" data-time="17/06 às 05:58" style="" title="Por do sol em brumado no sudoeste BAIANO">POR DO SOL EM BRUMADO NO SUDOESTE BAIANO
+</a>
+<p class="_margin-t-20 -gray">
+Por Roberto Meira
+</p>
+<p class="_margin-t-10 -gray" style="font-size: 13px;">
+<time>17/06 às 05:58</time>
+</p>
+</div>
+<div>
+<a class="act-control-modal" title="POR DO SOL EM JOINVILLE SC" data-modal="article" data-open-article data-image="https://imagens.climatempo.com.br/img_users/2021/06/313de572179c48701b6085ebb3f4093f/595x278.jpg" data-text="POR DO SOL EM JOINVILLE SC" data-title="POR DO SOL EM JOINVILLE SC" data-time="15/06 às 05:56" data-user="Roberto Meira" data-modal-title="Colaborativo" data-modal-link="/participe">
+<figure>
+<img data-src="https://imagens.climatempo.com.br/img_users/2021/06/313de572179c48701b6085ebb3f4093f/248x248.jpg" class="lazyload" alt="POR DO SOL EM JOINVILLE SC" height="100%">
+</figure>
+</a>
+<a class="-dark-blue -bold _block -font-16 _margin-t-20 act-control-modal" data-modal="article" data-open-article data-image="https://imagens.climatempo.com.br/img_users/2021/06/313de572179c48701b6085ebb3f4093f/595x278.jpg" data-title="POR DO SOL EM JOINVILLE SC" data-text="POR DO SOL EM JOINVILLE SC" data-user="Roberto Meira" data-time="15/06 às 05:56" style="" title="POR DO SOL EM JOINVILLE SC">POR DO SOL EM JOINVILLE SC
+</a>
+<p class="_margin-t-20 -gray">
+Por Roberto Meira
+</p>
+<p class="_margin-t-10 -gray" style="font-size: 13px;">
+<time>15/06 às 05:56</time>
+</p>
+</div>
+<div>
+<a class="act-control-modal" title="Mais uma tarde chuvosa na Capital" data-modal="article" data-open-article data-image="https://imagens.climatempo.com.br/img_users/2021/06/80b3e80e6fc11e2777e458067a103314/595x278.jpg" data-text="Junho está bem atípico nesta semana em Brasília" data-title="Mais uma tarde chuvosa na Capital" data-time="15/06 às 05:08" data-user="Jean Claude" data-modal-title="Colaborativo" data-modal-link="/participe">
+<figure>
+<img data-src="https://imagens.climatempo.com.br/img_users/2021/06/80b3e80e6fc11e2777e458067a103314/248x248.jpg" class="lazyload" alt="Mais uma tarde chuvosa na Capital" height="100%">
+</figure>
+</a>
+<a class="-dark-blue -bold _block -font-16 _margin-t-20 act-control-modal" data-modal="article" data-open-article data-image="https://imagens.climatempo.com.br/img_users/2021/06/80b3e80e6fc11e2777e458067a103314/595x278.jpg" data-title="Mais uma tarde chuvosa na Capital" data-text="Junho está bem atípico nesta semana em Brasília" data-user="Jean Claude" data-time="15/06 às 05:08" style="" title="Mais uma tarde chuvosa na Capital">MAIS UMA TARDE CHUVOSA NA CAPITAL
+</a>
+<p class="_margin-t-20 -gray">
+Por Jean Claude
+</p>
+<p class="_margin-t-10 -gray" style="font-size: 13px;">
+<time>15/06 às 05:08</time>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion-card _margin-t-20" id="container-accordion-nearby">
+<input type="checkbox" class="chk-accordion _none" id="chk-accordion-nearby">
+<div class="card -no-bottom _relative">
+<label class="label actTriggerGA" for="chk-accordion-nearby" id="accordion-nearby" data-category="Proximidades" data-action="Clique_accordion_proximidades" data-label="Proximidades">
+<p class="title _flex _align-center"><span class="icon -circle -nearby common-sprite sprite-nearby"></span> Proximidades</p>
+<span class="dropdown-arrow">
+<i class="fa chevron"></i>
+</span>
+</label>
+</div>
+<div class="accordion-content card -no-top">
+<div class="wrapper row -extra-space-top">
+<div class="col-lg-6">
+<div class="card-indexes">
+<ul class="list">
+<li class="item">
+<img class="icon -no-radius lazyload" data-src="/dist/images/v2/svg/.svg" width="33" height="33" />
+<div class="description _relative _flex _space-between _align-center" style="width: 100%">
+<a class="title -first" href="/previsao-do-tempo/aeroporto/337/aeroportodocampodemarte-sp" data-text="Aeroportos" title="Aeroporto Aeroporto do Campo de Marte - SP">Aeroporto do Campo de Marte, SP</a>
+<div class="_flex _relative">
+<p class="value -light-gray -fixed-width -first" data-text="Temp.">
+°
+</p>
+<p class="value -light-gray -fixed-width -first" data-text="Sens.">
+°
+</p>
+</div>
+</div>
+</li>
+<li class="item">
+<img class="icon -no-radius lazyload" data-src="/dist/images/v2/svg/.svg" width="33" height="33" />
+<div class="description _relative _flex _space-between _align-center" style="width: 100%">
+<a class="title " href="/previsao-do-tempo/aeroporto/336/aeroportodecongonhas-sp" data-text="Aeroportos" title="Aeroporto Aeroporto de Congonhas - SP">Aeroporto de Congonhas, SP</a>
+<div class="_flex _relative">
+<p class="value -light-gray -fixed-width " data-text="Temp.">
+°
+</p>
+<p class="value -light-gray -fixed-width " data-text="Sens.">
+°
+</p>
+</div>
+</div>
+</li>
+<li class="item">
+<img class="icon -no-radius lazyload" data-src="/dist/images/v2/svg/.svg" width="33" height="33" />
+<div class="description _relative _flex _space-between _align-center" style="width: 100%">
+<a class="title " href="/previsao-do-tempo/aeroporto/328/aeroportointernacionaldeguarulhos-sp" data-text="Aeroportos" title="Aeroporto Aeroporto Internacional de Guarulhos - SP">Aeroporto Internacional de Guarulhos, SP</a>
+<div class="_flex _relative">
+<p class="value -light-gray -fixed-width " data-text="Temp.">
+°
+</p>
+<p class="value -light-gray -fixed-width " data-text="Sens.">
+°
+</p>
+</div>
+</div>
+</li>
+<li class="item">
+<img class="icon -no-radius lazyload" data-src="/dist/images/v2/svg/.svg" width="33" height="33" />
+<div class="description _relative _flex _space-between _align-center" style="width: 100%">
+<a class="title " href="/previsao-do-tempo/aeroporto/381/aeroportodesaoroque-sp" data-text="Aeroportos" title="Aeroporto Aeroporto de São Roque - SP">Aeroporto de São Roque, SP</a>
+<div class="_flex _relative">
+<p class="value -light-gray -fixed-width " data-text="Temp.">
+°
+</p>
+<p class="value -light-gray -fixed-width " data-text="Sens.">
+°
+</p>
+</div>
+</div>
+</li>
+<li class="item">
+<img class="icon -no-radius lazyload" data-src="/dist/images/v2/svg/.svg" width="33" height="33" />
+<div class="description _relative _flex _space-between _align-center" style="width: 100%">
+<a class="title " href="/previsao-do-tempo/aeroporto/392/aeroportodejundiai-sp" data-text="Aeroportos" title="Aeroporto Aeroporto de Jundiaí - SP">Aeroporto de Jundiaí, SP</a>
+<div class="_flex _relative">
+<p class="value -light-gray -fixed-width " data-text="Temp.">
+°
+</p>
+<p class="value -light-gray -fixed-width " data-text="Sens.">
+°
+</p>
+</div>
+</div>
+</li>
+</ul>
+</div> </div>
+<div class="col-lg-6 _margin-t-sm-20">
+<div class="card-indexes _margin-t-sm-20">
+<ul class="list">
+<li class="item">
+<img class="icon -no-radius lazyload" data-src="/dist/images/v2/svg/2.svg" width="33" height="33" />
+<div class="description _relative _flex _space-between _align-center" style="width: 100%">
+<a class="title -first" href="/previsao-do-tempo/cidade/548/saocaetanodosul-sp" data-text="Cidades" title="São Caetano do Sul - SP">São Caetano do Sul, SP</a>
+<div class="_flex _relative">
+<p class="value -light-gray -fixed-width -first" data-text="Temp.">
+16°
+</p>
+<p class="value -light-gray -fixed-width -first" data-text="Sens.">
+16°
+</p>
+</div>
+</div>
+</li>
+<li class="item">
+<img class="icon -no-radius lazyload" data-src="/dist/images/v2/svg/2.svg" width="33" height="33" />
+<div class="description _relative _flex _space-between _align-center" style="width: 100%">
+<a class="title " href="/previsao-do-tempo/cidade/499/osasco-sp" data-text="Cidades" title="Osasco - SP">Osasco, SP</a>
+<div class="_flex _relative">
+<p class="value -light-gray -fixed-width " data-text="Temp.">
+16°
+</p>
+<p class="value -light-gray -fixed-width " data-text="Sens.">
+16°
+</p>
+</div>
+</div>
+</li>
+</ul>
+</div> </div>
+</div>
+</div>
+</div>
+<div class="accordion-card _margin-t-20">
+<input type="checkbox" class="chk-accordion _none" id="chk-accordion-news" checked>
+<div class="card -no-bottom _relative">
+<label class="label actTriggerGA" for="chk-accordion-news" id="accordion-news" data-category="Ultimas_noticias" data-action="Clique_accordion_ultimas_noticias" data-label="Ultimas_noticias">
+<h3 class="title -gray-dark-2 _flex _align-center">
+<span class="icon -circle -news common-sprite sprite-news"></span>
+Últimas notícias
+</h3>
+<span class="dropdown-arrow">
+<i class="fa chevron"></i>
+</span>
+</label>
+</div>
+<div class="accordion-content card -no-top">
+<div class="wrapper row">
+<div class="col-lg-6">
+<div class="news-carousel -small owl-carousel owl-theme" data-owl-carousel data-items="1" data-autoplay="true">
+<div class="">
+<a class="_flex _align-center _margin-b-15" href="/noticia/2023/05/13/sol-predomina-no-centro-sul-do-pais-chove-no-norte-e-nordeste--0522" title="Sol predomina no centro-sul do país. Chove no Norte e Nordeste.">
+<figure>
+<img height="140" data-src="https://imagens.climatempo.com.br/climapress/galeria/2022/07/145x108_c703e1bcaae983d81f7c64edf0e3bcc0.jpg" class="lazyload" alt="Sol predomina no centro-sul do país. Chove no Norte e Nordeste.">
+</figure>
+<p class="title -gray-dark-2">Sol predomina no centro-sul do país. Chove no Norte e Nordeste.</p>
+</a>
+<a class="_flex _align-center" href="/noticia/2023/05/13/ar-frio-de-origem-polar-continua-sobre-o-centro-sul-do-brasil-0521" title="Ar frio de origem polar continua sobre o centro-sul do Brasil">
+<figure>
+<img height="140" data-src="https://imagens.climatempo.com.br/climapress/galeria/2021/05/145x108_0276302788667b2080ca2144f12cc294.jpg" class="lazyload" alt="">
+</figure>
+<p class="title -gray-dark-2">Ar frio de origem polar continua sobre o centro-sul do Brasil</p>
+</a>
+</div>
+<div class="">
+<a class="_flex _align-center _margin-b-15" href="/noticia/2023/05/13/astronomos-descobrem-maior-explosao-cosmica-ja-observada-0519" title="Astrônomos descobrem maior explosão cósmica já observada">
+<figure>
+<img height="140" data-src="https://imagens.climatempo.com.br/climapress/galeria/2023/05/145x108_4e9070550489ebb46a9b6df7e6b5db9f.jpg" class="lazyload" alt="">
+</figure>
+<p class="title -gray-dark-2">Astrônomos descobrem maior explosão cósmica já observada</p>
+</a>
+<a class="_flex _align-center" href="/noticia/2023/05/12/dia-das-maes-previsao-de-nevoeiro-no-sul-e-no-sudeste-do-brasil-0509" title="Dia das Mães: previsão de nevoeiro no Sul e no Sudeste do Brasil">
+<figure>
+<img height="140" data-src="https://imagens.climatempo.com.br/climapress/galeria/2023/05/145x108_8e24186d4293c12a0ee9f6dac1e4cc66.jpg" class="lazyload" alt="">
+</figure>
+<p class="title -gray-dark-2">Dia das Mães: previsão de nevoeiro no Sul e no Sudeste do Brasil</p>
+</a>
+</div>
+<div class="">
+<a class="_flex _align-center _margin-b-15" href="/noticia/2023/05/12/previsao-para-o-fim-de-semana-do-dia-das-maes-0506" title="Previsão para o fim de semana do Dia das Mães">
+<figure>
+<img height="140" data-src="https://imagens.climatempo.com.br/climapress/galeria/2023/05/145x108_4b089c5521fb3c8c7b544e66d85daa25.jpg" class="lazyload" alt="">
+</figure>
+<p class="title -gray-dark-2">Previsão para o fim de semana do Dia das Mães</p>
+</a>
+<a class="_flex _align-center" href="/noticia/" title="">
+<figure>
+<img height="140" data-src="https://imagens.climatempo.com.br/climapress/galeria/145x108" class="lazyload" alt="">
+</figure>
+<p class="title -gray-dark-2"></p>
+</a>
+</div>
+</div> </div>
+<div class="col-lg-6 _margin-t-sm-20">
+<div class="wrapper-banner -bg-dark _margin-t-sm-20">
+<div class="banner -retangle-2">
+
+<div id="truvid_player_placement" data-tp_widget_id="3923" data-tp_playlist_id="1815"></div>
+<script>
+  window.dataLayer = window.dataLayer || []; window.dataLayer.push({ 'event' :
+  'adops_control', 'name': 'source-truvid-componente-executado' })
+</script>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion-card _margin-t-20">
+<input type="checkbox" class="chk-accordion _none" id="chk-accordion-recommended" checked>
+<div class="card -no-bottom _relative">
+<label class="label actTriggerGA" for="chk-accordion-recommended" id="accordion-recommended" data-category="Taboola_recommended" data-action="Clique_accordion_taboola_recomendados" data-label="Taboola_recommended">
+<p class="title _flex _align-center"><span class="icon -circle -recommended common-sprite sprite-recommended"></span> Recomendados para você</p>
+<span class="dropdown-arrow">
+<i class="fa chevron"></i>
+</span>
+</label>
+</div>
+<div class="accordion-content card -no-top">
+<div class="wrapper">
+<div id="taboola-widget"></div>
+</div>
+</div>
+</div> </div>
+</div>
+</div>
+<div class="_flex _justify-center _relative">
+<div class="stick-banner-mobile -bottom _none _flex-md" data-banner="stickBannerMobileBottom">
+<div class="" id="M_noticias_sticky_2">
+<script>
+          googletag.cmd.push(function() { 
+            googletag.display('M_noticias_sticky_2')
+          })
+        </script>
+</div>
+<span class="-close-banner -bottom" data-close-banner></span>
+</div>
+</div>
+</div>
+<footer class="footer-site ">
+<div class="container _relative">
+<div class="top">
+<div class="_flex _align-center" style="flex:1;">
+<img class="logo lazyload" width="120" height="31" data-src="/dist/images/v2/svg/logo-climatempo-stormgeo.svg" alt="Climatempo - a Stormgeo Company">
+</div>
+<div class="_flex _align-center apps _gap-10" style="flex:3;">
+<p class="-white -bold">Baixe os apps</p>
+<a href="https://wx84f.app.goo.gl/gvvL" id="Link_para_loja_app_climatempo" data-category="Rodape_novo_2020_site_climatempo" data-action="Clique_link_para_loja_app_climatempo" data-label="Rodape_novo_2020_site_climatempo" target="_blank" rel="noopener" rel="noreferrer" class="link actTriggerGA">Climatempo</a>
+<a href="https://pedagua.climatempo.com.br/" id="Link_para_loja_app_pedagua" data-category="Rodape_novo_2020_site_climatempo" data-action="Clique_link_para_loja_app_pedagua" data-label="Rodape_novo_2020_site_climatempo" target="_blank" rel="noopener" rel="noreferrer" class="link _margin-t-sm-10 actTriggerGA">Pédagua</a>
+<div class="_flex _margin-t-sm-10 _gap-10">
+<span class="ico">
+<img class="lazyload" data-src="/dist/images/v2/svg/android.svg" alt="Aplicativo Climatempo para Android" width="17" height="20" />
+</span>
+<span class="ico">
+<img class="lazyload" data-src="/dist/images/v2/svg/apple.svg" alt="Aplicativo Climatempo para IOS" width="16" height="20" />
+</span>
+</div>
+</div>
+<div class="social _flex _justify-flex-end" style="flex:2;">
+<p class="-white -bold _center-sm" style="margin-top:8px;">Siga-nos</p>
+<ul>
+<li>
+<a class="actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Facebook" data-category="Links do Rodapé" href="https://www.facebook.com/Climatempo.Meteorologia" target="_blank" rel="noopener" rel="noreferrer">
+<img class="lazyload" data-src="/dist/images/v2/svg/facebook.svg" alt="Facebook Climatempo" width="30" height="30" />
+</a>
+</li>
+<li>
+<a class="actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Twitter" data-category="Links do Rodapé" href="https://twitter.com/climatempo" target="_blank" rel="noopener" rel="noreferrer">
+<img class="lazyload" data-src="/dist/images/v2/svg/twitter.svg" alt="Twitter Climatempo" width="30" height="30" />
+</a>
+</li>
+<li>
+<a class="actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Linkedin" data-category="Links do Rodapé" href="https://www.linkedin.com/company/climatempo" target="_blank" rel="noopener" rel="noreferrer">
+<img class="lazyload" data-src="/dist/images/v2/svg/linkedin.svg" alt="Linkedin Climatempo" width="30" height="30" />
+</a>
+</li>
+<li>
+<a class="actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Instagram" data-category="Links do Rodapé" href="https://instagram.com/climatempo/" target="_blank" rel="noopener" rel="noreferrer">
+<img class="lazyload" data-src="/dist/images/v2/svg/instagram.svg" alt="Instagram Climatempo" width="30" height="30" />
+</a>
+</li>
+<li>
+<a class="actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Youtube" data-category="Links do Rodapé" href="https://www.youtube.com/user/climatempo" target="_blank" rel="noopener" rel="noreferrer">
+<img class="lazyload" data-src="/dist/images/v2/svg/youtube.svg" alt="Youtube Climatempo" width="30" height="30" />
+</a>
+</li>
+</ul>
+</div> </div>
+<div class="row _padding-l-20 _padding-r-20">
+<div class="col-md-2 col-6">
+<ul class="footer-links">
+<li class="item -title"><a href="/previsao-do-tempo" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Previsao" data-category="Links do Rodape">Previsão</a></li>
+<li class="item"><a href="/brasil" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Previsao_Brasil" data-category="Links do Rodape">Brasil</a></li>
+<li class="item"><a data-link="/previsao-do-tempo/agora/cidade/{slug}" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Previsao_Agora" data-category="Links do Rodape" data-dynamic-link>Agora</a></li>
+<li class="item"><a data-link="/previsao-do-tempo/cidade/{slug}" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Previsao_Hoje" data-category="Links do Rodape" data-dynamic-link>Hoje</a></li>
+<li class="item"><a data-link="/previsao-do-tempo/amanha/cidade/{slug}" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Previsao_Amanha" data-category="Links do Rodape" data-dynamic-link>Amanhã</a></li>
+<li class="item"><a data-link="/previsao-do-tempo/fim-de-semana/cidade/{slug}" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Previsao_Fim_de_Semana" data-category="Links do Rodape" data-dynamic-link>Fim de semana</a></li>
+<li class="item"><a data-link="/previsao-do-tempo/15-dias/cidade/{slug}" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Previsao_15_Dias" data-category="Links do Rodape" data-dynamic-link>15 dias</a></li>
+<li class="item"><a href="/previsao-do-tempo/cidade/litoral" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Previsao_Praias" data-category="Links do Rodape">Praias</a></li>
+<li class="item"><a href="/previsao-do-tempo/aeroporto" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Previsao_Aeroportos" data-category="Links do Rodape">Aeroportos</a></li>
+<li class="item -title"><a class="link">Hub de Cidades</a></li>
+<li class="item"><a data-link="/previsao-do-tempo/?page=HOJE" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Hub_Cidades_Hoje" data-category="Links do Rodape" data-dynamic-link>Hoje</a></li>
+<li class="item"><a data-link="/previsao-do-tempo/?page=AMANHA" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Hub_Cidades_Amanha" data-category="Links do Rodape" data-dynamic-link>Amanhã</a></li>
+<li class="item"><a data-link="/previsao-do-tempo/?page=15DIAS" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Hub_Cidades_15_Dias" data-category="Links do Rodape" data-dynamic-link>15 dias</a></li>
+<li class="item"><a data-link="/previsao-do-tempo/?page=FDS" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Hub_Cidades_Fim_de_Semana" data-category="Links do Rodape" data-dynamic-link>Fim de semana</a></li>
+<li class="item -title"><a class="link">Clima</a></li>
+<li class="item"><a href="https://www.climatempoconsultoria.com.br/levantamento-de-dados-meteorologicos/?utm_source=climatempo&utm_medium=portal&utm_campaign=botao_produtos&utm_content=levantamento%2Cdados%2Cmeteorologia" target="_blank" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Clima_Historico_de_Clima_Dataclima" data-category="Links do Rodape">Históricos de clima - Dataclima</a></li>
+<li class="item"><a href="https://www.climatempoconsultoria.com.br/relclima/" target="_blank" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Clima_Relclima" data-category="Links do Rodape">Relclima</a></li>
+<li class="item"><a href="/podcast/o-clima-entre-nos" target="_blank" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Clima_Podcasts" data-category="Links do Rodape">Podcasts</a></li>
+<li class="item"><a href="/noticia/2020/09/09/clima-o-que-e-fatores-elementos-e-muito-mais--5667" target="_blank" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Clima_Diferenca_Entre_Clima_e_Tempo" data-category="Links do Rodape">Diferença entre clima e tempo</a></li>
+<li class="item -title"><a class="link">Chuva</a></li>
+<li class="item"><a href="/mapas#weatherNow:rainNow" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Chuva_Chuva_Agora" data-category="Links do Rodape">Chuva Agora</a></li>
+<li class="item"><a href="https://www.climatempo.com.br/alerta-rio/radar" target="_blank" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Chuva_Radar_RJ" data-category="Links do Rodape">Radar RJ</a></li>
+<li class="item"><a href="https://www.redemet.aer.mil.br/" target="_blank" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Chuva_Outros_Radares" data-category="Links do Rodape">Outros radares</a></li>
+<li class="item"><a data-link="/previsao-do-tempo/15-dias/cidade/{slug}#chuva" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Chuva_Chuva_Prevista" data-category="Links do Rodape" data-dynamic-link>Chuva prevista</a></li>
+<li class="item"><a data-link="/mapas#forecast:accumulatedRain" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Chuva_Chuva_Acumulada" data-category="Links do Rodape" data-dynamic-link>Chuva acumulada</a></li>
+</ul>
+</div>
+<div class="col-md-2 col-6">
+<ul class="footer-links">
+<li class="item -title"><a href="/mapas" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Mapas" data-category="Links do Rodape">Mapas</a></li>
+<li class="item"><a href="/mapas#forecast:temperature" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Mapas_Temperatura" data-category="Links do Rodape">Temperatura</a></li>
+<li class="item"><a href="/mapas#forecast:rain" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Mapas_Chuva" data-category="Links do Rodape">Chuva</a></li>
+<li class="item"><a href="/mapas#forecast:accumulatedRain" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Mapas_Acumulado_de_Chuva" data-category="Links do Rodape">Acumulado de chuva</a></li>
+<li class="item"><a href="/mapas#forecast:pressure" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Mapas_Pressao" data-category="Links do Rodape">Pressão</a></li>
+<li class="item"><a href="/mapas#forecast:humidity" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Mapas_Umidade_Relativa" data-category="Links do Rodape">Umidade relativa</a></li>
+<li class="item"><a href="/mapas#forecast:wind" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Mapas_Vento" data-category="Links do Rodape">Vento</a></li>
+<li class="item"><a href="/mapas#forecast:fireRisk" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Mapas_Risco_Incendio" data-category="Links do Rodape">Risco de Incêndio</a></li>
+<li class="item"><a href="/mapas#weatherNow" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Mapas_Satelite" data-category="Links do Rodape">Satélite</a></li>
+<li class="item"><a href="/mapas#weatherNow:rainNow" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Mapas_Chuva_Agora" data-category="Links do Rodape">Chuva Agora</a></li>
+<li class="item"><a href="/mapas#weatherNow:flood" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Mapas_Risco_de_Alagamento_RMSP" data-category="Links do Rodape">Risco de alagamento RMSP</a></li>
+<li class="item -title"><a href="/graficos/cidade/{slug}#chuva" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Graficos" data-category="Links do Rodape">Gráficos</a></li>
+<li class="item"><a data-link="/graficos/cidade/{slug}#chuva" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Graficos_Previsao_de_Chuva" data-category="Links do Rodape" data-dynamic-link>Previsão de chuva</a></li>
+<li class="item"><a data-link="/graficos/cidade/{slug}#temperatura" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Graficos_Previsao_de_Temperatura" data-category="Links do Rodape" data-dynamic-link>Previsão de temperatura</a></li>
+<li class="item"><a data-link="/graficos/cidade/{slug}#umidade" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Graficos_Previsao_de_Umidade" data-category="Links do Rodape" data-dynamic-link>Previsão de umidade</a></li>
+<li class="item"><a data-link="/vento/cidade/{slug}" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Graficos_Vento_Hora_a_Hora" data-category="Links do Rodape" data-dynamic-link>Vento hora a hora</a></li>
+<li class="item"><a data-link="/uv/{slug}" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Graficos_Indice_UV" data-category="Links do Rodape" data-dynamic-link>Índice UV</a></li>
+<li class="item"><a href="/tabua-de-mares" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Graficos_Tabua_de_Mares" data-category="Links do Rodape">Tábua de marés</a></li>
+<li class="item"><a data-link="/climatologia/{slug}" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Graficos_Climatologia" data-category="Links do Rodape" data-dynamic-link>Climatologia</a></li>
+</ul>
+</div>
+<div class="col-md-2 col-6 _margin-t-sm-60">
+<ul class="footer-links">
+<li class="item -title"><a href="/noticias" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Noticias" data-category="Links do Rodape">Notícias</a></li>
+<li class="item"><a href="/noticias" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Noticias_Ultimas_Noticias" data-category="Links do Rodape">Últimas notícias</a></li>
+<li class="item"><a href="/agroclima" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Noticias_Agroclima" data-category="Links do Rodape">Agroclima</a></li>
+<li class="item"><a href="/noticias/alimentacao" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Noticias_Alimentacao" data-category="Links do Rodape">Alimentação</a></li>
+<li class="item"><a href="/noticias/saude" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Noticias_Saude" data-category="Links do Rodape">Saúde</a></li>
+<li class="item"><a href="/noticias/meio-ambiente" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Noticias_Meio_Ambiente" data-category="Links do Rodape">Meio Ambiente</a></li>
+<li class="item"><a href="/participe" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Noticias_Enviados_pelos_Usuarios" data-category="Links do Rodape">Enviados pelos usuários</a></li>
+<li class="item"><a href="/noticias/o-clima-que-queremos" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Noticias_O_Clima_que_Queremos" data-category="Links do Rodape">O Clima que Queremos</a></li>
+<li class="item"><a href="/alertas" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Noticias_Alertas" data-category="Links do Rodape">Alertas</a></li>
+<li class="item"><a href="/noticias/sustentabilidade" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Noticias_Sustentabilidade" data-category="Links do Rodape">Sustentabilidade</a></li>
+<li class="item"><a href="/noticias/internacional" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Noticias_Internacional" data-category="Links do Rodape">Internacional</a></li>
+<li class="item"><a href="https://agroclima.climatempo.com.br/boletim-semanal" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Noticias_Boletim_Semanal" data-category="Links do Rodape">Agroclima - Boletim Semanal de previsão do tempo</a></li>
+<li class="item -title"><a href="/podcasts" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Podcasts" data-category="Links do Rodape">Podcasts</a></li>
+<li class="item"><a href="/podcast/o-clima-entre-nos" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Podcast_O Clima Entre Nós" data-category="Links do Rodape">O Clima Entre Nós</a></li>
+<li class="item"><a href="/podcast/agrotalk" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Podcast_Agrotalk" data-category="Links do Rodape">Agrotalk</a></li>
+<li class="item"><a href="/podcast/estudioagro" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Podcast_EstúdioAgro" data-category="Links do Rodape">EstúdioAgro</a></li>
+<li class="item -title"><a href="/videos" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Videos" data-category="Links do Rodape">Vídeos</a></li>
+<li class="item"><a href="/videos/playlist/1/previsao-brasil-e-regioes" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Videos_Boletins_de_Previsao" data-category="Links do Rodape">Boletins de previsão</a></li>
+<li class="item"><a href="/videos/playlist/5/tendencia-climatica" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Videos_Tendencias_Climaticas" data-category="Links do Rodape">Tendências climáticas</a></li>
+<li class="item"><a href="/videos/playlist/11/videos-usuarios--whatsapp" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Videos_Enviados_pelos_usuarios" data-category="Links do Rodape">Enviados pelos usuários</a></li>
+</ul>
+</div>
+<div class="col-md-2 col-6 _margin-t-sm-60">
+<ul class="footer-links">
+<li class="item -title"><a class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Canais" data-category="Links do Rodape">Canais</a></li>
+<li class="item"><a href="/noticias/sustentabilidade" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Canais_Sustentabilidade" data-category="Links do Rodape">Sustentabilidade</a></li>
+<li class="item"><a href="https://agroclima.climatempo.com.br" target="_blank" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Canais_Agroclima" data-category="Links do Rodape">Agroclima</a></li>
+<li class="item"><a href="https://agrotalk.climatempo.com.br" target="_blank" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Canais_Agrotalk" data-category="Links do Rodape">Agrotalk</a></li>
+<li class="item"><a href="/radio" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Canais_Radio" data-category="Links do Rodape">Rádio</a></li>
+<li class="item -title"><a class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Produtos" data-category="Links do Rodape">Produtos</a></li>
+<li class="item"><a href="https://www.climatempoconsultoria.com.br/smac/?utm_source=climatempo&utm_medium=portal&utm_campaign=botao_produtos&utm_content=raios%2Cchuva%2Cvento%2Csmac" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Produtos_SMAC" data-category="Links do Rodape" target="_blank">SMAC</a></li>
+<li class="item"><a href="https://www.climatempoconsultoria.com.br/agroclima-pro/?utm_source=agroclima&utm_medium=botao&utm_campaign=assine&utm_content=agricultura%2C%20safra%2C%20chuva%2C%20colheita%2C%20estiagem" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Produtos_Agroclima_PRO" data-category="Links do Rodape" target="_blank">Agroclima PRO</a></li>
+<li class="item"><a href="https://advisor.climatempo.com.br/?utm_source=climatempo&utm_medium=portal&utm_campaign=botao_produtos&utm_content=api%2Cdados%2Cadvisor" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Produtos_API" data-category="Links do Rodape" target="_blank">API</a></li>
+<li class="item"><a href="https://www.climatempoconsultoria.com.br/levantamento-de-dados-meteorologicos/?utm_source=climatempo&utm_medium=portal&utm_campaign=botao_produtos&utm_content=levantamento%2Cdados%2Cmeteorologia" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Produtos_Levantamento_de_Dados" data-category="Links do Rodape" target="_blank">Levantamento de dados</a></li>
+<li class="item"><a href="https://www.climatempoconsultoria.com.br/ocean-report/?utm_source=climatempo&utm_medium=portal&utm_campaign=botao_produtos&utm_content=ocean%2Creport%2Cmeteorologia" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Produtos_Ocean_Report" data-category="Links do Rodape" target="_blank">Ocean Report</a></li>
+<li class="item"><a href="https://www.climatempoconsultoria.com.br/relclima/?utm_source=climatempo&utm_medium=portal&utm_campaign=botao_produtos&utm_content=relatorio%2Cclimatico%2Cmeteorologia" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Produtos_Relclima" data-category="Links do Rodape" target="_blank">Relclima</a></li>
+<li class="item"><a href="https://www.climatempoconsultoria.com.br/weather-index/?utm_source=climatempo&utm_medium=portal&utm_campaign=botao_produtos&utm_content=consultoria%2Cclimatica%2Cmeteorologia" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Produtos_Weather_Index" data-category="Links do Rodape" target="_blank">Weather Index</a></li>
+</ul>
+</div>
+<div class="col-md-2 col-6 _margin-t-sm-60">
+<ul class="footer-links">
+<li class="item -title"><a href="https://descontos.climatempo.com.br" target="_blank" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Descontos" data-category="Links do Rodape">Descontos</a></li>
+<li class="item"><a href="https://descontos.climatempo.com.br/cupom-desconto-americanas" target="_blank" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Descontos_Cupons" data-category="Links do Rodape">Cupom Americanas</a></li>
+<li class="item"><a href="https://descontos.climatempo.com.br/descontos-submarino" target="_blank" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Descontos_Cupons" data-category="Links do Rodape">Cupom Submarino</a></li>
+<li class="item"><a href="https://descontos.climatempo.com.br/cupom-desconto-netshoes" target="_blank" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Descontos_Cupons" data-category="Links do Rodape">Cupom Netshoes</a></li>
+<li class="item"><a href="https://descontos.climatempo.com.br/cupom-desconto-casas-bahia" target="_blank" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Descontos_Cupons" data-category="Links do Rodape">Cupom Casas Bahia</a></li>
+<li class="item"><a href="https://descontos.climatempo.com.br/cupom-de-desconto-ponto-frio" target="_blank" rel="noopener" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Descontos_Cupons" data-category="Links do Rodape">Cupons Ponto Frio</a></li>
+<li class="item"><a href="https://descontos.climatempo.com.br/cupom-de-desconto-extra" target="_blank" rel="noopener" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Descontos_Cupons" data-category="Links do Rodape">Cupons Extra</a></li>
+<li class="item"><a href="https://descontos.climatempo.com.br/cupom-desconto-zattini" target="_blank" rel="noopener" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Descontos_Cupons" data-category="Links do Rodape">Cupons Zattini</a></li>
+<li class="item"><a href="https://descontos.climatempo.com.br/cupom-desconto-carrefour" target="_blank" rel="noopener" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Descontos_Cupons" data-category="Links do Rodape">Cupons Carrefour</a></li>
+<li class="item"><a href="https://descontos.climatempo.com.br" target="_blank" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Descontos_Ver_Todos_os_Descontos" data-category="Links do Rodape">Ver todos os descontos</a></li>
+<li class="item -title"><a href="#" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Confira" data-category="Links do Rodape">Confira também</a></li>
+<li class="item"><a href="/participe" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Confira_Participe" data-category="Links do Rodape">Participe</a></li>
+<li class="item"><a href="/tempo-no-seu-site" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Confira_Tempo_no_seu_Site" data-category="Links do Rodape">Tempo no seu site</a></li>
+</ul>
+</div>
+<div class="col-md-2 col-6 _margin-t-sm-60">
+<ul class="footer-links">
+<li class="item -title"><a href="#" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Contato" data-category="Links do Rodape">Contato</a></li>
+<li class="item"><a href="/anuncie" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Contato_Anuncie" data-category="Links do Rodape">Anuncie</a></li>
+<li class="item"><a href="/fale-conosco" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Contato_Fale_Conosco" data-category="Links do Rodape">Fale conosco</a></li>
+<li class="item"><a href="/politica-de-privacidade" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Contato_Politica_de_Privacidade" data-category="Links do Rodape">Política de privacidade</a></li>
+<li class="item"><a href="#" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Contato_Change_Privace" data-category="Links do Rodape" onclick="if(window.__lxG__consent__!==undefined&&window.__lxG__consent__.getState()!==null){window.__lxG__consent__.showConsent()} else {alert('This function only for users from European Economic Area (EEA)')}; return false">Change privacy settings</a></li>
+<li class="item"><a href="/trabalhe-conosco" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Contato_Trabalhe_Conosco" data-category="Links do Rodape">Trabalhe conosco</a></li>
+<li class="item"><a href="/faq" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Contato_FAQ" data-category="Links do Rodape">FAQ</a></li>
+<li class="item"><a href="/termos-de-uso" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Contato_Termos_de_Uso" data-category="Links do Rodape">Termos de uso</a></li>
+<li class="item"><a href="/previsao-por-email" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Contato_Previsao_por_Email" data-category="Links do Rodape">Previsão por e-mail</a></li>
+<li class="item"><a href="https://advisor.climatempo.com.br" target="_blank" rel="noopener" class="link actTriggerGA" data-label="Rodape" data-action="Link_Rodape_Contato_API_de_Previsao_de_Tempo" data-category="Links do Rodape">API de previsão de tempo</a></li>
+</ul>
+</div>
+</div>
+<h6 class="copyright">Copyright 2023 - Climatempo. Todos os direitos reservados.</h6>
+</div>
+</footer>
+<div class="modal-content" id="article">
+<div class="card -no-bottom _margin-b-off _border-b-gray-light _flex _align-center _space-between">
+<p class="title" id="modal-article-title"></p>
+<a class="close-modal -bold act-close-modal"></a>
+</div>
+<div class="card -no-top -no-bottom _margin-b-off _border-b-gray-light">
+<div class="row">
+<div class="col-12" id="modal-article"></div>
+</div>
+</div>
+<div class="card -no-top _flex _space-between">
+<p class="_none-sm">
+<a title="Compartilhe no Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.climatempo.com.br/noticia/2023/05/13/ar-frio-de-origem-polar-continua-sobre-o-centro-sul-do-brasil-0521" target="_blank">
+<i class="fa fa-facebook -gray"></i>
+</a>
+<a title="Compartilhe no Twitter" href="https://twitter.com/intent/tweet?text=Confira a previsão do tempo completa para  em https://www.climatempo.com.br/noticia/2023/05/13/ar-frio-de-origem-polar-continua-sobre-o-centro-sul-do-brasil-0521" target="_blank">
+<i class="fa fa-twitter -gray _margin-l-10"></i>
+</a>
+<a title="Compartilhe no Whatsapp" href="whatsapp://send?text=Confira a previsão do tempo completa para  em https://www.climatempo.com.br/noticia/2023/05/13/ar-frio-de-origem-polar-continua-sobre-o-centro-sul-do-brasil-0521" target="_blank">
+<i class="fa fa-whatsapp -gray _margin-l-10"></i>
+</a>
+</p>
+<a href="#" id="modal-article-link" class="-blue -bold -uppercase">+ mais notícias</a>
+</div>
+</div>
+<div class="wrapper-modal _flex _justify-center _align-center act-close-modal"></div>
+
+<script src="/dist/js/article.bundle.min.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7c6bdbcfce4916e9","version":"2023.4.0","b":1,"token":"76672a8da85648f7947594a029f54200","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
