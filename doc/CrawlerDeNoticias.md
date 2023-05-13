@@ -823,7 +823,7 @@ Conteúdos de terceiros são de responsabilidades dos mesmos bem como seus direi
 
 O projeto encontra-se em desenvolvimento, inicialmente fôra batizado de Ani Fátima Liu, e estará passando por alterações estando de inicio disponibilizado em formato "_jupyter notebook_" podendo servir como _case_ de estudo para os que se interessam por "web scrap" (raspagem de dados).
 
-Tecnologias foram usadas para gerar vídeo de noticias diária para página [Dimensão Alfa no facebook](https://www.facebook.com) e [Youtube](https://www.youtube.com/@dimensaoalfa); foi usada as seguintes tecnologias:
+Tecnologias foram usadas para gerar vídeo de noticias diária para página [Youtube](https://www.youtube.com/@dimensaoalfa); foi usada as seguintes tecnologias:
 
 * [Editor de códigos VSCode](https://code.visualstudio.com/)
 * [Python (linguagem de programação)](https://www.python.org/)
@@ -835,7 +835,7 @@ Tecnologias foram usadas para gerar vídeo de noticias diária para página [Dim
 
 Peço e agradeço a compreensão e apoio de todos. 
 
-Para contribuições, dúvidas, sugestões visitem nossas páginas no [Facebook](https://www.facebook.com/).
+Para contribuições, dúvidas, sugestões visitem meu blog [WSRicardo](https://wsricardo.blogspot.com).
 
 
 ## Sugestões de Conteúdo
