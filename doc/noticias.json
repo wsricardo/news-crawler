@@ -1,0 +1,422 @@
+[
+    {
+        "title": "Mensagens e prints ligam jogadores a esquema de manipulação",
+        "href": "https://g1.globo.com/go/goias/noticia/2023/05/13/chamadas-de-video-com-apostador-comprovantes-de-pagamento-e-mensagens-veja-provas-apontadas-pelo-mp-que-ligam-jogadores-a-esquema-de-manipulacao-de-jogos.ghtml",
+        "datafile": "newsdata/0"
+    },
+    {
+        "title": "Treinador de futsal denunciado por assediar jogadoras morre na cadeia",
+        "href": "https://g1.globo.com/ce/ceara/noticia/2023/05/13/treinador-de-futsal-denunciado-por-assediar-ao-menos-12-jogadoras-morre-dentro-de-presidio-apos-passar-mal-no-ceara.ghtml",
+        "datafile": "newsdata/1"
+    },
+    {
+        "title": "VÍDEO mostra momento em que meteoro é engolido por nuvem em SC",
+        "href": "https://g1.globo.com/sc/santa-catarina/noticia/2023/05/13/meteoro-cruza-o-ceu-e-desaparece-dentro-de-nuvem-sob-a-luz-da-lua-em-sc-video.ghtml",
+        "datafile": "newsdata/2"
+    },
+    {
+        "title": "MS, RJ e SP devem ter frio de menos de 10ºC no fim de semana; veja previsão",
+        "href": "https://www.climatempo.com.br/noticia/2023/05/13/ar-frio-de-origem-polar-continua-sobre-o-centro-sul-do-brasil-0521",
+        "datafile": "newsdata/3"
+    },
+    {
+        "title": "Menina vítima de agressões dos pais espalha cartas com pedido de socorro",
+        "href": "https://g1.globo.com/sp/sao-jose-do-rio-preto-aracatuba/noticia/2023/05/12/menina-espalha-cartas-pedindo-socorro-e-e-acolhida-pelo-conselho-tutelar-no-interior-de-sao-paulo.ghtml",
+        "datafile": "newsdata/4"
+    },
+    {
+        "title": "Quem é Danilo Tandera, o miliciano mais procurado do RJ ",
+        "href": "https://g1.globo.com/rj/rio-de-janeiro/noticia/2023/05/13/quem-e-danilo-tandera-miliciano-mais-procurado-do-rj-e-com-apenas-duas-passagens-rapidas-pela-cadeia.ghtml",
+        "datafile": "newsdata/5"
+    },
+    {
+        "title": "LULA X BOLSONARO À CNN, Bolsonaro diz que vai processar Lula por falas sobre mansão e mortes na pandemia",
+        "href": "https://www.cnnbrasil.com.br/politica/a-cnn-bolsonaro-diz-que-vai-processar-lula-por-falas-sobre-mansao-e-mortes-na-pandemia/",
+        "datafile": "newsdata/6"
+    },
+    {
+        "title": "Governo espera ter regulamentação das apostas online até o fim do ano, diz Fazenda",
+        "href": "https://www.cnnbrasil.com.br/nacional/governo-espera-ter-regulamentacao-das-apostas-online-ate-o-fim-do-ano-diz-fazenda/",
+        "datafile": "newsdata/7"
+    },
+    {
+        "title": "Se o dinheiro está caro, a culpa não é do BC, porque é malvado, mas do governo, que deve muito, diz Campos Neto à CNN",
+        "href": "https://www.cnnbrasil.com.br/economia/se-o-dinheiro-esta-caro-a-culpa-nao-e-do-bc-porque-e-malvado-mas-do-governo-que-deve-muito-diz-campos-neto-a-cnn/",
+        "datafile": "newsdata/8"
+    },
+    {
+        "title": "Política",
+        "href": "https://www.cnnbrasil.com.br/politica/",
+        "datafile": "newsdata/9"
+    },
+    {
+        "title": "Pop",
+        "href": "https://www.cnnbrasil.com.br/pop/",
+        "datafile": "newsdata/10"
+    },
+    {
+        "title": "Mercado",
+        "href": "/cotacoes/bolsa",
+        "datafile": "newsdata/11"
+    },
+    {
+        "title": "Economia",
+        "href": "https://www.cnnbrasil.com.br/economia/",
+        "datafile": "newsdata/11"
+    },
+    {
+        "title": "Internacional",
+        "href": "https://www.cnnbrasil.com.br/internacional/",
+        "datafile": "newsdata/12"
+    },
+    {
+        "title": "Viagem & Gastronomia",
+        "href": "https://www.cnnbrasil.com.br/viagemegastronomia/",
+        "datafile": "newsdata/13"
+    },
+    {
+        "title": "Nacional",
+        "href": "https://www.cnnbrasil.com.br/nacional/",
+        "datafile": "newsdata/14"
+    },
+    {
+        "title": "Saúde",
+        "href": "https://www.cnnbrasil.com.br/saude/",
+        "datafile": "newsdata/15"
+    },
+    {
+        "title": "Esportes",
+        "href": "https://www.cnnbrasil.com.br/esportes/",
+        "datafile": "newsdata/16"
+    },
+    {
+        "title": "CNN Plural",
+        "href": "https://www.cnnbrasil.com.br/tudo-sobre/cnn-plural/",
+        "datafile": "newsdata/17"
+    },
+    {
+        "title": "Ciência e Tecnologia",
+        "href": "https://www.cnnbrasil.com.br/tecnologia/",
+        "datafile": "newsdata/18"
+    },
+    {
+        "title": "Fórmula ucraniana é \"a única capaz de parar guerra\", diz Zelensky a Amorim",
+        "href": "https://www.cnnbrasil.com.br/internacional/formula-ucraniana-e-a-unica-capaz-de-parar-guerra-diz-zelensky-a-amorim/",
+        "datafile": "newsdata/19"
+    },
+    {
+        "title": "As sacerdotisas africanas perseguidas pela Inquisição no Brasil",
+        "href": "https://www.bbc.com/portuguese/articles/cw07ne17z2wo",
+        "datafile": "newsdata/20"
+    },
+    {
+        "title": "Erdogan: o vendedor de pães que mudou a Turquia e enfrenta teste nas urnas",
+        "href": "https://www.bbc.com/portuguese/articles/cz768epyreeo",
+        "datafile": "newsdata/21"
+    },
+    {
+        "title": "Expectativa x realidade: por que não devemos romantizar a maternidade?",
+        "href": "https://www.bbc.com/portuguese/articles/c2v5z773lldo",
+        "datafile": "newsdata/22"
+    },
+    {
+        "title": "Por que jogos de azar são proibidos e sites de apostas são permitidos no Brasil?",
+        "href": "https://www.bbc.com/portuguese/articles/ce7g64gx1r9o",
+        "datafile": "newsdata/23"
+    },
+    {
+        "title": "Os ex-escravizados que levaram tradições brasileiras para Gana",
+        "href": "https://www.bbc.com/portuguese/articles/cw9pw50y92wo",
+        "datafile": "newsdata/24"
+    },
+    {
+        "title": "O trágico fim de um dos leões mais velhos do mundo",
+        "href": "https://www.bbc.com/portuguese/articles/cd1r4yzxy9do",
+        "datafile": "newsdata/25"
+    },
+    {
+        "title": "Os mitos e erros sobre os hemisférios do cérebro",
+        "href": "https://www.bbc.com/portuguese/articles/cjj999w39dgo",
+        "datafile": "newsdata/26"
+    },
+    {
+        "title": "Como a poluição luminosa altera os sentidos das plantas",
+        "href": "https://www.bbc.com/portuguese/articles/c0dx18dkd2vo",
+        "datafile": "newsdata/27"
+    },
+    {
+        "title": "Como Marília Mendonça continua a ser fenômeno após sua morte",
+        "href": "https://www.bbc.com/portuguese/articles/ckrk07gg2reo",
+        "datafile": "newsdata/28"
+    },
+    {
+        "title": "As perguntas ainda sem resposta sobre suposto 'plano de golpe' de militares próximos a Bolsonaro",
+        "href": "https://www.bbc.com/portuguese/articles/cn4ee72v7mvo",
+        "datafile": "newsdata/29"
+    },
+    {
+        "title": "Por que Alexandre de Moraes mandou soltar Anderson Torres após quase 4 meses na prisão",
+        "href": "https://www.bbc.com/portuguese/articles/c10qrrv9j3po",
+        "datafile": "newsdata/30"
+    },
+    {
+        "title": "O que o SUS está ensinando ao serviço de saúde britânico",
+        "href": "https://www.bbc.com/portuguese/articles/cq5ww8jryk0o",
+        "datafile": "newsdata/31"
+    },
+    {
+        "title": "Surto de síndromes gripais em crianças causa emergência de saúde na Paraíba",
+        "href": "https://www.bbc.com/portuguese/articles/ce9xxe2v4v9o",
+        "datafile": "newsdata/32"
+    },
+    {
+        "title": "Morre Rita Lee: relembre trajetória da rainha do rock brasileiro",
+        "href": "https://www.bbc.com/portuguese/articles/cp3zrv57yylo",
+        "datafile": "newsdata/33"
+    },
+    {
+        "title": "Por que visita de Celso Amorim à Ucrânia pode melhorar posição de Lula na reunião do G7",
+        "href": "https://www.bbc.com/portuguese/articles/cll119mmrvpo",
+        "datafile": "newsdata/34"
+    },
+    {
+        "title": "A embaixadora que luta por espaço para mulheres no Itamaraty: ‘Somos deixadas de lado’",
+        "href": "https://www.bbc.com/portuguese/articles/c3gj9vnxzwdo",
+        "datafile": "newsdata/35"
+    },
+    {
+        "title": "'Vou ser aprisionada': corte de verba pode levar 12 pessoas a morar em hospital",
+        "href": "https://www.bbc.com/portuguese/articles/c721q5zx2dyo",
+        "datafile": "newsdata/36"
+    },
+    {
+        "title": "Vídeo, Como contraofensiva ucraniana pode mudar guerra com Rússia, Duration 3,44",
+        "href": "https://www.bbc.com/portuguese/geral-65489161",
+        "datafile": "newsdata/37"
+    },
+    {
+        "title": "Youtuber admite ter provocado acidente de avião em busca de audiência",
+        "href": "https://www.bbc.com/portuguese/articles/cy7p5rgddx8o",
+        "datafile": "newsdata/38"
+    },
+    {
+        "title": "'Meu filho morreu após comer lixo': a tragédia que virou símbolo da miséria na Venezuela",
+        "href": "https://www.bbc.com/portuguese/articles/c1688yxl77ko",
+        "datafile": "newsdata/39"
+    },
+    {
+        "title": "Vídeo, O desastre que ameaça líder turco, no poder há duas décadas, Duration 4,54",
+        "href": "https://www.bbc.com/portuguese/internacional-65573941",
+        "datafile": "newsdata/40"
+    },
+    {
+        "title": "O que 2ª Guerra tem a ver com crise de alergia no Japão",
+        "href": "https://www.bbc.com/portuguese/articles/cp91dwemvj7o",
+        "datafile": "newsdata/41"
+    },
+    {
+        "title": "O apelo da polícia para identificar 22 mulheres assassinadas desde 1976 na Europa",
+        "href": "https://www.bbc.com/portuguese/articles/cpr14l20r72o",
+        "datafile": "newsdata/42"
+    },
+    {
+        "title": "'Como protegerei meu filho?': o desespero de imigrantes na fronteira dos EUA com mudança de regra",
+        "href": "https://www.bbc.com/portuguese/articles/cw01x1k30ryo",
+        "datafile": "newsdata/43"
+    },
+    {
+        "title": "As imagens da tensão na fronteira México-EUA às vésperas do fim de lei polêmica",
+        "href": "https://www.bbc.com/portuguese/articles/clellzwjjd6o",
+        "datafile": "newsdata/44"
+    },
+    {
+        "title": "A feroz batalha pelo controle dos céus da Ucrânia",
+        "href": "https://www.bbc.com/portuguese/articles/c9xnnrpdxero",
+        "datafile": "newsdata/45"
+    },
+    {
+        "title": "Como falas polêmicas de Lula levaram Celso Amorim à Ucrânia",
+        "href": "https://www.bbc.com/portuguese/articles/cqezz876rq7o",
+        "datafile": "newsdata/46"
+    },
+    {
+        "title": "Vídeo, A seita que encorajava a morte por inanição para 'encontrar Jesus', Duration 1,23",
+        "href": "https://www.bbc.com/portuguese/geral-65418691",
+        "datafile": "newsdata/47"
+    },
+    {
+        "title": "Vídeo, Em 3 pontos, como Lula se saiu em viagem a Portugal e Espanha, Duration 4,27",
+        "href": "https://www.bbc.com/portuguese/geral-65381321",
+        "datafile": "newsdata/48"
+    },
+    {
+        "title": "David Miranda: quando uma infecção intestinal pode se agravar?",
+        "href": "https://www.bbc.com/portuguese/articles/clm99rdggk7o",
+        "datafile": "newsdata/49"
+    },
+    {
+        "title": "De câncer a gripe, as doenças na mira de novas vacinas de mRNA após covid",
+        "href": "https://www.bbc.com/portuguese/articles/c2lpnp05ddvo",
+        "datafile": "newsdata/50"
+    },
+    {
+        "title": "Robert de Niro virou pai aos 79 anos: a paternidade tardia traz riscos?",
+        "href": "https://www.bbc.com/portuguese/geral-62478442",
+        "datafile": "newsdata/51"
+    },
+    {
+        "title": "Colite microscópica, a doença intestinal de difícil diagnóstico que atinge mais as mulheres",
+        "href": "https://www.bbc.com/portuguese/articles/cjln18361l3o",
+        "datafile": "newsdata/52"
+    },
+    {
+        "title": "Reino Unido anuncia R$ 500 milhões para o Fundo Amazônia",
+        "href": "https://www.bbc.com/portuguese/articles/c6p98ym9rgjo",
+        "datafile": "newsdata/53"
+    },
+    {
+        "title": "Restaurantes usam calor da cozinha para gerar sua própria energia",
+        "href": "https://www.bbc.com/portuguese/articles/c870grk4zgdo",
+        "datafile": "newsdata/54"
+    },
+    {
+        "title": "Por dentro da 'machosfera', onde homens debatem reação ao feminismo e técnicas de sedução",
+        "href": "https://www.bbc.com/portuguese/articles/cy90kg5l955o",
+        "datafile": "newsdata/55"
+    },
+    {
+        "title": "A mulher com deficiência que contratou profissional para fazer sexo pela primeira vez aos 43",
+        "href": "https://www.bbc.com/portuguese/articles/c6p00wwl2l9o",
+        "datafile": "newsdata/56"
+    },
+    {
+        "title": "Por que primeiro pangenoma humano pode revolucionar a medicina",
+        "href": "https://www.bbc.com/portuguese/articles/cv2krpn7gexo",
+        "datafile": "newsdata/57"
+    },
+    {
+        "title": "Como será o brutal final da Estação Espacial Internacional",
+        "href": "https://www.bbc.com/portuguese/articles/c80yxzgkky1o",
+        "datafile": "newsdata/58"
+    },
+    {
+        "title": "A multa contra o McDonalds nos EUA por empregar centenas de menores de idade",
+        "href": "https://www.bbc.com/portuguese/articles/c25peypzev5o",
+        "datafile": "newsdata/59"
+    },
+    {
+        "title": "O incrível erro que levou Pepsi a enfrentar universitário por avião militar",
+        "href": "https://www.bbc.com/portuguese/articles/cnl921y2ej7o",
+        "datafile": "newsdata/60"
+    },
+    {
+        "title": "4 características de pais e mães 'tóxicos', segundo psicólogos",
+        "href": "https://www.bbc.com/portuguese/articles/cqq9zw3y4kro",
+        "datafile": "newsdata/61"
+    },
+    {
+        "title": "'Menina Veneno', 40 anos: a história do roqueiro inglês que fez sucesso no Brasil cantando em português",
+        "href": "https://www.bbc.com/portuguese/articles/c0xd4n18ldwo",
+        "datafile": "newsdata/62"
+    },
+    {
+        "title": "Jovem de 16 anos recebe R$ 45 milhões em ofertas de bolsas universitárias nos EUA e se aproxima de recorde",
+        "href": "https://www.bbc.com/portuguese/articles/cqezgqj2gd5o",
+        "datafile": "newsdata/63"
+    },
+    {
+        "title": "Os clubes de leitura que desafiam a crescente censura de livros nos EUA",
+        "href": "https://www.bbc.com/portuguese/articles/crgxz027332o",
+        "datafile": "newsdata/64"
+    },
+    {
+        "title": "O polêmico general americano que inspirou sobrenome de Rita Lee",
+        "href": "https://www.bbc.com/portuguese/articles/c8877j8ylx9o",
+        "datafile": "newsdata/65"
+    },
+    {
+        "title": "A família boêmia que chocou a Grã-Bretanha vitoriana",
+        "href": "https://www.bbc.com/portuguese/articles/cjqk08z5ew4o",
+        "datafile": "newsdata/66"
+    },
+    {
+        "title": "Podcast busca entender como brasileiros chegaram a atual grau de divisão; ouça aqui",
+        "href": "https://www.bbc.com/portuguese/podcasts/p0cyhvny",
+        "datafile": "newsdata/67"
+    },
+    {
+        "title": "Ouça aqui o podcast que conta incríveis casos na raiz das guerras culturais",
+        "href": "https://www.bbc.com/portuguese/podcasts/p0cx5pt6",
+        "datafile": "newsdata/68"
+    },
+    {
+        "title": "Que História!: ouça as duas temporadas do podcast",
+        "href": "https://www.bbc.com/portuguese/podcasts/p07r3r3t",
+        "datafile": "newsdata/69"
+    },
+    {
+        "title": "A campanha por jovem com doença rara que enganou celebridades e teve desfecho trágico ",
+        "href": "https://www.bbc.com/portuguese/articles/cv2vvdw5q0vo",
+        "datafile": "newsdata/70"
+    },
+    {
+        "title": "'Dor e alegria': o reencontro de pai e filhas separados na imigração dos EUA há 4 anos",
+        "href": "https://www.bbc.com/portuguese/articles/c51ppx5ejj7o",
+        "datafile": "newsdata/71"
+    },
+    {
+        "title": "Por que eleição para Constituinte no Chile é 'paradoxo', segundo cientista política",
+        "href": "https://www.bbc.com/portuguese/articles/cd14qzd8nkro",
+        "datafile": "newsdata/72"
+    },
+    {
+        "title": "O momento em que estrela devora planeta, recriado em imagens",
+        "href": "https://www.bbc.com/portuguese/articles/c2xpp88kyd3o",
+        "datafile": "newsdata/73"
+    },
+    {
+        "title": "'Sobrevivi a bomba em aeroporto, reaprendi a andar e completei prova do Ironman'",
+        "href": "https://www.bbc.com/portuguese/articles/c72jz7lkz8jo",
+        "datafile": "newsdata/74"
+    },
+    {
+        "title": "Por que sexo planejado pode ser tão ou mais prazeroso que o 'impulsivo'",
+        "href": "https://www.bbc.com/portuguese/articles/cw9prry22nzo",
+        "datafile": "newsdata/75"
+    },
+    {
+        "title": "A surpreendente história do piloto que sobreviveu ao ser sugado por janela de avião",
+        "href": "https://www.bbc.com/portuguese/articles/cn01q990wrpo",
+        "datafile": "newsdata/76"
+    },
+    {
+        "title": "Inteligência artificial pode dificultar identificação de golpes, alerta cofundador da Apple",
+        "href": "https://www.bbc.com/portuguese/articles/clm99ngkreeo",
+        "datafile": "newsdata/77"
+    },
+    {
+        "title": "Parceiros comerciais da BBC Brasil",
+        "href": "https://www.bbc.com/portuguese/institutional-41672312",
+        "datafile": "newsdata/78"
+    },
+    {
+        "title": "Facebook",
+        "href": "https://www.facebook.com/bbcnewsbrasil/",
+        "datafile": "newsdata/79"
+    },
+    {
+        "title": "YouTube",
+        "href": "https://www.youtube.com/user/BBCBrasil",
+        "datafile": "newsdata/80"
+    },
+    {
+        "title": "Instagram",
+        "href": "https://www.instagram.com/bbcbrasil/?hl=en",
+        "datafile": "newsdata/81"
+    },
+    {
+        "title": "Twitter",
+        "href": "https://twitter.com/bbcbrasil?lang=en",
+        "datafile": "newsdata/82"
+    }
+]

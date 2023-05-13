@@ -4,7 +4,8 @@ import openai
 import os
 #import asyncio
 
-telegram_token = os.getenv('TELEGRAMTOKEN')
+#telegram_token = os.getenv('TELEGRAMTOKEN')
+telegram_token='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'
 openai_token = os.getenv( 'OPENAITOKEN' )
 
 bot = telebot.TeleBot( telegram_token )
