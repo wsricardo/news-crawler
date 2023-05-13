@@ -11,7 +11,7 @@ Módulo newsbot servirá para extração de listas de noticias dos portais e ind
 
 ## Jupyter Notebooks com saídas
 
-[Notebooks](https://github.com/dimensaoalfa/info-crawler/blob/main/CrawlerDeNoticias-completo.md)
+[Notebooks](https://github.com/dimensaoalfa/info-crawler/blob/main/CrawlerDeNoticias.md)
 
 ## Links
 
