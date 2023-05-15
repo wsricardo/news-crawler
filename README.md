@@ -13,6 +13,10 @@ Módulo newsbot servirá para extração de listas de noticias dos portais e ind
 
 [Notebooks](https://github.com/wsricardo/news-crawler/blob/main/doc/CrawlerDeNoticias.md)
 
+## Como Apoiar
+
+[Como Contribuir](https://wsricardo.blogspot.com/2023/05/como-contribuir.html)
+
 ## Links
 
 [Instagram WSRicardo](https://www.instagram.com/wsricardo22)
