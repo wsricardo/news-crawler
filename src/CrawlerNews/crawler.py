@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import random
 
-class NewsBot:
+class CrawlerNews:
     def __init__(self, url=None, attrs=dict() ):
 
         self.url = url 
@@ -179,7 +179,7 @@ def create_list_news(name='out.txt', number_news_per_page = 2, withLinks=True):
 
     url_name_replace = {'g1': 'G1/Globo', 'bbc': 'BBC Brasil', 'cnnbrasil': 'CNN Brasil'  }
 
-    d = NewsBot()
+    d = CrawlerNews()
     news = []
     keys = urls.keys()
     print(keys)
