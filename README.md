@@ -13,6 +13,17 @@ Módulo newsbot servirá para extração de listas de noticias dos portais e ind
 
 [Notebooks](https://github.com/wsricardo/news-crawler/blob/main/doc/CrawlerDeNoticias.md)
 
+## Sofia - Telegram Bot
+
+O robô Sofia, como batizei, estou desenvolvendo e fazendo testes o mesmo usa o modulo crawler de notícias que criei e funciona integrado ao Telegram através do nome [Sofia](https://t.me/vrwnewsBot)  em _https://t.me/vrwnewsBot_ ela também está no canal de notícias próprio que criei para os testes.
+
+Susgetões e cometarios podem entrar em contato através de meus canais
+
+[Blog](https://wsricardo.blogspot.com)
+
+[Instagram](https://www.instagram.com/wsricardo22)
+
+
 ## Como Apoiar
 
 [Como Contribuir](https://wsricardo.blogspot.com/2023/05/como-contribuir.html)

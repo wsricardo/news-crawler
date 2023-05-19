@@ -1,7 +1,8 @@
 *.pyc
+listdo.md
 *__pycache__/
 *.txt
 *.wav
 *.ipynb_checkpoints/
 *.venv/
-src/CRawlerNews/testes.ipynb
+src/CrawlerNews/*.ipynb
