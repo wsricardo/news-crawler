@@ -14,7 +14,7 @@ class Tracker:
             data - web page html content (string format)
             args - extra parameters for get specified content from web page ( tags, attributes).
     """
-    
+
     def __init__(self, data, **args):
         self.data = data
         self.args = args
@@ -26,5 +26,6 @@ class Tracker:
         """
         Get content webpage for list tags/attribute for specified contents.
         """
+        result = None
 
         return result

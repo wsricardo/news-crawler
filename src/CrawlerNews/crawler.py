@@ -7,18 +7,22 @@ class CrawlerNews:
 
         self.url = url 
         self.attrs = attrs
-        
 
+        self.portais = ['G1', 'BBC', 'CNN']
         self.agnews_calls = {
             'g1': self.__trackNewsG1,
             'cnn': self.__trackNewsCNN,
             'bbc': self.__trackNewsBBC
         }
 
+        self.data = None
+        self.news = None
+
     def bnRequest(self, url=None ):
         if url == None:
             url = self.url
 
+        self.url = url
         return requests.get(url).content.decode()
         
     def trackNews(self, url= None, tag=None, attrs=None):
@@ -26,9 +30,14 @@ class CrawlerNews:
         #if url != None:
         #    self.url = url
         
-        aux_link_url = url.split('.')
         
         
+        if url==None:
+            return {'G1': self.__trackNewsG1(), 
+                    'CNN': self.__trackNewsCNN(), 
+                    'BBC': self.__trackNewsBBC() }
+        else:
+            aux_link_url = url.split('.')
 
         if url.find('g1') != -1:
             return self.__trackNewsG1()
@@ -206,28 +215,7 @@ def create_list_news(name='out.txt', number_news_per_page = 2, withLinks=True):
         } for i in news
         
     ]
-    print(news)
-    """if withLinks:
-        for i in news:
-
-            j = [ s for s in i.keys()][0]
-          
-            out += f"Portal de Notícias { url_name_replace[j] }\n"
-            for k in i[j]:
-                out += k['title'] + '.'  + '\n' + k['href'] + '\n'
-            out += '\n\n'
-    else:
-        for i in news:
-
-            j = [ s for s in i.keys()][0]
-
-            out += f"Portal de Notícias { url_name_replace[j] }\n"
-			
-            for k in i[j]:
-                out += k['title'] + '.' + '\n'
-
-            out += '\n\n'
-    """
+    #print(news)
 
     date = datetime.date.today()
     date = str( date.day ) + '-' + str( date.month ) + '-' + str( date.year )
@@ -238,17 +226,3 @@ def create_list_news(name='out.txt', number_news_per_page = 2, withLinks=True):
 
 if __name__ == "__main__":
     create_list_news("Noticias", 0, True)
-
-    """with open('data.html', 'r') as fl:
-        data = fl.read()
-        fl.close()
-    
-    bot = NewsBot(data)
-    a = bot.trackNewsHTMLFile(data, 'g1')
-    print( a )
-    for i in a :
-        print(f'\n\n{i["title"]}\n{i["href"]}')
-    with open('links.txt', 'w') as fl:
-        fl.write( '\n'.join( [ str( i['text'] ) + ' , ' + str( i['href'] )  for i in bot.trackLinks('https://www.band.uol.com.br') ] ) )
-        fl.close()
-    """
