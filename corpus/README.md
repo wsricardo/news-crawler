@@ -1,3 +1,3 @@
 # Corpus Data
 
-Conteúdos de textos extraidos dos sites.
+Conteúdos de textos extraidos dos sites e padrões para respostas.
