@@ -2,7 +2,7 @@
 
 ## News Crawler
 
-	Tools for tracker news of web pages.
+Tools for tracker news of web pages.
 
 
 ## Sofia Bot
