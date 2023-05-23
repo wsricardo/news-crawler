@@ -1,5 +1,7 @@
 # Info Crawler
 
+[Info in English](README-en.md)
+
 ## Módulo newsbot
 
 
