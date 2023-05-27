@@ -17,7 +17,7 @@ Módulo newsbot servirá para extração de listas de noticias dos portais e ind
 
 ## Sofia - Telegram Bot
 
-O robô Sofia, como batizei, estou desenvolvendo e fazendo testes o mesmo usa o modulo crawler de notícias que criei e funciona integrado ao Telegram através do nome [Sofia](https://t.me/vrwnewsBot)  em _https://t.me/vrwnewsBot_ ela também está no canal de notícias próprio que criei para os testes.
+O robô Sofia, como batizei, estou desenvolvendo e fazendo testes o mesmo usa o modulo crawler de notícias que criei e funciona integrado ao Telegram através do nome [Sofia](https://t.me/vrwnewsBot)  em _https://t.me/vrwnewsBot_ ela também está no canal de notícias próprio que criei para os testes no Telegram em [https://t.me/sofianewsfeed](https://t.me/sofianewsfeed).
 
 Susgetões e cometarios podem entrar em contato através de meus canais
 
