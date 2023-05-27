@@ -26,6 +26,12 @@ Sugestões e cometarios podem entrar em contato através de meus canais
 [Instagram](https://www.instagram.com/wsricardo22)
 
 
+## List To Do
+
+Study new resources and possibilities for features for this crawler.
+
+[List | Features | Idead](https://github.com/wsricardo/news-crawler/blob/main/listdo.md)
+
 ## Como Apoiar
 
 [Como Contribuir](https://wsricardo.blogspot.com/2023/05/como-contribuir.html)
