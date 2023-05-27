@@ -32,6 +32,8 @@ Study new resources and possibilities for features for this crawler.
 
 [List | Features | Idead](https://github.com/wsricardo/news-crawler/blob/main/listdo.md)
 
+[Discussions](https://github.com/wsricardo/news-crawler/discussions)
+
 ## Como Apoiar
 
 [Como Contribuir](https://wsricardo.blogspot.com/2023/05/como-contribuir.html)
