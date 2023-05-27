@@ -23,7 +23,9 @@ class CrawlerNews:
 
             __trackNewsBBC -> private method for get news from site BBC Brasil;
 
-            __trackNewsCNN -> private method for get news from site CNN Brasil;
+            __trackNewsCNN -> private method for get news from site CNN Brasil;;
+
+            __trackBandNews -> private methos for get news from site Band
 
             trackLinks -> get list news from web page;
 
