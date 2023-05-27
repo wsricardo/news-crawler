@@ -41,7 +41,8 @@ class CrawlerNews:
         self.agnews_calls = {
             'g1': self.__trackNewsG1,
             'cnn': self.__trackNewsCNN,
-            'bbc': self.__trackNewsBBC
+            'bbc': self.__trackNewsBBC,
+            'band': self.__trackBandNews
         }
 
         self.data = None
@@ -69,7 +70,8 @@ class CrawlerNews:
         if url==None:
             return {'G1': self.__trackNewsG1(), 
                     'CNN': self.__trackNewsCNN(), 
-                    'BBC': self.__trackNewsBBC() }
+                    'BBC': self.__trackNewsBBC(),
+                     'Band': self.__trackBandNews() }
         else:
             aux_link_url = url.split('.')
 
@@ -81,6 +83,10 @@ class CrawlerNews:
 
         elif  url.find('bbc') != -1:
             return self.__trackNewsBBC()
+        
+        elif url.find('band') != -1:
+            print('band get\n')
+            return self.__trackBandNews()
 
         else:
             return self.trackLinks()
@@ -192,6 +198,64 @@ class CrawlerNews:
 
         return cnn_list_news
 
+    # Type list of dictionary
+    ListDict = list[ dict ]
+
+    def __trackBandNews(self, data = None) -> ListDict:
+        """
+        data: str [dados] text html
+        return list of news with fields 'Title of news' and 'url' for news.
+        l = [
+        {'title': 'string', 'href': link},
+        ...
+        ]
+        """
+        # Lista de notícias
+        result = []
+        url: str = None
+
+        if data == None:
+            url = 'https://www.band.uol.com.br/'
+
+            # Conteúdo do site.
+            data = requests.get( url ).content.decode()
+
+        # Obtendo conteúdo html
+        #band_data = requests.get(url_band).content
+        soup_band = BeautifulSoup(data, 'html.parser')
+        
+        # Primeiro acesso tag main (bloco principal que contêm conteúdos como as noticias principais e seus links.
+        # Tag 'main' e class=[home container]. (variável band_main_home)
+        band_main_home = soup_band.find_all('main', class_='home')
+        
+        # Capturando html do bloco maior em main que contêm as noticias.
+        soup_band2 = BeautifulSoup( str( band_main_home ) , 'html.parser')
+        
+        # Este block ( tag:section, class:hardnews) filho da tag main contem dois blocos de noticias a serem tratados insoladamente.
+        bmainhardnews = soup_band2.find_all('section', 'hardnews')
+        soup_blocknews = BeautifulSoup( str( bmainhardnews[0] ), 'html.parser' )
+        bn1 = soup_blocknews.find_all( 'div', class_='hardnews__highlight' )
+
+        
+        soup_links_news = BeautifulSoup(str( bn1 ), 'html.parser') 
+        bn1_link_news = soup_links_news.find_all( 'a'  )#, class_= [ 'link image','related', 'link']  ) 
+        bn2 = soup_blocknews.find_all( 'div', class_='cards' )
+
+        soup2bn2 = BeautifulSoup( str( bn2[0] ), 'html.parser' ) 
+        bn2_cards_links = soup2bn2.find_all( 'a' )
+        
+        # Lista de links de notícias no bloco {tag: div, class_: 'hardnews__highlight' } do HTML.
+        for i in bn1_link_news:
+            result.append( { 'title': i.text, 'href': i['href'] } )
+            #print('\n> ', i.text +'\n | '+i['href'])
+            
+        for i in bn2_cards_links:
+            result.append( { 'title' : i['title'], 'href':  i['href'] } )
+            #print('\n> ', i['title'] +'\n | '+i['href'])
+        
+        return result
+
+
     def trackLinks(self, url=None, data=None):
         """
             trackLinks -> get list news from web page;
@@ -204,7 +268,7 @@ class CrawlerNews:
         elif url != None:
             try:
                 data = requests.get( url ).content.decode()
-                links =BeautifulSoup( data, 'html.parser').find_all('a')
+                links = BeautifulSoup( data, 'html.parser').find_all('a')
 
             except:
                 print('Error in url request.')
@@ -232,12 +296,14 @@ def create_list_news(name='out.txt', number_news_per_page = 2, withLinks=True):
     import datetime
     import json
 
-    urls = { 'g1': 'https://g1.globo.com',
+    urls = { 
+        'g1': 'https://g1.globo.com',
         'bbc': 'https://www.bbc.com/portuguese', 
-        'cnnbrasil': 'https://www.cnnbrasil.com.br/'
+        'cnnbrasil': 'https://www.cnnbrasil.com.br/',
+        'band': 'https://www.band.uol.com.br/'
     }
 
-    url_name_replace = {'g1': 'G1/Globo', 'bbc': 'BBC Brasil', 'cnnbrasil': 'CNN Brasil'  }
+    url_name_replace = { 'g1': 'G1/Globo', 'bbc': 'BBC Brasil', 'cnnbrasil': 'CNN Brasil', 'band': 'Band'  }
 
     d = CrawlerNews()
     news = []
