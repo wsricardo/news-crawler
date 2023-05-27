@@ -3,7 +3,36 @@ from bs4 import BeautifulSoup
 import random
 
 class CrawlerNews:
+    """
+        The 'CrawlerNews' is module for get news some news web pages.
+        Atributes:
+            url - web page address (string)
+            attrs - HTML tgas and attributes for get specific content from web pages.
+
+        Functions:
+
+            __init__ -> create object crawler;
+
+            bnRequest -> request for url of web page;
+
+            trackNews -> tracker for news content in web pages;
+
+            trackNewsHTMLFile -> Using local HTML file to get content. File saved in local machine;
+
+            __trackNewsG1 -> private method for get news from site G1/Globo;
+
+            __trackNewsBBC -> private method for get news from site BBC Brasil;
+
+            __trackNewsCNN -> private method for get news from site CNN Brasil;
+
+            trackLinks -> get list news from web page;
+
+
+    """
     def __init__(self, url=None, attrs=dict() ):
+        """
+            __init__ -> create object crawler;
+        """
 
         self.url = url 
         self.attrs = attrs
@@ -19,6 +48,9 @@ class CrawlerNews:
         self.news = None
 
     def bnRequest(self, url=None ):
+        """
+            bnRequest -> request for url of web page;
+        """
         if url == None:
             url = self.url
 
@@ -26,7 +58,9 @@ class CrawlerNews:
         return requests.get(url).content.decode()
         
     def trackNews(self, url= None, tag=None, attrs=None):
-        
+        """
+            trackNews -> tracker for news content in web pages;
+        """
         #if url != None:
         #    self.url = url
         
@@ -53,7 +87,9 @@ class CrawlerNews:
 
      
     def trackNewsHTMLFile(self, html_content_file, source=None):
-        
+        """
+            trackNewsHTMLFile -> Using local HTML file to get content. File saved in local machine;
+        """
         if source.lower() == 'g1':
             return self.__trackNewsG1(html_content_file)
 
@@ -67,6 +103,9 @@ class CrawlerNews:
             return None 
 
     def __trackNewsG1(self, data=None):
+        """
+            __trackNewsG1 -> private method for get news from site G1/Globo;
+        """
 
         dnews = []
         self.url = 'https://g1.globo.com'
@@ -89,6 +128,9 @@ class CrawlerNews:
 
 
     def __trackNewsBBC(self, data=None):
+        """
+            __trackNewsBBC -> private method for get news from site BBC Brasil;
+        """
         bbc_news_lists = []
         self.url = 'https://www.bbc.com/portuguese'
         url_bbc_base = 'https://www.bbc.com'
@@ -116,6 +158,9 @@ class CrawlerNews:
         return bbc_news_lists
 
     def __trackNewsCNN(self, data = None):
+        """
+            __trackNewsCNN -> private method for get news from site CNN Brasil;
+        """
         cnn_list_news = []
         self.url = 'https://www.cnnbrasil.com.br/'
         if data == None and self.url != None:
@@ -148,6 +193,9 @@ class CrawlerNews:
         return cnn_list_news
 
     def trackLinks(self, url=None, data=None):
+        """
+            trackLinks -> get list news from web page;
+        """
         page_list_links = [] 
         if url == None and data != None:
             soup = BeautifulSoup(data, 'html.parser')
@@ -178,6 +226,9 @@ class CrawlerNews:
         return page_list_links
 
 def create_list_news(name='out.txt', number_news_per_page = 2, withLinks=True):
+    """
+        Create list of news from Crawler.
+    """
     import datetime
     import json
 

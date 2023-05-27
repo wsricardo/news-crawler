@@ -1,487 +1,387 @@
 [
     {
-        "title": "Atos golpistas: STF forma maioria para tornar réus mais 250",
-        "href": "https://g1.globo.com/politica/noticia/2023/05/07/stf-forma-maioria-para-tornar-reus-250-acusados-pelos-atos-golpistas-de-8-de-janeiro.ghtml",
+        "title": "Vini saiu do lugar que brancos acham que todo preto tem, diz PC Vasconcellos",
+        "href": "https://g1.globo.com/podcast/o-assunto/noticia/2023/05/23/vini-jr-desafina-coro-dos-brancos-contentes-com-privilegio-diz-pc-vasconcellos.ghtml",
         "datafile": "newsdata/0"
     },
     {
-        "title": "O que acontece quando um preso passa no Enem? Entenda",
-        "href": "https://g1.globo.com/educacao/noticia/2023/05/07/presos-aprovados-no-enem-podem-ter-remicao-de-pena-e-direito-de-ir-a-faculdade-quero-esquecer-o-passado-diz-jovem-que-passou-em-federal.ghtml",
+        "title": "Casos de racismo nos estádios do Brasil saltam 40%; homofobia dispara 76%",
+        "href": "https://g1.globo.com/bom-dia-brasil/noticia/2023/05/23/casos-de-preconceito-contra-atletas-cresceram-40percent-nos-estadios-brasileiros-em-2022.ghtml",
         "datafile": "newsdata/1"
     },
     {
-        "title": "Praia Clube bate o Minas e vence a Superliga feminina de vôlei",
-        "href": "https://ge.globo.com/volei/noticia/2023/05/07/praia-clube-se-impoe-bate-o-minas-e-e-bicampeao-da-superliga-feminina.ghtml",
+        "title": "Major da PM que deu ordem de recuo no 8 de janeiro é preso",
+        "href": "https://g1.globo.com/df/distrito-federal/noticia/2023/05/23/pf-cumpre-mandados-em-operacao-que-investiga-atos-terroristas-em-brasilia.ghtml",
         "datafile": "newsdata/2"
     },
     {
-        "title": "'Stranger Things' paralisa produção por conta da greve de roteiristas",
-        "href": "https://g1.globo.com/pop-arte/noticia/2023/05/07/stranger-things-paralisa-producao-por-conta-da-greve-de-roteiristas-de-hollywood.ghtml",
+        "title": "Conselho do TRF-4 afasta Eduardo Appio, novo juiz da Lava Jato ",
+        "href": "https://g1.globo.com/politica/blog/andreia-sadi/post/2023/05/22/conselho-do-trf-4-afasta-juiz-da-lava-jato.ghtml",
         "datafile": "newsdata/3"
     },
     {
-        "title": "Polícia prende 23 suspeitos de aplicar golpe do bilhete premiado",
-        "href": "https://g1.globo.com/rs/rio-grande-do-sul/noticia/2023/05/07/golpe-do-bilhete-premiado-em-quatro-estados.ghtml",
+        "title": "Influencer assassinada no Rio dizia ser 'ex-obesa' e exibia carrões",
+        "href": "https://g1.globo.com/rj/rio-de-janeiro/noticia/2023/05/23/influencer-morta-na-zona-norte-teve-loja-na-baixada-fluminense-e-passou-a-exibir-carroes-e-viagens-nas-redes-apos-emagrecimento.ghtml",
         "datafile": "newsdata/4"
     },
     {
-        "title": "Venezuelana é a 3ª da família achada morta em área de garimpo",
-        "href": "https://g1.globo.com/rr/roraima/noticia/2023/05/07/mulher-encontrada-morta-na-terra-yanomami-foi-terceira-da-familia-assassinada-em-uma-semana.ghtml",
+        "title": "Luanne trocou blindado por carro sem proteção 15 dias antes",
+        "href": "https://g1.globo.com/rj/rio-de-janeiro/noticia/2023/05/23/influenciadora-morta-na-zona-norte-do-rio-trocou-blindado-por-um-carro-sem-protecao-dias-antes-de-crime.ghtml",
         "datafile": "newsdata/5"
     },
     {
-        "title": "Inocente espancado após fake news tem morte encefálica",
-        "href": "https://g1.globo.com/sp/santos-regiao/noticia/2023/05/07/homem-inocente-espancado-por-moradores-apos-grito-de-pega-ladrao-tem-morte-encefalica-no-litoral-de-sp.ghtml",
+        "title": "OPERAÇÃO LESA PÁTRIA Nova fase mira policiais que deram ordem de recuo durante atos criminosos de 8/1",
+        "href": "https://www.cnnbrasil.com.br/politica/pf-deflagra-12a-fase-da-operacao-lesa-patria-contra-suspeitos-de-ataques-aos-tres-poderes/",
         "datafile": "newsdata/6"
     },
     {
-        "title": "REINO UNIDO Rei Charles III é coroado na Abadia de Westminster",
-        "href": "https://www.cnnbrasil.com.br/internacional/rei-charles-iii-e-coroado-em-cerimonia-na-abadia-de-westminster/",
+        "title": "Polícia espanhola prende sete suspeitos de atos racistas contra Vinícius Júnior",
+        "href": "https://www.cnnbrasil.com.br/esportes/policia-espanhola-prende-tres-suspeitos-por-atos-racistas-contra-vini-junior-em-valencia/",
         "datafile": "newsdata/7"
     },
     {
-        "title": "Maioria do STF aceita denúncia contra mais 250 acusados pelos atos criminosos de 8 de janeiro",
-        "href": "https://www.cnnbrasil.com.br/politica/maioria-do-stf-aceita-denuncia-contra-mais-250-acusados-pelo-8-de-janeiro/",
+        "title": "Operação cumpre mandados contra policiais que deram ordem de recuo durante 8/1",
+        "href": "https://www.cnnbrasil.com.br/politica/pf-deflagra-12a-fase-da-operacao-lesa-patria-contra-suspeitos-de-ataques-aos-tres-poderes/",
         "datafile": "newsdata/8"
-    },
-    {
-        "title": "Morre Palmirinha, carismática apresentadora de programas culinários, aos 91 anos",
-        "href": "https://www.cnnbrasil.com.br/entretenimento/palmirinha-onofre-morre-aos-91-anos/",
-        "datafile": "newsdata/9"
     },
     {
         "title": "Política",
         "href": "https://www.cnnbrasil.com.br/politica/",
-        "datafile": "newsdata/10"
+        "datafile": "newsdata/9"
     },
     {
         "title": "Pop",
         "href": "https://www.cnnbrasil.com.br/pop/",
+        "datafile": "newsdata/10"
+    },
+    {
+        "title": "Mercado",
+        "href": "/cotacoes/bolsa",
         "datafile": "newsdata/11"
     },
     {
         "title": "Economia",
         "href": "https://www.cnnbrasil.com.br/economia/",
-        "datafile": "newsdata/12"
+        "datafile": "newsdata/11"
     },
     {
         "title": "Internacional",
         "href": "https://www.cnnbrasil.com.br/internacional/",
-        "datafile": "newsdata/13"
+        "datafile": "newsdata/12"
     },
     {
         "title": "Viagem & Gastronomia",
         "href": "https://www.cnnbrasil.com.br/viagemegastronomia/",
-        "datafile": "newsdata/14"
+        "datafile": "newsdata/13"
     },
     {
         "title": "Nacional",
         "href": "https://www.cnnbrasil.com.br/nacional/",
-        "datafile": "newsdata/15"
+        "datafile": "newsdata/14"
     },
     {
         "title": "Saúde",
         "href": "https://www.cnnbrasil.com.br/saude/",
-        "datafile": "newsdata/16"
+        "datafile": "newsdata/15"
     },
     {
         "title": "Esportes",
         "href": "https://www.cnnbrasil.com.br/esportes/",
-        "datafile": "newsdata/17"
+        "datafile": "newsdata/16"
     },
     {
         "title": "CNN Plural",
         "href": "https://www.cnnbrasil.com.br/tudo-sobre/cnn-plural/",
-        "datafile": "newsdata/18"
+        "datafile": "newsdata/17"
     },
     {
         "title": "Ciência e Tecnologia",
         "href": "https://www.cnnbrasil.com.br/tecnologia/",
+        "datafile": "newsdata/18"
+    },
+    {
+        "title": "Brasileira é encontrada em Paris após mais de 15 dias desaparecida",
+        "href": "https://www.cnnbrasil.com.br/internacional/brasileira-e-encontrada-em-paris-apos-mais-de-15-dias-desaparecida/",
         "datafile": "newsdata/19"
     },
     {
-        "title": "Os filhos da rainha Camilla Parker terão algum direito real? Entenda",
-        "href": "https://www.cnnbrasil.com.br/internacional/os-filhos-da-rainha-camilla-terao-algum-direito-real-entenda/",
+        "title": "Por que roubos de carro despencaram em SP na última década",
+        "href": "https://www.bbc.com/portuguese/articles/cxxye7yezk2o",
         "datafile": "newsdata/20"
     },
     {
-        "title": "Como ‘vazio legal’ impulsiona consumo e venda de cogumelos psicodélicos no Brasil",
-        "href": "https://www.bbc.com/portuguese/articles/c4nzr26p352o",
+        "title": "Espanha inventou racismo atual e tenta se provar branca, diz conselheiro do governo espanhol",
+        "href": "https://www.bbc.com/portuguese/articles/c9rx5vywxpwo",
         "datafile": "newsdata/21"
     },
     {
-        "title": "Como número de seguidores no Instagram facilita (ou dificulta) acesso ao 'remédio mais caro do mundo'",
-        "href": "https://www.bbc.com/portuguese/articles/ckrk08y8xvro",
+        "title": "A busca da polícia em represa 16 anos após desaparecimento de Madeleine McCann",
+        "href": "https://www.bbc.com/portuguese/articles/ce967j85mn6o",
         "datafile": "newsdata/22"
     },
     {
-        "title": "A tecnologia da Primeira Guerra Mundial que está ajudando a Ucrânia a enganar a Rússia",
-        "href": "https://www.bbc.com/portuguese/articles/c168zd53616o",
+        "title": "As impressionantes imagens da erupção do vulcão que deixa México em alerta",
+        "href": "https://www.bbc.com/portuguese/articles/cqez3gmg7zyo",
         "datafile": "newsdata/23"
     },
     {
-        "title": "Retirada de pessoas de cidade gera preocupação sobre segurança nuclear na Ucrânia",
-        "href": "https://www.bbc.com/portuguese/articles/c0vx952jlpyo",
+        "title": "Tumba de mais de mil anos descoberta no Peru revela vida luxuosa de 'senhor das águas'",
+        "href": "https://www.bbc.com/portuguese/articles/c04mln0zvpgo",
         "datafile": "newsdata/24"
     },
     {
-        "title": "Ucrânia acusa Rússia de usar bombas de fósforo para destruir cidade de Bakhmut",
-        "href": "https://www.bbc.com/portuguese/articles/c9xn776rpw2o",
+        "title": "Vídeo, O impacto de liberação de caças americanos à Ucrânia, Duration 6,54",
+        "href": "https://www.bbc.com/portuguese/internacional-65682014",
         "datafile": "newsdata/25"
     },
     {
-        "title": "Como foi a coroação de Charles 3º",
-        "href": "https://www.bbc.com/portuguese/articles/cje01158037o",
+        "title": "TikTok parte para batalha judicial contra Estado americano que decidiu banir a rede social",
+        "href": "https://www.bbc.com/portuguese/articles/c8834rvldpmo",
         "datafile": "newsdata/26"
     },
     {
-        "title": "'Sobrevivi a bomba em aeroporto, reaprendi a andar e completei prova do Ironman'",
-        "href": "https://www.bbc.com/portuguese/articles/c72jz7lkz8jo",
+        "title": "A multa bilionária ao Facebook por descuido com dados de usuários",
+        "href": "https://www.bbc.com/portuguese/articles/cekd7p41lmyo",
         "datafile": "newsdata/27"
     },
     {
-        "title": "A polêmica solução de enigma matemático por Marilyn vos Savant, mulher com QI mais alto do mundo",
-        "href": "https://www.bbc.com/portuguese/articles/cy90p2y5v1xo",
+        "title": "'Não foi 1ª, 2ª ou 3ª': 10 vezes em que Vini Jr. foi vítima de racismo na Espanha",
+        "href": "https://www.bbc.com/portuguese/articles/c729gypd570o",
         "datafile": "newsdata/28"
     },
     {
-        "title": "O incrível erro que levou Pepsi a enfrentar universitário por avião militar",
-        "href": "https://www.bbc.com/portuguese/articles/cnl921y2ej7o",
+        "title": "Por que Brasil está no topo de ranking de países onde mais se acredita em Deus",
+        "href": "https://www.bbc.com/portuguese/articles/c29r21r69j8o",
         "datafile": "newsdata/29"
     },
     {
-        "title": "'Novo Cangaço': o que acontece nas cidades onde bandidos explodem bancos",
-        "href": "https://www.bbc.com/portuguese/articles/c0vxw220n42o",
+        "title": "4 pontos defendidos por Lula na cúpula do G7",
+        "href": "https://www.bbc.com/portuguese/articles/c9762966ln4o",
         "datafile": "newsdata/30"
     },
     {
-        "title": "Fissura ou 'desbolsonarização': como CPMI do 8 de janeiro pode afetar relação de militares com governo Lula",
-        "href": "https://www.bbc.com/portuguese/articles/czrpm9xyl78o",
+        "title": "Fentanil: o que Brasil pode aprender com erros dos EUA",
+        "href": "https://www.bbc.com/portuguese/articles/c4nwxjgqrwno",
         "datafile": "newsdata/31"
     },
     {
-        "title": "Como Brasil se tornou 'berçário' de espiões russos",
-        "href": "https://www.bbc.com/portuguese/articles/ckk43wg6n31o",
+        "title": "Brasil no G7: quatro prioridades e uma preocupação de Lula em viagem ao Japão",
+        "href": "https://www.bbc.com/portuguese/articles/c84133nzj9do",
         "datafile": "newsdata/32"
     },
     {
-        "title": "Como conversar com filhos sobre ataques a escolas",
-        "href": "https://www.bbc.com/portuguese/articles/cev4klp4px0o",
+        "title": "Vídeo, Decisão 'arbitrária' ou 'irretocável'? O debate sobre cassação de Dallagnol, Duration 5,03",
+        "href": "https://www.bbc.com/portuguese/brasil-65645112",
         "datafile": "newsdata/33"
     },
     {
-        "title": "Como celular de Bolsonaro apreendido pela PF no caso das vacinas pode ser usado em outras investigações",
-        "href": "https://www.bbc.com/portuguese/articles/cp91j0vxgzxo",
+        "title": "As dicas de negociadores de paz para reconciliar Brasil polarizado",
+        "href": "https://www.bbc.com/portuguese/articles/clk4jygg21po",
         "datafile": "newsdata/34"
     },
     {
-        "title": "Que crimes Bolsonaro pode ter cometido caso se confirme falsificação do certificado de vacina contra covid",
-        "href": "https://www.bbc.com/portuguese/articles/c883k4kkzpjo",
+        "title": "A disputa entre monarquia britânica e Etiópia por devolução de restos mortais de príncipe africano",
+        "href": "https://www.bbc.com/portuguese/articles/crg394wezneo",
         "datafile": "newsdata/35"
     },
     {
-        "title": "Bolsonaro não precisou de registro de vacina para ir aos EUA",
-        "href": "https://www.bbc.com/portuguese/articles/ckrk785vp41o",
+        "title": "Vini Jr.: torcida piora desempenho de jogadores vítimas de racismo, segundo estudo",
+        "href": "https://www.bbc.com/portuguese/articles/c841nng522wo",
         "datafile": "newsdata/36"
     },
     {
-        "title": "O que realmente diz a 'bula da Pfizer', que Bolsonaro disse ter lido para decidir não se vacinar",
-        "href": "https://www.bbc.com/portuguese/articles/cxxy40wenp9o",
+        "title": "'Dentes de dragão', trincheiras e bunkers: imagens revelam defesas russas antes de grande ataque ucraniano",
+        "href": "https://www.bbc.com/portuguese/articles/cql394n7qgno",
         "datafile": "newsdata/37"
     },
     {
-        "title": "A herança arquitetônica brasileira sob risco na Nigéria",
-        "href": "https://www.bbc.com/portuguese/articles/c51p73m4g2po",
+        "title": "'China viola nosso espaço aéreo todo dia': a tensão no Japão em uma das áreas de maior rivalidade no mundo",
+        "href": "https://www.bbc.com/portuguese/articles/ce7gp8j2y68o",
         "datafile": "newsdata/38"
     },
     {
-        "title": "Os 5 principais desafios de Charles 3º como novo rei",
-        "href": "https://www.bbc.com/portuguese/internacional-62932565",
+        "title": "'Quando vou dormir vejo os que morreram em meus braços': o drama do estresse pós-traumático na guerra",
+        "href": "https://www.bbc.com/portuguese/articles/c51pewzp2e2o",
         "datafile": "newsdata/39"
     },
     {
-        "title": "Coroação de Charles 3º: por que príncipe Harry não estava na sacada do palácio de Buckingham?",
-        "href": "https://www.bbc.com/portuguese/articles/c6p9nqjq51jo",
+        "title": "O encontro entre Lula e Zelensky que não aconteceu - e mais 3 destaques da cúpula do G7",
+        "href": "https://www.bbc.com/portuguese/articles/c51pe7vn9y5o",
         "datafile": "newsdata/40"
     },
     {
-        "title": "Líder de grupo anti-monarquia é preso em protesto contra a coroação",
-        "href": "https://www.bbc.com/portuguese/articles/c883ddve15lo",
+        "title": "O presidente 'linha-dura' de um pequeno país que se tornou ídolo nas redes na América Latina",
+        "href": "https://www.bbc.com/portuguese/articles/clm9g01zkk9o",
         "datafile": "newsdata/41"
     },
     {
-        "title": "O desconhecido parentesco entre Charles 3º e a família real brasileira",
-        "href": "https://www.bbc.com/portuguese/articles/cndgzjpnlr3o",
+        "title": "'Vim para desaparecer': a perigosa cidade subterrânea onde vivem centenas de pessoas em Las Vegas",
+        "href": "https://www.bbc.com/portuguese/articles/cx04wd9pw0yo",
         "datafile": "newsdata/42"
     },
     {
-        "title": "Confira em 3D detalhes da coroa que será usada por Charles 3º",
-        "href": "https://www.bbc.com/portuguese/resources/idt-5136bea2-40b8-45bf-83be-e06babcbc2bf",
+        "title": "Japão vê seu pacifismo histórico em xeque diante de avanços de China e Coreia do Norte",
+        "href": "https://www.bbc.com/portuguese/articles/cm5lgyr48vmo",
         "datafile": "newsdata/43"
     },
     {
-        "title": "Vídeo em 360º: por dentro da Abadia de Westminster, palco da coroação de Charles 3°",
-        "href": "https://www.bbc.com/portuguese/articles/c2elvr93lqmo",
+        "title": "Vídeo, O meio milhão de crianças sem comida e educação no maior campo de refugiados do mundo, Duration 2,30",
+        "href": "https://www.bbc.com/portuguese/internacional-65645115",
         "datafile": "newsdata/44"
     },
     {
-        "title": "Por que o monarca precisa de uma coroação?",
-        "href": "https://www.bbc.com/portuguese/articles/c976g686g84o",
+        "title": "Vídeo, Como lei que inspirou Deltan Dallagnol levou à sua cassação, Duration 5,24",
+        "href": "https://www.bbc.com/portuguese/brasil-65632368",
         "datafile": "newsdata/45"
     },
     {
-        "title": "Vídeo, Coroação de Charles 3°: como são as carruagens reais que levarão o rei e a rainha, Duration 1,48",
-        "href": "https://www.bbc.com/portuguese/geral-65381327",
+        "title": "'Perguntavam se era queimadura': a rara doença que faz pele crescer rápido",
+        "href": "https://www.bbc.com/portuguese/articles/c4nw0e51rwyo",
         "datafile": "newsdata/46"
     },
     {
-        "title": "Reino Unido anuncia R$ 500 milhões para o Fundo Amazônia",
-        "href": "https://www.bbc.com/portuguese/articles/c6p98ym9rgjo",
+        "title": "Para que serve a vitamina K, da coagulação ao envelhecimento saudável",
+        "href": "https://www.bbc.com/portuguese/articles/c72zjr3vrv1o",
         "datafile": "newsdata/47"
     },
     {
-        "title": "‘Olhei para meu pé e vi que estava sem dedos’: as minas terrestres que fazem centenas de vítimas na Ucrânia",
-        "href": "https://www.bbc.com/portuguese/articles/c29renpxgjzo",
+        "title": "Algumas pessoas são mais propensas a se tornarem viciadas?",
+        "href": "https://www.bbc.com/portuguese/articles/cw455dj47elo",
         "datafile": "newsdata/48"
     },
     {
-        "title": "A multa contra o McDonalds nos EUA por empregar centenas de menores de idade",
-        "href": "https://www.bbc.com/portuguese/articles/c25peypzev5o",
+        "title": "A publicitária que foi para a UTI após usar Ozempic sem orientação médica",
+        "href": "https://www.bbc.com/portuguese/articles/cped4v9w4eeo",
         "datafile": "newsdata/49"
     },
     {
-        "title": "Paraguai: 'Quero discutir com Lula próximos 50 anos de relação', diz presidente eleito",
-        "href": "https://www.bbc.com/portuguese/articles/c10qdz85311o",
+        "title": "Vidro ou plástico: o que é melhor para o meio ambiente?",
+        "href": "https://www.bbc.com/portuguese/articles/cev4zpvq952o",
         "datafile": "newsdata/50"
     },
     {
-        "title": "Por que Rússia acusa Ucrânia de tentar matar Putin com drones",
-        "href": "https://www.bbc.com/portuguese/articles/cje0n9w0nq5o",
+        "title": "O mistério da onça rara que dura quase 10 anos na região serrana do RJ",
+        "href": "https://www.bbc.com/portuguese/articles/cglzzkpnprko",
         "datafile": "newsdata/51"
     },
     {
-        "title": "O que a China ganha ao agir como moderadora da paz entre Rússia e Ucrânia",
-        "href": "https://www.bbc.com/portuguese/articles/cg35gy4x1d7o",
+        "title": "As medidas bilionárias de países asiáticos para reverter queda na natalidade",
+        "href": "https://www.bbc.com/portuguese/articles/c10q2e6q5e2o",
         "datafile": "newsdata/52"
     },
     {
-        "title": "Eleição no Paraguai: por que vitória de Santiago Peña é exceção entre 'ondas políticas' da América Latina",
-        "href": "https://www.bbc.com/portuguese/articles/crgmzl9j9j7o",
+        "title": "‘Minha mãe fingiu sua morte': a inesperada descoberta de escritora ao investigar seu passado",
+        "href": "https://www.bbc.com/portuguese/articles/cxel1dx4dglo",
         "datafile": "newsdata/53"
     },
     {
-        "title": "Corpo de pescador desaparecido é encontrado dentro de crocodilo na Austrália",
-        "href": "https://www.bbc.com/portuguese/articles/cg3d8z4lz44o",
+        "title": "Aliança inteligente e votos escritos por robô: como são as cerimônias de casamento high-tech",
+        "href": "https://www.bbc.com/portuguese/articles/cx04777yq20o",
         "datafile": "newsdata/54"
     },
     {
-        "title": "O 'padrinho' da inteligência artificial que se demitiu do Google e adverte sobre perigos da tecnologia",
-        "href": "https://www.bbc.com/portuguese/articles/cgr1qr06myzo",
+        "title": "Como nossa mente nos faz repetir os erros e o que fazer para evitar isso",
+        "href": "https://www.bbc.com/portuguese/articles/c4nw80547plo",
         "datafile": "newsdata/55"
     },
     {
-        "title": "Vídeo, A seita que encorajava a morte por inanição para 'encontrar Jesus', Duration 1,23",
-        "href": "https://www.bbc.com/portuguese/geral-65418691",
+        "title": "4 fatores que explicam a nova desaceleração econômica na Venezuela",
+        "href": "https://www.bbc.com/portuguese/articles/cw4p2lxdyzjo",
         "datafile": "newsdata/56"
     },
     {
-        "title": "Vídeo, Em 3 pontos, como Lula se saiu em viagem a Portugal e Espanha, Duration 4,27",
-        "href": "https://www.bbc.com/portuguese/geral-65381321",
+        "title": "A gasolina vai ficar mais barata? 5 perguntas sobre a mudança de política de preços da Petrobras",
+        "href": "https://www.bbc.com/portuguese/articles/cv2dl05gvveo",
         "datafile": "newsdata/57"
     },
     {
-        "title": "Os números que levaram OMS a decretar fim da emergência global de covid-19",
-        "href": "https://www.bbc.com/portuguese/articles/cl748lv5xn0o",
+        "title": "As impressionantes imagens vencedoras de concurso de fotos de comida",
+        "href": "https://www.bbc.com/portuguese/articles/cx8p1xll9yjo",
         "datafile": "newsdata/58"
     },
     {
-        "title": "Câncer na garganta: por que sexo oral pode ser fator de risco?",
-        "href": "https://www.bbc.com/portuguese/articles/cd1rxkmjje8o",
+        "title": "Tom Hanks: carreira pode continuar após a morte com inteligência artificial, diz ator",
+        "href": "https://www.bbc.com/portuguese/articles/cd1rkn0qx9zo",
         "datafile": "newsdata/59"
     },
     {
-        "title": "Como é 1ª vacina do mundo contra VSR aprovada nos EUA",
-        "href": "https://www.bbc.com/portuguese/articles/cx04ldv7vdyo",
+        "title": "Como fronteiras de Israel mudaram desde sua criação há 75 anos",
+        "href": "https://www.bbc.com/portuguese/extra/IkTCzu5CAd/Israel_historico_fronteiras",
         "datafile": "newsdata/60"
     },
     {
-        "title": "'As pessoas param de respirar antes que se deem conta': o que o fentanil faz com o cérebro",
-        "href": "https://www.bbc.com/portuguese/articles/c51pl202527o",
+        "title": "O que revelam novos esqueletos encontrados nas ruínas de Pompeia",
+        "href": "https://www.bbc.com/portuguese/articles/cn4eplle5y6o",
         "datafile": "newsdata/61"
-    },
-    {
-        "title": "Restaurantes usam calor da cozinha para gerar sua própria energia",
-        "href": "https://www.bbc.com/portuguese/articles/c870grk4zgdo",
-        "datafile": "newsdata/62"
-    },
-    {
-        "title": "Como mudanças climáticas ameaçam a produção de vinhos australianos",
-        "href": "https://www.bbc.com/portuguese/articles/czrpnd38d33o",
-        "datafile": "newsdata/63"
-    },
-    {
-        "title": "Cartilha da desinformação: como agem os grupos que usam redes sociais para espalhar fake news e mobilizar eleitores",
-        "href": "https://www.bbc.com/portuguese/articles/ceq55vxe9leo",
-        "datafile": "newsdata/64"
-    },
-    {
-        "title": "'Nasci de um estupro, mas isso não me define'",
-        "href": "https://www.bbc.com/portuguese/articles/cevnw4w2n9yo",
-        "datafile": "newsdata/65"
-    },
-    {
-        "title": "Os profissionais que temem perder seu emprego para a inteligência artificial",
-        "href": "https://www.bbc.com/portuguese/articles/cn4rvelpmejo",
-        "datafile": "newsdata/66"
-    },
-    {
-        "title": "O que são seitas e por que as pessoas se juntam a elas?",
-        "href": "https://www.bbc.com/portuguese/articles/crgewpyxvyvo",
-        "datafile": "newsdata/67"
-    },
-    {
-        "title": "O empreendedor que aposta na descoberta da juventude eterna",
-        "href": "https://www.bbc.com/portuguese/articles/cqezl9eppljo",
-        "datafile": "newsdata/68"
-    },
-    {
-        "title": "O que é a misteriosa 'caixa preta' da inteligência artifical que preocupa os especialistas",
-        "href": "https://www.bbc.com/portuguese/articles/c870xmd2dv0o",
-        "datafile": "newsdata/69"
-    },
-    {
-        "title": "Como é calculada chance de chuva que serviços de meteorologia divulgam",
-        "href": "https://www.bbc.com/portuguese/articles/c1680x5g0pjo",
-        "datafile": "newsdata/70"
-    },
-    {
-        "title": "O que a ciência diz sobre os remédios naturais para dormir",
-        "href": "https://www.bbc.com/portuguese/articles/c25pdvd5xpwo",
-        "datafile": "newsdata/71"
-    },
-    {
-        "title": "Salário mínimo de R$ 1.320: quanto piso aumentou em cada governo?",
-        "href": "https://www.bbc.com/portuguese/articles/c3gn96zyy6qo",
-        "datafile": "newsdata/72"
-    },
-    {
-        "title": "Como a Amazon dominou vendas de livros no Brasil em apenas 9 anos",
-        "href": "https://www.bbc.com/portuguese/articles/c4nwprveg0wo",
-        "datafile": "newsdata/73"
-    },
-    {
-        "title": "Greve de roteiristas ameaça programas de TV e filmes nos EUA",
-        "href": "https://www.bbc.com/portuguese/articles/clel3gzw61qo",
-        "datafile": "newsdata/74"
-    },
-    {
-        "title": "Met Gala: 7 dos melhores looks ao longo das décadas",
-        "href": "https://www.bbc.com/portuguese/articles/c9rx41gv06lo",
-        "datafile": "newsdata/75"
-    },
-    {
-        "title": "Jovem de 16 anos recebe R$ 45 milhões em ofertas de bolsas universitárias nos EUA e se aproxima de recorde",
-        "href": "https://www.bbc.com/portuguese/articles/cqezgqj2gd5o",
-        "datafile": "newsdata/76"
-    },
-    {
-        "title": "Os clubes de leitura que desafiam a crescente censura de livros nos EUA",
-        "href": "https://www.bbc.com/portuguese/articles/crgxz027332o",
-        "datafile": "newsdata/77"
-    },
-    {
-        "title": "Carolina, a rainha consorte da Inglaterra barrada da própria coroação pelo rei",
-        "href": "https://www.bbc.com/portuguese/articles/cjm73exdmgdo",
-        "datafile": "newsdata/78"
-    },
-    {
-        "title": "CLT faz 80 anos: o que mudou e pode mudar no Brasil da informalidade e aplicativos",
-        "href": "https://www.bbc.com/portuguese/articles/c1rleweverwo",
-        "datafile": "newsdata/79"
     },
     {
         "title": "Podcast busca entender como brasileiros chegaram a atual grau de divisão; ouça aqui",
         "href": "https://www.bbc.com/portuguese/podcasts/p0cyhvny",
-        "datafile": "newsdata/80"
+        "datafile": "newsdata/62"
     },
     {
         "title": "Ouça aqui o podcast que conta incríveis casos na raiz das guerras culturais",
         "href": "https://www.bbc.com/portuguese/podcasts/p0cx5pt6",
-        "datafile": "newsdata/81"
+        "datafile": "newsdata/63"
     },
     {
         "title": "Que História!: ouça as duas temporadas do podcast",
         "href": "https://www.bbc.com/portuguese/podcasts/p07r3r3t",
-        "datafile": "newsdata/82"
+        "datafile": "newsdata/64"
     },
     {
-        "title": "Por que Disney e governador da Flórida estão em pé de guerra",
-        "href": "https://www.bbc.com/portuguese/articles/cjr18xp1940o",
-        "datafile": "newsdata/83"
+        "title": "As descobertas que estão mudando o que sabemos sobre os neandertais",
+        "href": "https://www.bbc.com/portuguese/articles/cpvxngnx4p9o",
+        "datafile": "newsdata/65"
     },
     {
-        "title": "Grupo Wagner: por que mercenários russos ameaçam se retirar de cidade na Ucrânia",
-        "href": "https://www.bbc.com/portuguese/articles/c9xn74lw80wo",
-        "datafile": "newsdata/84"
+        "title": "'Filiprimos'? As semelhanças entre Brasil e Filipinas que se refletem nas redes sociais",
+        "href": "https://www.bbc.com/portuguese/articles/cv240x00p90o",
+        "datafile": "newsdata/66"
     },
     {
-        "title": "Matança de cães infectados com parasita gera polêmica em cidade de São Paulo",
-        "href": "https://www.bbc.com/portuguese/articles/c721dr9p0x1o",
-        "datafile": "newsdata/85"
+        "title": "A importância da musculação para mulheres antes e após menopausa",
+        "href": "https://www.bbc.com/portuguese/articles/c0xd24w0g42o",
+        "datafile": "newsdata/67"
     },
     {
-        "title": "Por que o Rio de Janeiro está atraindo nômades digitais",
-        "href": "https://www.bbc.com/portuguese/articles/cnejxx2gme4o",
-        "datafile": "newsdata/86"
+        "title": "O alerta da OMS sobre riscos de adoçante artificial à saúde",
+        "href": "https://www.bbc.com/portuguese/articles/cd1g55ppng9o",
+        "datafile": "newsdata/68"
     },
     {
-        "title": "Entenda a polêmica envolvendo a capivara Filó",
-        "href": "https://www.bbc.com/portuguese/articles/c887jy7ge99o",
-        "datafile": "newsdata/87"
+        "title": "O teste de DNA que identificou serial killer 30 anos depois dos crimes",
+        "href": "https://www.bbc.com/portuguese/articles/cn3vpm7yl5ko",
+        "datafile": "newsdata/69"
     },
     {
-        "title": "Doador de esperma que teve mais de 550 filhos é proibido de doar novamente",
-        "href": "https://www.bbc.com/portuguese/articles/cv2d4geye8yo",
-        "datafile": "newsdata/88"
-    },
-    {
-        "title": "Por que cientistas temem futuro catastrófico causado pela inteligência artificial",
-        "href": "https://www.bbc.com/portuguese/articles/cn07ljg5yrzo",
-        "datafile": "newsdata/89"
-    },
-    {
-        "title": "O que diz a lei sobre casos como casamento de prefeito de 65 anos com adolescente de 16",
-        "href": "https://www.bbc.com/portuguese/articles/cn07gz0p422o",
-        "datafile": "newsdata/90"
-    },
-    {
-        "title": "EUA: os 4 motivos que levaram Biden a se lançar à reeleição",
-        "href": "https://www.bbc.com/portuguese/articles/c2eln74l7jyo",
-        "datafile": "newsdata/91"
+        "title": "Três falácias que podem nos enganar - e como evitar cair na armadilha",
+        "href": "https://www.bbc.com/portuguese/articles/cx9n4gej8llo",
+        "datafile": "newsdata/70"
     },
     {
         "title": "Parceiros comerciais da BBC Brasil",
         "href": "https://www.bbc.com/portuguese/institutional-41672312",
-        "datafile": "newsdata/92"
+        "datafile": "newsdata/71"
     },
     {
         "title": "Facebook",
         "href": "https://www.facebook.com/bbcnewsbrasil/",
-        "datafile": "newsdata/93"
+        "datafile": "newsdata/72"
     },
     {
         "title": "YouTube",
         "href": "https://www.youtube.com/user/BBCBrasil",
-        "datafile": "newsdata/94"
+        "datafile": "newsdata/73"
     },
     {
         "title": "Instagram",
         "href": "https://www.instagram.com/bbcbrasil/?hl=en",
-        "datafile": "newsdata/95"
+        "datafile": "newsdata/74"
     },
     {
         "title": "Twitter",
         "href": "https://twitter.com/bbcbrasil?lang=en",
-        "datafile": "newsdata/96"
+        "datafile": "newsdata/75"
     }
 ]
