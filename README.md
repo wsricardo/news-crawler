@@ -30,7 +30,7 @@ Sugestões e cometarios podem entrar em contato através de meus canais
 
 Study new resources and possibilities for features for this crawler.
 
-[List | Features | Idead](https://github.com/wsricardo/news-crawler/blob/main/listdo.md)
+[List | Features | Idead](https://github.com/wsricardo/news-crawler/blob/main/listtodo.md)
 
 [Discussions](https://github.com/wsricardo/news-crawler/discussions)
 
