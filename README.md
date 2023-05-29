@@ -23,7 +23,7 @@ Sugestões e cometarios podem entrar em contato através de meus canais
 
 [Blog](https://wsricardo.blogspot.com)
 
-[Instagram](https://www.instagram.com/wsricardo22)
+[Instagram](https://www.instagram.com/wsricardo22/)
 
 
 ## List To Do
