@@ -2,7 +2,7 @@ import telebot
 import json
 import openai
 import os
-#import asyncio
+import asyncio
 
 telegram_token = os.getenv('TELEGRAMTOKEN')
 openai_token = os.getenv( 'OPENAITOKEN' )
@@ -23,6 +23,16 @@ cmds = {
         'search': '',
         'help': ''
         }
+# Recurso em implementação
+# Objetivo criar um uma tarefa agendada para execução em um horario especifico, diariamente.
+async def a_chsendnews(delay):
+	await await asyncio.sleep( delay )
+
+
+async def agtask_sendnews():
+	await a_achsendnews( t )
+# rodar o bot.polling e agtask_sendnews dentro de um asyncio (vide asyncio.gather functio)
+#-------------------------------------Agendamento -----------------------
 
 def process(text):
     response = openai.Completion.create(
