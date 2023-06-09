@@ -1,7 +1,7 @@
 import moviepy.editor as mvp
 import sys
 
-def gen(audiofile, image='', outfilename='out.mp4'):
+def gen(audiofile, image='', outfilename='out.mp4', dim = ( 1200,800), fps = 24 ):
     #namef = audiofile.split('.')[0]
 
     clip_image = mvp.ImageClip(image)
@@ -16,16 +16,9 @@ def gen(audiofile, image='', outfilename='out.mp4'):
     v = clip.set_audio( clip_audio )
     v.set_duration( clip_audio.duration )
 
-    #clip_titulo = mvp.TextClip("Noticias do Dia \n\n www.dimensaoalfa.com.br", fontsize=28, color='white')
-    #text = clip_titulo.set_pos('center').set_duration(clip_audio.duration)
-
-    #v = clip.set_audio(clip_audio)
-
-    #v.set_duration(clip_audio.duration)
-    video = mvp.CompositeVideoClip( [ v  ], size=(1200, 800) )
-
+    video = mvp.CompositeVideoClip( [ v  ], size=dim )
  
-    video.write_videofile(outfilename, fps=12)
+    video.write_videofile(outfilename, codec='mpeg4', audio=True,  fps = fps)
 
   
 
@@ -36,9 +29,10 @@ if __name__ == "__main__":
         print('\n\nFormat\n')
         print('\tprog <audio name> <image bakground for vídeo> <out file name mp4>\n')
         exit(0)
-
+	#elif len(arg)==5:
+	#	gen(arg[1], arg
     else:
         print(arg)
-        gen(arg[1], arg[2], arg[3] ) 
+        gen(arg[1], arg[2], arg[3], (720, 1280), 16  ) 
     print(arg)
     

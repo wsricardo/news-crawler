@@ -8,7 +8,7 @@ telegram_token = os.getenv('TELEGRAMTOKEN')
 openai_token = os.getenv( 'OPENAITOKEN' )
 
 bot = telebot.TeleBot( telegram_token )
-openai.api_key = openai_token
+#openai.api_key = openai_token
 
 portais = {
         '0': ['Globo/G1', 'https://g1.globo.com' ],
