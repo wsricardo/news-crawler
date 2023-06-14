@@ -18,11 +18,17 @@ class Crawler:
             track -> get list news from web page;
 
     """
+    
 
-    def __init__(self, url=None, attrs=None):
+    def __init__(self, url=None, attrs=None, *args, **kwargs):
+
         self.url = url
         self.data = None
         self.rs = requests.Session()
+        self.attrs = attrs
+        self.args = args
+        self.kwargs = kwargs
+        self._text = ''
 
     def __get__(self):
         return {'url':self.url, 'data': self.data}
@@ -48,6 +54,11 @@ class Crawler:
     def toJSON(self, *args):
         return 0
 
+    @property
+    def text(self):
+        
+        return self.data.text if self.data != None else self.rs.get(self.url).text
+        
 
 if __name__=='__main__':
     print('MOdule Crawler News version 2.\n')

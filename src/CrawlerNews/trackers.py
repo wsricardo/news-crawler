@@ -15,10 +15,35 @@ pages = {
         '2': ( 'CNN Brazil', 'https://www.cnnbrasil.com.br/' ),
         '3': ( 'Band', 'https://www.band.uol.com.br' ),
 }
+params = {}
+attrs = {}
+"""funcs = (
+    trackerG1,
+    trackerBand,
+    trackerBBC,
+    trackerCNN,
+    trackerFolhaSP
+)"""
+    
+def trackerG1( contentHTML ):
+    """
+        News for web page G1/Globo
+        Site:  https://g1.globo.com
 
-def trackerG1():
+        contentHTML - html of web page (text format, string )
+    """
+    
+    url = 'https://g1.globo.com'
 
-    return None
+    soup = BeautifulSoup(contentHTML, 'html.parser')
+
+    news_block = soup.find_all('div', class_='bastian-page')
+
+    for i in news_block[0].children:
+        for news in i:
+            yield { 'title': news.a.text, 'href': news.a['href'] }
+
+
 
 def trackerBand():
 
