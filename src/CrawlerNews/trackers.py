@@ -17,13 +17,6 @@ pages = {
 }
 params = {}
 attrs = {}
-"""funcs = (
-    trackerG1,
-    trackerBand,
-    trackerBBC,
-    trackerCNN,
-    trackerFolhaSP
-)"""
     
 def trackerG1( contentHTML ):
     """
@@ -32,7 +25,7 @@ def trackerG1( contentHTML ):
 
         contentHTML - html of web page (text format, string )
     """
-    
+
     url = 'https://g1.globo.com'
 
     soup = BeautifulSoup(contentHTML, 'html.parser')
