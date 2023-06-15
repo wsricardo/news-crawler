@@ -61,7 +61,7 @@ dfnews.head()
 
 
 <div>
-<style scoped>
+<style id=scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
