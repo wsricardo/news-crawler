@@ -12,7 +12,7 @@ Tracker read urls for get data from web page.
 pages = {
         '0': ('Globo/G1', 'https://g1.globo.com' ),
         '1': ( 'BBC Brazil','https://www.bbc.com/portuguese' ),
-        '2': ( 'CNN Brazil', 'https://www.cnnbrasil.com.br/' ),
+        '2': ( 'CNN Brazil', 'https://www.cnnbrasil.com.br' ),
         '3': ( 'Band', 'https://www.band.uol.com.br' ),
 }
 params = {}
@@ -82,7 +82,7 @@ def trackerBand( contentHTML ):
 def trackerBBC( contentHTML ):
     bbc_news_lists = []
     url = 'https://www.bbc.com/portuguese'
-    url_bbc_base = 'https://www.bbc.com/'
+    url_bbc_base = 'https://www.bbc.com'
 
     soup = BeautifulSoup( contentHTML, 'html.parser' )
     bbc_sections = soup.find_all( 'section', class_='bbc-iinl4t' )

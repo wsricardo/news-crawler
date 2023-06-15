@@ -28,7 +28,7 @@ Abaixo atributos e métodos contidos na classe _Crawler_ dentro do módulo _craw
 print( dir(c) )
 ```
 
-    ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__get__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_text', 'args', 'attrs', 'data', 'get', 'kwargs', 'rs', 'text', 'toJSON', 'track', 'tracker', 'url']
+    ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_text', 'args', 'attrs', 'cleandataframe', 'data', 'dataframe', 'get', 'kwargs', 'rs', 'save', 'text', 'toJSON', 'track', 'tracker', 'url']
 
 
 ### Exemplo - Obtendo Conteúdo e noticias para site BBC Brasil
@@ -61,7 +61,19 @@ dfnews.head()
 
 
 <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -74,27 +86,27 @@ dfnews.head()
     <tr>
       <th>0</th>
       <td>Celso Sabino: o que pode levar Lula a dar mini...</td>
-      <td>https://www.bbc.com//portuguese/articles/c4n4q...</td>
+      <td>https://www.bbc.com/portuguese/articles/c4n4q8...</td>
     </tr>
     <tr>
       <th>1</th>
       <td>Febre maculosa: quem deve responder pelas mort...</td>
-      <td>https://www.bbc.com//portuguese/articles/c0xe9...</td>
+      <td>https://www.bbc.com/portuguese/articles/c0xe9e...</td>
     </tr>
     <tr>
       <th>2</th>
       <td>Por que Beyoncé está sendo responsabilizada po...</td>
-      <td>https://www.bbc.com//portuguese/articles/ckvzj...</td>
+      <td>https://www.bbc.com/portuguese/articles/ckvzjp...</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Silvio Berlusconi: as dúvidas sobre herança de...</td>
-      <td>https://www.bbc.com//portuguese/articles/c997y...</td>
+      <td>A falta de remédios nos EUA que deixa paciente...</td>
+      <td>https://www.bbc.com/portuguese/articles/cjqzy4...</td>
     </tr>
     <tr>
       <th>4</th>
       <td>Discriminação de políticos: o que seria crime,...</td>
-      <td>https://www.bbc.com//portuguese/articles/ckrm4...</td>
+      <td>https://www.bbc.com/portuguese/articles/ckrm4e...</td>
     </tr>
   </tbody>
 </table>
