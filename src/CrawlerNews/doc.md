@@ -116,5 +116,20 @@ dfnews.head()
 
 
 ```python
+import json
+# List news from json format data
+for i in json.loads( dfnews.head().to_json( orient='records' )):
+    print( f"{ i[ 'title' ] } - { i[ 'href' ] }" )
+```
+
+    Celso Sabino: o que pode levar Lula a dar ministério a ex-aliado de Bolsonaro - https://www.bbc.com/portuguese/articles/c4n4q8q2q29o
+    Febre maculosa: quem deve responder pelas mortes no interior de SP? - https://www.bbc.com/portuguese/articles/c0xe9eq0x4qo
+    Por que Beyoncé está sendo responsabilizada por inflação na Suécia - https://www.bbc.com/portuguese/articles/ckvzjp9p399o
+    A falta de remédios nos EUA que deixa pacientes com câncer sem quimioterapia - https://www.bbc.com/portuguese/articles/cjqzy41k3q5o
+    Discriminação de políticos: o que seria crime, segundo projeto aprovado pela Câmara - https://www.bbc.com/portuguese/articles/ckrm4ez9393o
+
+
+
+```python
 
 ```
