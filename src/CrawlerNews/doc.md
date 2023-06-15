@@ -119,7 +119,7 @@ dfnews.head()
 import json
 # List news from json format data
 for i in json.loads( dfnews.head().to_json( orient='records' )):
-    print( f"{ i[ 'title' ] } - { i[ 'href' ] }" )
+    print( f"[{ i[ 'title' ] }] - [{ i[ 'href' ] }]" )
 ```
 
     Celso Sabino: o que pode levar Lula a dar ministério a ex-aliado de Bolsonaro - https://www.bbc.com/portuguese/articles/c4n4q8q2q29o
