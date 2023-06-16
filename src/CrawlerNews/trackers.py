@@ -2,6 +2,13 @@
 # Functions for get data from web page
 # Register tracker for page.
 from bs4 import BeautifulSoup
+try:
+    import parsel
+    import scrapy
+    
+except ImportError:
+    print('\nInstall pakcaged requireds. Packages: Parsel, Scrapy')
+    raise
 
 
 """
@@ -17,8 +24,22 @@ pages = {
 }
 params = {}
 attrs = {}
+
+
+def tracker():
+    """
+    Generic tracker
+    """
+    return BeautifulSoup
+
+def trackerGOVBR( contentHTML: str ) ->  list[str]:
+    """
+        Sessão de notícias do portal do governo brasileiro.
+    """
+    soup = BeautifulSoup( contentHTML, 'html.parser' )
+    return soup.select('div .row-content .tile-noticia-destaque .tile-default')
     
-def trackerG1( contentHTML ):
+def trackerG1( contentHTML ) -> list[str]:
     """
         News for web page G1/Globo
         Site:  https://g1.globo.com
@@ -38,7 +59,7 @@ def trackerG1( contentHTML ):
 
 
 
-def trackerBand( contentHTML ):
+def trackerBand( contentHTML ) -> list[str]:
     """
         News for web page Band
         Site: 'https://www.band.uol.com.br/'
@@ -79,7 +100,7 @@ def trackerBand( contentHTML ):
     return result
 
 
-def trackerBBC( contentHTML ):
+def trackerBBC( contentHTML : str ) -> list[str]:
     bbc_news_lists = []
     url = 'https://www.bbc.com/portuguese'
     url_bbc_base = 'https://www.bbc.com'
@@ -99,7 +120,7 @@ def trackerBBC( contentHTML ):
 
     return bbc_news_lists
    
-def trackerCNN( contentHTML ):
+def trackerCNN( contentHTML : str ) -> list[str]:
     """
     Get news from page CNN Brasil.
     Corrigir obter lista news.
@@ -130,8 +151,8 @@ def trackerCNN( contentHTML ):
 
     return cnn_list_news 
 
-def trackerFolhaSP():
+def trackerFolhaSP( contentHTML : str) -> list[str]:
     return None
 
-def builderJSONContent(url ):
+def builderJSONContent( url: str ) -> str:
     return None
