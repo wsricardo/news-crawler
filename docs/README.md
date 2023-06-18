@@ -2,4 +2,4 @@
 
 ## Database News & Articles
 
-- [Jornalistic Articles and News links](https://github.com/wsricardo/news-crawler/tree/main/database)
+- [Jornalistic Articles and News links](https://github.com/wsricardo/news-crawler/blob/main/database/README.md)
