@@ -1,4 +1,4 @@
 # Database
 
-## News Bank
+## News DataBase
 
