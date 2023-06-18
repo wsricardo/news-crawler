@@ -43,6 +43,8 @@ Study new resources and possibilities for features for this crawler.
 
 [Como Contribuir](https://wsricardo.blogspot.com/2023/05/como-contribuir.html)
 
+[Github Sponsor](https://github.com/sponsors/wsricardo)
+
 ## Links
 
 [Instagram WSRicardo](https://www.instagram.com/wsricardo22)
