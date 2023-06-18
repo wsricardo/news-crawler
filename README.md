@@ -2,6 +2,11 @@
 
 [Info in English](README-en.md)
 
+
+# Bancos de Artigos
+
+- [Artigos Jornalísticos](https://github.com/wsricardo/news-crawler/tree/main/database)
+
 ## Módulo newsbot
 
 
