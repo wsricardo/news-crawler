@@ -4,7 +4,7 @@
         "href": "https://g1.globo.com/economia/noticia/2023/05/12/light-entra-com-pedido-de-recuperacao-judicial-com-divida-de-r-11-bilhoes.ghtml"
     },
     {
-        "title": "Caso das joias: PF apreende celular de chefe do setor de presentes de Bolsonaro",
+        "title": "PF apreende celular de chefe do setor de presentes de Bolsonaro",
         "href": "https://g1.globo.com/rj/rio-de-janeiro/noticia/2023/05/12/pf-faz-buscas-contra-ex-funcionario-da-presidencia.ghtml"
     },
     {
@@ -12,12 +12,24 @@
         "href": "https://g1.globo.com/go/goias/noticia/2023/05/12/robos-contas-em-nomes-de-terceiros-e-laranjas-para-receber-valores-veja-estrategias-de-apostadores-para-nao-serem-pegos-em-esquema-de-fraudes.ghtml"
     },
     {
-        "title": "Crime e religião: como atuam os traficantes evangélicos no Rio",
-        "href": "https://g1.globo.com/rj/rio-de-janeiro/noticia/2023/05/12/narcopentecostalismo-traficantes-evangelicos-usam-religiao-na-briga-por-territorios-no-rio.ghtml"
+        "title": "Por que os bilionários da tecnologia estão perdendo dinheiro",
+        "href": "https://g1.globo.com/tecnologia/noticia/2023/05/12/musk-zuckerberg-e-bill-gates-por-que-os-bilionarios-da-tecnologia-estao-perdendo-dinheiro-em-2023.ghtml"
     },
     {
         "title": "'Não tinha preocupação se ia me ferir', diz empresária que andou sobre vidro",
         "href": "https://g1.globo.com/sp/sao-paulo/noticia/2023/05/12/nao-tinha-preocupacao-se-ia-me-ferir-machucar-diz-empresaria-que-andou-sobre-cacos-de-vidro-em-evento-em-hotel-de-luxo-em-sp.ghtml"
+    },
+    {
+        "title": "PM agride aluno dentro de escola, morte em metrô nos EUA e mais vídeos",
+        "href": "https://g1.globo.com/playlist/videos-para-assistir-agora.ghtml"
+    },
+    {
+        "title": "Desmatamento na Amazônia cai 68% em abril e tem 1ª grande queda com Lula",
+        "href": "https://g1.globo.com/meio-ambiente/noticia/2023/05/12/desmatamento-na-amazonia-cai-68-em-abril-primeira-grande-queda-no-governo-lula.ghtml"
+    },
+    {
+        "title": "Líderes avaliam que Lula 'entendeu o recado' após derrota no Congresso",
+        "href": "https://g1.globo.com/politica/blog/valdo-cruz/post/2023/05/12/apos-pressao-por-liberacao-de-emendas-lideres-aliados-apostam-na-aprovacao-da-nova-regra-fiscal.ghtml"
     },
     {
         "title": "'Narcopentecostalismo': traficantes evangélicos usam religião na briga por territórios no Rio",
@@ -240,22 +252,6 @@
         "href": "https://www.bbc.com/portuguese/institutional-41672312"
     },
     {
-        "title": "Facebook",
-        "href": "https://www.facebook.com/bbcnewsbrasil/"
-    },
-    {
-        "title": "YouTube",
-        "href": "https://www.youtube.com/user/BBCBrasil"
-    },
-    {
-        "title": "Instagram",
-        "href": "https://www.instagram.com/bbcbrasil/?hl=en"
-    },
-    {
-        "title": "Twitter",
-        "href": "https://twitter.com/bbcbrasil?lang=en"
-    },
-    {
         "title": "AMÉRICA DO SUL Brasil assina hoje acordo inédito com países do Mercosul para combater discursos de ódio",
         "href": "https://www.cnnbrasil.com.br/politica/brasil-assina-acordo-inedito-com-paises-do-mercosul-para-combater-discursos-de-odio/"
     },
@@ -264,52 +260,8 @@
         "href": "https://www.cnnbrasil.com.br/nacional/pf-faz-buscas-contra-ex-funcionario-da-presidencia-responsavel-por-presentes-no-governo-bolsonaro/"
     },
     {
-        "title": "Inflação no Brasil desacelera a 0,61% em abril, índice acima do esperado, diz IBGE",
+        "title": "Inflação desacelera a 0,61% em abril; nos últimos 12 meses, índice é de 4,18%",
         "href": "https://www.cnnbrasil.com.br/economia/inflacao-desacelera-a-061-em-abril-diz-ibge/"
-    },
-    {
-        "title": "Política",
-        "href": "https://www.cnnbrasil.com.br/politica/"
-    },
-    {
-        "title": "Pop",
-        "href": "https://www.cnnbrasil.com.br/pop/"
-    },
-    {
-        "title": "Mercado",
-        "href": "/cotacoes/bolsa"
-    },
-    {
-        "title": "Economia",
-        "href": "https://www.cnnbrasil.com.br/economia/"
-    },
-    {
-        "title": "Internacional",
-        "href": "https://www.cnnbrasil.com.br/internacional/"
-    },
-    {
-        "title": "Viagem & Gastronomia",
-        "href": "https://www.cnnbrasil.com.br/viagemegastronomia/"
-    },
-    {
-        "title": "Nacional",
-        "href": "https://www.cnnbrasil.com.br/nacional/"
-    },
-    {
-        "title": "Saúde",
-        "href": "https://www.cnnbrasil.com.br/saude/"
-    },
-    {
-        "title": "Esportes",
-        "href": "https://www.cnnbrasil.com.br/esportes/"
-    },
-    {
-        "title": "CNN Plural",
-        "href": "https://www.cnnbrasil.com.br/tudo-sobre/cnn-plural/"
-    },
-    {
-        "title": "Ciência e Tecnologia",
-        "href": "https://www.cnnbrasil.com.br/tecnologia/"
     },
     {
         "title": "Fórmula ucraniana é \"a única capaz de parar guerra\", diz Zelensky a Amorim",
