@@ -1,6 +1,6 @@
 *.pyc
 *__pycache__/
-*.txt
 *.wav
 *.ipynb_checkpoints/
 *.venv/
+src/CrawlerNews/*.ipynb

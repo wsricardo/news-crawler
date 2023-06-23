@@ -1,5 +1,12 @@
 # Info Crawler
 
+[Info in English](README-en.md)
+
+
+# Bancos de Artigos
+
+- [Artigos Jornalísticos](https://github.com/wsricardo/news-crawler/tree/main/database)
+
 ## Módulo newsbot
 
 
@@ -12,6 +19,31 @@ Módulo newsbot servirá para extração de listas de noticias dos portais e ind
 ## Jupyter Notebooks com saídas
 
 [Notebooks](https://github.com/wsricardo/news-crawler/blob/main/doc/CrawlerDeNoticias.md)
+
+## Sofia - Telegram Bot
+
+O robô Sofia, como batizei, estou desenvolvendo e fazendo testes o mesmo usa o modulo crawler de notícias que criei e funciona integrado ao Telegram através do nome [Sofia](https://t.me/vrwnewsBot)  em _https://t.me/vrwnewsBot_ ela também está no canal de notícias próprio que criei para o Telegram em [https://t.me/sofianewsfeed](https://t.me/sofianewsfeed).
+
+Sugestões e cometarios podem entrar em contato através de meus canais
+
+[Blog](https://wsricardo.blogspot.com)
+
+[Instagram](https://www.instagram.com/wsricardo22/)
+
+
+## List To Do
+
+Study new resources and possibilities for features for this crawler.
+
+[List | Features | Idead](https://github.com/wsricardo/news-crawler/blob/main/listtodo.md)
+
+[Discussions](https://github.com/wsricardo/news-crawler/discussions)
+
+## Como Apoiar
+
+[Como Contribuir](https://wsricardo.blogspot.com/2023/05/como-contribuir.html)
+
+[Github Sponsor](https://github.com/sponsors/wsricardo)
 
 ## Links
 
