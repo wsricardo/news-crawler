@@ -4,6 +4,10 @@
 
 Tools for tracker news of web pages.
 
+## Database
+
+Folder database with list files of jornalistics articles moved to repository [NewsFeed](https://github.com/wsricardo/newsfeed).
+
 
 ## Sofia Bot
 

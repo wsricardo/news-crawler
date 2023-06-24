@@ -7,6 +7,10 @@
 
 - [Artigos Jornalísticos](https://github.com/wsricardo/news-crawler/tree/main/database)
 
+## Database
+
+Arquivos de noticias movidos para o repositório [NewsFeed](https://github.com/wsricardo/newsfeed)
+
 ## Módulo newsbot
 
 
