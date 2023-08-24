@@ -32,7 +32,7 @@ Sugestões e cometarios podem entrar em contato através de meus canais
 
 [Blog](https://wsricardo.blogspot.com)
 
-[Instagram](https://www.instagram.com/wsricardo22/)
+[Dimensão Alfa Youtube](https://www.youtube.com/@dimensaoalfa)
 
 
 ## List To Do
@@ -51,7 +51,9 @@ Study new resources and possibilities for features for this crawler.
 
 ## Links
 
-[Instagram WSRicardo](https://www.instagram.com/wsricardo22)
+[Dimensão Alfa Blog](https://dimensaoalfa.blogspot.com)
+
+[Dimensão Alfa Youtube](https://www.youtube.com/@dimensaoalfa)
 
 [WSRicardo meu blog](https://wsricardo.blogspot.com)
 
