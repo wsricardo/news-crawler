@@ -236,7 +236,7 @@ def create_list_news(name='out.txt', number_news_per_page = 2, withLinks=True):
     date = datetime.date.today()
     date = str( date.day ) + '-' + str( date.month ) + '-' + str( date.year )
 
-    with open('/home/opc/news-crawler/datanews/'+name+'-'+date+'.json', "w") as fl:
+    with open(name+'-'+date+'.json', "w") as fl:
         fl.write( json.dumps( news, ensure_ascii=False, indent=4 ) )
         print('save')
 
