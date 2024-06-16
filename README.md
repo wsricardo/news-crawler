@@ -26,7 +26,9 @@ Módulo newsbot servirá para extração de listas de noticias dos portais e ind
 
 ## Jupyter Notebooks com saídas
 
-[Notebooks](https://github.com/wsricardo/news-crawler/blob/main/docs/CrawlerDeNoticias.md)
+[Notebooks (antigo)](https://github.com/wsricardo/news-crawler/blob/main/docs/CrawlerDeNoticias.md)
+
+[Notebook (novo) usando módulo "spider"](https://github.com/wsricardo/news-crawler/blob/main/src/spider.ipynb)
 
 ## Sofia - Telegram Bot
 
