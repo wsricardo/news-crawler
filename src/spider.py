@@ -3,6 +3,8 @@
     Blog: https://wsricardo.blogspot.com
     Site: www.dimensaoalfa.com.br
     Github: www.github.com/wsricardo
+
+    Código para extrair links.
 """
 
 from bs4 import BeautifulSoup
