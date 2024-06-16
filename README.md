@@ -5,7 +5,7 @@
 
 # Bancos de Artigos
 
-- [Artigos Jornalísticos](https://github.com/wsricardo/news-crawler/tree/main/database)
+- [Artigos Jornalísticos](https://github.com/wsricardo/newsfeed)
 
 ## Database
 
