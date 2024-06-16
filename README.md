@@ -11,6 +11,10 @@
 
 Arquivos de noticias movidos para o repositório [NewsFeed](https://github.com/wsricardo/newsfeed)
 
+## Spider
+
+Novo módulo inserido, nomeado de spider, extrai todos links de uma página para posterior filtragem e salvar no arquivos. Módulos usados são o [Requests](https://requests.readthedocs.io) e [BeautifulSoup](https://beautiful-soup-4.readthedocs.io/en/latest/).
+
 ## Módulo newsbot
 
 
